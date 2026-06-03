@@ -42,6 +42,78 @@ is_goalie_only_position <- function(pos) {
   })
 }
 
+get_colliding_name_keys <- function(identity_variants) {
+  identity_variants %>%
+    group_by(.data$name_key) %>%
+    summarise(player_id_n = n_distinct(.data$player_id), .groups = "drop") %>%
+    filter(.data$player_id_n > 1) %>%
+    pull(.data$name_key)
+}
+
+build_player_era_lookup <- function(bios_skaters) {
+  bios_skaters %>%
+    group_by(.data$player_id) %>%
+    summarise(
+      min_season = min(.data$season, na.rm = TRUE),
+      max_season = max(.data$season, na.rm = TRUE),
+      .groups = "drop"
+    )
+}
+
+build_player_team_lookup <- function(bios_skaters) {
+  bios_skaters %>%
+    distinct(.data$player_id, .data$season, .data$team)
+}
+
+resolve_collision_candidate <- function(target_name_key, target_signing_team_abbr, target_season, identity_variants, player_team_lookup, player_era_lookup) {
+  candidates <- identity_variants %>%
+    filter(.data$name_key == target_name_key) %>%
+    distinct(.data$player_id)
+
+  if (nrow(candidates) == 0) {
+    return(list(player_id = NA_integer_, resolution = "collision_unresolved"))
+  }
+
+  candidate_scores <- candidates %>%
+    left_join(player_era_lookup, by = "player_id") %>%
+    mutate(
+      era_match = !is.na(.data$min_season) & !is.na(.data$max_season) & target_season >= .data$min_season & target_season <= .data$max_season
+    ) %>%
+    rowwise() %>%
+    mutate(
+      team_season_match = any(
+        player_team_lookup$player_id == .data$player_id &
+          player_team_lookup$season == target_season &
+          player_team_lookup$team == target_signing_team_abbr
+      ),
+      team_any_match = any(
+        player_team_lookup$player_id == .data$player_id &
+          player_team_lookup$team == target_signing_team_abbr
+      )
+    ) %>%
+    ungroup() %>%
+    mutate(
+      score =
+        ifelse(.data$team_season_match, 100L, 0L) +
+        ifelse(.data$era_match, 10L, 0L) +
+        ifelse(.data$team_any_match, 1L, 0L)
+    ) %>%
+    arrange(desc(.data$score), .data$player_id)
+
+  if (nrow(candidate_scores) == 0) {
+    return(list(player_id = NA_integer_, resolution = "collision_unresolved"))
+  }
+
+  top_score <- candidate_scores$score[[1]]
+  top_rows <- candidate_scores %>% filter(.data$score == top_score)
+
+  if (top_score > 0 && nrow(top_rows) == 1) {
+    return(list(player_id = as.integer(top_rows$player_id[[1]]), resolution = "collision_team_era"))
+  }
+
+  list(player_id = NA_integer_, resolution = "collision_unresolved")
+}
+
 apply_name_matching <- function(df, identity_variants, first_name_variants, name_col = "player_name") {
   working <- df %>%
     mutate(
@@ -60,7 +132,8 @@ apply_name_matching <- function(df, identity_variants, first_name_variants, name
     select(row_id, name_key) %>%
     left_join(
       identity_variants %>% select(player_id, name_key),
-      by = "name_key"
+      by = "name_key",
+      relationship = "many-to-many"
     ) %>%
     filter(!is.na(.data$player_id))
 
@@ -68,7 +141,6 @@ apply_name_matching <- function(df, identity_variants, first_name_variants, name
     group_by(.data$row_id) %>%
     summarise(
       player_id = ifelse(n_distinct(.data$player_id) == 1, first(.data$player_id), NA_integer_),
-      exact_candidate_n = n_distinct(.data$player_id),
       .groups = "drop"
     ) %>%
     mutate(match_status = ifelse(!is.na(.data$player_id), "exact", "ambiguous_exact"))
@@ -88,7 +160,8 @@ apply_name_matching <- function(df, identity_variants, first_name_variants, name
     distinct() %>%
     left_join(
       identity_variants %>% select(player_id, name_key),
-      by = c("candidate_key" = "name_key")
+      by = c("candidate_key" = "name_key"),
+      relationship = "many-to-many"
     ) %>%
     filter(!is.na(.data$player_id))
 
@@ -96,7 +169,6 @@ apply_name_matching <- function(df, identity_variants, first_name_variants, name
     group_by(.data$row_id) %>%
     summarise(
       player_id = ifelse(n_distinct(.data$player_id) == 1, first(.data$player_id), NA_integer_),
-      variant_candidate_n = n_distinct(.data$player_id),
       .groups = "drop"
     ) %>%
     mutate(match_status = ifelse(!is.na(.data$player_id), "first_name_variant", "ambiguous_variant"))
@@ -112,7 +184,8 @@ apply_name_matching <- function(df, identity_variants, first_name_variants, name
     select(row_id, name_key_ascii) %>%
     left_join(
       identity_variants %>% select(player_id, name_key_ascii),
-      by = "name_key_ascii"
+      by = "name_key_ascii",
+      relationship = "many-to-many"
     ) %>%
     filter(!is.na(.data$player_id))
 
@@ -120,12 +193,11 @@ apply_name_matching <- function(df, identity_variants, first_name_variants, name
     group_by(.data$row_id) %>%
     summarise(
       player_id = ifelse(n_distinct(.data$player_id) == 1, first(.data$player_id), NA_integer_),
-      ascii_candidate_n = n_distinct(.data$player_id),
       .groups = "drop"
     ) %>%
     mutate(match_status = ifelse(!is.na(.data$player_id), "accent_fallback", "ambiguous_ascii"))
 
-  resolved <- working %>%
+  working %>%
     left_join(exact_resolved %>% transmute(row_id, exact_player_id = player_id, exact_status = match_status), by = "row_id") %>%
     left_join(variant_resolved %>% transmute(row_id, variant_player_id = player_id, variant_status = match_status), by = "row_id") %>%
     left_join(ascii_resolved %>% transmute(row_id, ascii_player_id = player_id, ascii_status = match_status), by = "row_id") %>%
@@ -138,15 +210,128 @@ apply_name_matching <- function(df, identity_variants, first_name_variants, name
         TRUE ~ "unmatched"
       )
     )
+}
 
-  resolved
+apply_collision_disambiguation <- function(matched, identity_variants, bios_skaters) {
+  colliding_name_keys <- get_colliding_name_keys(identity_variants)
+  player_era_lookup <- build_player_era_lookup(bios_skaters)
+  player_team_lookup <- build_player_team_lookup(bios_skaters)
+
+  working <- matched %>%
+    mutate(
+      original_player_id = .data$player_id,
+      original_match_status = .data$match_status,
+      was_colliding_name = .data$name_key %in% colliding_name_keys
+    )
+
+  collision_rows <- which(working$was_colliding_name)
+
+  for (i in collision_rows) {
+    resolved <- resolve_collision_candidate(
+      target_name_key = working$name_key[[i]],
+      target_signing_team_abbr = working$signing_team_abbr[[i]],
+      target_season = working$season[[i]],
+      identity_variants = identity_variants,
+      player_team_lookup = player_team_lookup,
+      player_era_lookup = player_era_lookup
+    )
+
+    working$player_id[[i]] <- resolved$player_id
+    working$match_status[[i]] <- resolved$resolution
+  }
+
+  list(
+    data = working,
+    colliding_name_keys = colliding_name_keys,
+    colliding_row_count = length(collision_rows),
+    colliding_reassigned_count = sum(
+      working$was_colliding_name &
+        !is.na(working$player_id) &
+        (is.na(working$original_player_id) | working$player_id != working$original_player_id)
+    ),
+    colliding_name_only_assigned_count = sum(
+      working$was_colliding_name &
+        working$match_status %in% c("exact", "first_name_variant", "accent_fallback")
+    )
+  )
+}
+
+build_or_update_override_map <- function(df, override_map_path) {
+  unresolved <- df %>%
+    filter(is.na(.data$player_id)) %>%
+    transmute(
+      player_name = .data$raw_name,
+      signing_team_abbr = .data$signing_team_abbr,
+      season = .data$season,
+      player_id = as.integer(NA),
+      override_note = ""
+    ) %>%
+    distinct()
+
+  if (file.exists(override_map_path)) {
+    existing <- readr::read_csv(override_map_path, show_col_types = FALSE) %>%
+      mutate(
+        player_name = as.character(.data$player_name),
+        signing_team_abbr = as.character(.data$signing_team_abbr),
+        season = as.integer(.data$season),
+        player_id = as.integer(.data$player_id),
+        override_note = as.character(.data$override_note)
+      )
+
+    new_rows <- unresolved %>%
+      anti_join(existing, by = c("player_name", "signing_team_abbr", "season"))
+
+    updated <- bind_rows(existing, new_rows) %>%
+      distinct(.data$player_name, .data$signing_team_abbr, .data$season, .keep_all = TRUE) %>%
+      arrange(.data$player_name, .data$season, .data$signing_team_abbr)
+  } else {
+    updated <- unresolved %>%
+      arrange(.data$player_name, .data$season, .data$signing_team_abbr)
+  }
+
+  readr::write_csv(updated, override_map_path)
+  updated
+}
+
+apply_manual_overrides <- function(df, override_map) {
+  active_overrides <- override_map %>%
+    filter(!is.na(.data$player_id)) %>%
+    transmute(
+      player_name = .data$player_name,
+      signing_team_abbr = .data$signing_team_abbr,
+      season = as.integer(.data$season),
+      override_player_id = as.integer(.data$player_id)
+    ) %>%
+    distinct()
+
+  if (nrow(active_overrides) == 0) {
+    return(list(data = df, overrides_applied = 0L))
+  }
+
+  out <- df %>%
+    left_join(
+      active_overrides,
+      by = c("raw_name" = "player_name", "signing_team_abbr", "season"),
+      relationship = "many-to-one"
+    ) %>%
+    mutate(
+      player_id_before_override = .data$player_id,
+      player_id = coalesce(.data$override_player_id, .data$player_id),
+      match_status = ifelse(!is.na(.data$override_player_id), "manual_override", .data$match_status)
+    )
+
+  overrides_applied <- sum(!is.na(out$override_player_id) & (is.na(out$player_id_before_override) | out$player_id_before_override != out$override_player_id))
+
+  list(data = out, overrides_applied = overrides_applied)
 }
 
 spotrac_path <- here::here("data", "raw", "spotrac_contracts_raw.csv")
 identity_path <- here::here("data", "processed", "identity_name_variants.csv")
 first_name_variants_path <- here::here("data", "processed", "first_name_variants.csv")
+bios_path <- here::here("data", "raw", "nhlscraper_player_bios_raw.csv")
 out_path <- here::here("data", "processed", "spotrac_contracts_clean.csv")
 unmatched_out_path <- here::here("data", "processed", "spotrac_unmatched_names.csv")
+override_map_path <- here::here("data", "processed", "spotrac_manual_overrides.csv")
 
 if (!file.exists(spotrac_path)) {
   stop("Missing Spotrac raw file: ", spotrac_path)
@@ -154,12 +339,23 @@ if (!file.exists(spotrac_path)) {
 if (!file.exists(identity_path) || !file.exists(first_name_variants_path)) {
   stop("Missing identity outputs. Run 01_build_identity_crosswalk.R first.")
 }
+if (!file.exists(bios_path)) {
+  stop("Missing bios raw file: ", bios_path)
+}
 
 dir.create(dirname(out_path), recursive = TRUE, showWarnings = FALSE)
 
 spotrac <- readr::read_csv(spotrac_path, show_col_types = FALSE)
 identity_variants <- readr::read_csv(identity_path, show_col_types = FALSE)
 first_name_variants <- readr::read_csv(first_name_variants_path, show_col_types = FALSE)
+bios_skaters <- readr::read_csv(bios_path, show_col_types = FALSE) %>%
+  filter(.data$position != "G") %>%
+  transmute(
+    player_id = as.integer(.data$player_id),
+    season = as.integer(.data$season),
+    team = as.character(.data$team)
+  ) %>%
+  distinct()
 team_crosswalk <- get_team_crosswalk()
 
 spotrac_skaters <- spotrac %>%
@@ -172,21 +368,34 @@ spotrac_skaters <- spotrac %>%
   ) %>%
   left_join(
     team_crosswalk %>% transmute(team_name_key, signing_team_abbr = team_abbr),
-    by = c("signing_team_key" = "team_name_key")
+    by = c("signing_team_key" = "team_name_key"),
+    relationship = "many-to-one"
   ) %>%
   left_join(
     team_crosswalk %>% transmute(team_name_key, previous_team_abbr = team_abbr),
-    by = c("previous_team_key" = "team_name_key")
+    by = c("previous_team_key" = "team_name_key"),
+    relationship = "many-to-one"
   )
 
-matched <- apply_name_matching(
+matched_first_pass <- apply_name_matching(
   df = spotrac_skaters,
   identity_variants = identity_variants,
   first_name_variants = first_name_variants,
   name_col = "player_name"
 )
 
-spotrac_clean <- matched %>%
+collision_pass <- apply_collision_disambiguation(
+  matched = matched_first_pass,
+  identity_variants = identity_variants,
+  bios_skaters = bios_skaters
+)
+
+override_map <- build_or_update_override_map(collision_pass$data, override_map_path)
+override_result <- apply_manual_overrides(collision_pass$data, override_map)
+
+spotrac_final <- override_result$data
+
+spotrac_clean <- spotrac_final %>%
   transmute(
     player_id = as.integer(.data$player_id),
     player_name = .data$raw_name,
@@ -226,11 +435,17 @@ message(sprintf("- unmatched: %s", unmatched_rows))
 message(sprintf("- Spotrac-to-player_id match rate: %.2f%%", match_rate))
 message("- match_status distribution:")
 print(spotrac_clean %>% count(.data$match_status, sort = TRUE))
+message(sprintf("- colliding name keys discovered in identity crosswalk: %s", length(collision_pass$colliding_name_keys)))
+message(sprintf("- Spotrac rows with colliding names: %s", collision_pass$colliding_row_count))
+message(sprintf("- colliding-name rows re-assigned in disambiguation pass: %s", collision_pass$colliding_reassigned_count))
+message(sprintf("- colliding-name rows still assigned by name-only statuses: %s", collision_pass$colliding_name_only_assigned_count))
+message(sprintf("- manual overrides applied: %s", override_result$overrides_applied))
+message(sprintf("- saved: %s", out_path))
+message(sprintf("- saved unmatched list: %s", unmatched_out_path))
+message(sprintf("- saved manual override map: %s", override_map_path))
 message("- unmatched player names (manual review):")
 if (nrow(unmatched_names) == 0) {
   message("none")
 } else {
   print(unmatched_names)
 }
-message(sprintf("- saved: %s", out_path))
-message(sprintf("- saved unmatched list: %s", unmatched_out_path))
