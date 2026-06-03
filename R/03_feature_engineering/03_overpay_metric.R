@@ -33,6 +33,9 @@ position_group <- function(x) {
 # Flat-cap period retained explicitly for 2020-21 and 2021-22.
 cap_table <- tibble::tribble(
   ~first_contract_season, ~cap_ceiling_millions,
+  20122013L, 70.2,
+  20132014L, 64.3,
+  20142015L, 69.0,
   20152016L, 71.4,
   20162017L, 73.0,
   20172018L, 75.0,

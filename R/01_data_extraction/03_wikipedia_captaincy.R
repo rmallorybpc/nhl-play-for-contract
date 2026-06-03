@@ -94,7 +94,13 @@ captain_tenures <- tibble::tribble(
   "Winnipeg Jets", 2015L, 2015L, "Andrew Ladd", "https://en.wikipedia.org/wiki/List_of_Winnipeg_Jets_captains", FALSE,
   "Winnipeg Jets", 2016L, 2021L, "Blake Wheeler", "https://en.wikipedia.org/wiki/List_of_Winnipeg_Jets_captains", FALSE,
   "Winnipeg Jets", 2023L, 2024L, "Adam Lowry", "https://en.wikipedia.org/wiki/List_of_Winnipeg_Jets_captains", FALSE
-)
+) %>%
+  arrange(.data$team, .data$start_year, .data$end_year) %>%
+  group_by(.data$team) %>%
+  mutate(
+    start_year = dplyr::if_else(dplyr::row_number() == 1L, pmin(.data$start_year, 2012L), .data$start_year)
+  ) %>%
+  ungroup()
 
 captaincy_raw <- captain_tenures %>%
   mutate(season_start_year = purrr::map2(.data$start_year, .data$end_year, seq)) %>%

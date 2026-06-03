@@ -19,10 +19,7 @@ if (!nhlscraper_available) {
   message("nhlscraper package not installed; using snapshot fallback sources.")
 }
 
-season_ids <- c(
-  20152016L, 20162017L, 20172018L, 20182019L, 20192020L,
-  20202021L, 20212022L, 20222023L, 20232024L, 20242025L
-)
+season_ids <- seq(20092010L, 20242025L, by = 10001L)
 
 roster_urls <- c(
   stats::setNames(

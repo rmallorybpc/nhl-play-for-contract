@@ -1,4 +1,7 @@
 player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_data_available
+8470612,Ryan Getzlaf,exact,Anaheim Ducks,ANA,20122013,https://en.wikipedia.org/wiki/List_of_Anaheim_Ducks_captains,FALSE
+8470612,Ryan Getzlaf,exact,Anaheim Ducks,ANA,20132014,https://en.wikipedia.org/wiki/List_of_Anaheim_Ducks_captains,FALSE
+8470612,Ryan Getzlaf,exact,Anaheim Ducks,ANA,20142015,https://en.wikipedia.org/wiki/List_of_Anaheim_Ducks_captains,FALSE
 8470612,Ryan Getzlaf,exact,Anaheim Ducks,ANA,20152016,https://en.wikipedia.org/wiki/List_of_Anaheim_Ducks_captains,FALSE
 8470612,Ryan Getzlaf,exact,Anaheim Ducks,ANA,20162017,https://en.wikipedia.org/wiki/List_of_Anaheim_Ducks_captains,FALSE
 8470612,Ryan Getzlaf,exact,Anaheim Ducks,ANA,20172018,https://en.wikipedia.org/wiki/List_of_Anaheim_Ducks_captains,FALSE
@@ -6,6 +9,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8470612,Ryan Getzlaf,exact,Anaheim Ducks,ANA,20192020,https://en.wikipedia.org/wiki/List_of_Anaheim_Ducks_captains,FALSE
 8470612,Ryan Getzlaf,exact,Anaheim Ducks,ANA,20202021,https://en.wikipedia.org/wiki/List_of_Anaheim_Ducks_captains,FALSE
 8470612,Ryan Getzlaf,exact,Anaheim Ducks,ANA,20212022,https://en.wikipedia.org/wiki/List_of_Anaheim_Ducks_captains,FALSE
+8465009,Zdeno Chara,exact,Boston Bruins,BOS,20122013,https://en.wikipedia.org/wiki/List_of_Boston_Bruins_captains,FALSE
+8465009,Zdeno Chara,exact,Boston Bruins,BOS,20132014,https://en.wikipedia.org/wiki/List_of_Boston_Bruins_captains,FALSE
+8465009,Zdeno Chara,exact,Boston Bruins,BOS,20142015,https://en.wikipedia.org/wiki/List_of_Boston_Bruins_captains,FALSE
 8465009,Zdeno Chara,exact,Boston Bruins,BOS,20152016,https://en.wikipedia.org/wiki/List_of_Boston_Bruins_captains,FALSE
 8465009,Zdeno Chara,exact,Boston Bruins,BOS,20162017,https://en.wikipedia.org/wiki/List_of_Boston_Bruins_captains,FALSE
 8465009,Zdeno Chara,exact,Boston Bruins,BOS,20172018,https://en.wikipedia.org/wiki/List_of_Boston_Bruins_captains,FALSE
@@ -16,6 +22,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8470638,Patrice Bergeron,exact,Boston Bruins,BOS,20222023,https://en.wikipedia.org/wiki/List_of_Boston_Bruins_captains,FALSE
 8473419,Brad Marchand,exact,Boston Bruins,BOS,20232024,https://en.wikipedia.org/wiki/List_of_Boston_Bruins_captains,FALSE
 8473419,Brad Marchand,exact,Boston Bruins,BOS,20242025,https://en.wikipedia.org/wiki/List_of_Boston_Bruins_captains,FALSE
+8467407,Brian Gionta,exact,Buffalo Sabres,BUF,20122013,https://en.wikipedia.org/wiki/List_of_Buffalo_Sabres_captains,FALSE
+8467407,Brian Gionta,exact,Buffalo Sabres,BUF,20132014,https://en.wikipedia.org/wiki/List_of_Buffalo_Sabres_captains,FALSE
+8467407,Brian Gionta,exact,Buffalo Sabres,BUF,20142015,https://en.wikipedia.org/wiki/List_of_Buffalo_Sabres_captains,FALSE
 8467407,Brian Gionta,exact,Buffalo Sabres,BUF,20152016,https://en.wikipedia.org/wiki/List_of_Buffalo_Sabres_captains,FALSE
 8467407,Brian Gionta,exact,Buffalo Sabres,BUF,20162017,https://en.wikipedia.org/wiki/List_of_Buffalo_Sabres_captains,FALSE
 8478403,Jack Eichel,exact,Buffalo Sabres,BUF,20182019,https://en.wikipedia.org/wiki/List_of_Buffalo_Sabres_captains,FALSE
@@ -24,6 +33,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8473449,Kyle Okposo,exact,Buffalo Sabres,BUF,20222023,https://en.wikipedia.org/wiki/List_of_Buffalo_Sabres_captains,FALSE
 8473449,Kyle Okposo,exact,Buffalo Sabres,BUF,20232024,https://en.wikipedia.org/wiki/List_of_Buffalo_Sabres_captains,FALSE
 8480839,Rasmus Dahlin,exact,Buffalo Sabres,BUF,20242025,https://en.wikipedia.org/wiki/List_of_Buffalo_Sabres_captains,FALSE
+8470966,Mark Giordano,exact,Calgary Flames,CGY,20122013,https://en.wikipedia.org/wiki/List_of_Calgary_Flames_captains,FALSE
+8470966,Mark Giordano,exact,Calgary Flames,CGY,20132014,https://en.wikipedia.org/wiki/List_of_Calgary_Flames_captains,FALSE
+8470966,Mark Giordano,exact,Calgary Flames,CGY,20142015,https://en.wikipedia.org/wiki/List_of_Calgary_Flames_captains,FALSE
 8470966,Mark Giordano,exact,Calgary Flames,CGY,20152016,https://en.wikipedia.org/wiki/List_of_Calgary_Flames_captains,FALSE
 8470966,Mark Giordano,exact,Calgary Flames,CGY,20162017,https://en.wikipedia.org/wiki/List_of_Calgary_Flames_captains,FALSE
 8470966,Mark Giordano,exact,Calgary Flames,CGY,20172018,https://en.wikipedia.org/wiki/List_of_Calgary_Flames_captains,FALSE
@@ -31,6 +43,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8470966,Mark Giordano,exact,Calgary Flames,CGY,20192020,https://en.wikipedia.org/wiki/List_of_Calgary_Flames_captains,FALSE
 8474150,Mikael Backlund,exact,Calgary Flames,CGY,20232024,https://en.wikipedia.org/wiki/List_of_Calgary_Flames_captains,FALSE
 8474150,Mikael Backlund,exact,Calgary Flames,CGY,20242025,https://en.wikipedia.org/wiki/List_of_Calgary_Flames_captains,FALSE
+8470595,Eric Staal,exact,Carolina Hurricanes,CAR,20122013,https://en.wikipedia.org/wiki/List_of_Carolina_Hurricanes_captains,FALSE
+8470595,Eric Staal,exact,Carolina Hurricanes,CAR,20132014,https://en.wikipedia.org/wiki/List_of_Carolina_Hurricanes_captains,FALSE
+8470595,Eric Staal,exact,Carolina Hurricanes,CAR,20142015,https://en.wikipedia.org/wiki/List_of_Carolina_Hurricanes_captains,FALSE
 8470595,Eric Staal,exact,Carolina Hurricanes,CAR,20152016,https://en.wikipedia.org/wiki/List_of_Carolina_Hurricanes_captains,FALSE
 8468508,Justin Williams,exact,Carolina Hurricanes,CAR,20182019,https://en.wikipedia.org/wiki/List_of_Carolina_Hurricanes_captains,FALSE
 8468508,Justin Williams,exact,Carolina Hurricanes,CAR,20192020,https://en.wikipedia.org/wiki/List_of_Carolina_Hurricanes_captains,FALSE
@@ -39,6 +54,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8473533,Jordan Staal,exact,Carolina Hurricanes,CAR,20222023,https://en.wikipedia.org/wiki/List_of_Carolina_Hurricanes_captains,FALSE
 8473533,Jordan Staal,exact,Carolina Hurricanes,CAR,20232024,https://en.wikipedia.org/wiki/List_of_Carolina_Hurricanes_captains,FALSE
 8473533,Jordan Staal,exact,Carolina Hurricanes,CAR,20242025,https://en.wikipedia.org/wiki/List_of_Carolina_Hurricanes_captains,FALSE
+8473604,Jonathan Toews,exact,Chicago Blackhawks,CHI,20122013,https://en.wikipedia.org/wiki/List_of_Chicago_Blackhawks_captains,FALSE
+8473604,Jonathan Toews,exact,Chicago Blackhawks,CHI,20132014,https://en.wikipedia.org/wiki/List_of_Chicago_Blackhawks_captains,FALSE
+8473604,Jonathan Toews,exact,Chicago Blackhawks,CHI,20142015,https://en.wikipedia.org/wiki/List_of_Chicago_Blackhawks_captains,FALSE
 8473604,Jonathan Toews,exact,Chicago Blackhawks,CHI,20152016,https://en.wikipedia.org/wiki/List_of_Chicago_Blackhawks_captains,FALSE
 8473604,Jonathan Toews,exact,Chicago Blackhawks,CHI,20162017,https://en.wikipedia.org/wiki/List_of_Chicago_Blackhawks_captains,FALSE
 8473604,Jonathan Toews,exact,Chicago Blackhawks,CHI,20172018,https://en.wikipedia.org/wiki/List_of_Chicago_Blackhawks_captains,FALSE
@@ -47,6 +65,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8473604,Jonathan Toews,exact,Chicago Blackhawks,CHI,20202021,https://en.wikipedia.org/wiki/List_of_Chicago_Blackhawks_captains,FALSE
 8473604,Jonathan Toews,exact,Chicago Blackhawks,CHI,20212022,https://en.wikipedia.org/wiki/List_of_Chicago_Blackhawks_captains,FALSE
 8473604,Jonathan Toews,exact,Chicago Blackhawks,CHI,20222023,https://en.wikipedia.org/wiki/List_of_Chicago_Blackhawks_captains,FALSE
+8476455,Gabriel Landeskog,exact,Colorado Avalanche,COL,20122013,https://en.wikipedia.org/wiki/List_of_Colorado_Avalanche_captains,FALSE
+8476455,Gabriel Landeskog,exact,Colorado Avalanche,COL,20132014,https://en.wikipedia.org/wiki/List_of_Colorado_Avalanche_captains,FALSE
+8476455,Gabriel Landeskog,exact,Colorado Avalanche,COL,20142015,https://en.wikipedia.org/wiki/List_of_Colorado_Avalanche_captains,FALSE
 8476455,Gabriel Landeskog,exact,Colorado Avalanche,COL,20152016,https://en.wikipedia.org/wiki/List_of_Colorado_Avalanche_captains,FALSE
 8476455,Gabriel Landeskog,exact,Colorado Avalanche,COL,20162017,https://en.wikipedia.org/wiki/List_of_Colorado_Avalanche_captains,FALSE
 8476455,Gabriel Landeskog,exact,Colorado Avalanche,COL,20172018,https://en.wikipedia.org/wiki/List_of_Colorado_Avalanche_captains,FALSE
@@ -57,6 +78,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8476455,Gabriel Landeskog,exact,Colorado Avalanche,COL,20222023,https://en.wikipedia.org/wiki/List_of_Colorado_Avalanche_captains,FALSE
 8476455,Gabriel Landeskog,exact,Colorado Avalanche,COL,20232024,https://en.wikipedia.org/wiki/List_of_Colorado_Avalanche_captains,FALSE
 8476455,Gabriel Landeskog,exact,Colorado Avalanche,COL,20242025,https://en.wikipedia.org/wiki/List_of_Colorado_Avalanche_captains,FALSE
+8473422,Nick Foligno,exact,Columbus Blue Jackets,CBJ,20122013,https://en.wikipedia.org/wiki/List_of_Columbus_Blue_Jackets_captains,FALSE
+8473422,Nick Foligno,exact,Columbus Blue Jackets,CBJ,20132014,https://en.wikipedia.org/wiki/List_of_Columbus_Blue_Jackets_captains,FALSE
+8473422,Nick Foligno,exact,Columbus Blue Jackets,CBJ,20142015,https://en.wikipedia.org/wiki/List_of_Columbus_Blue_Jackets_captains,FALSE
 8473422,Nick Foligno,exact,Columbus Blue Jackets,CBJ,20152016,https://en.wikipedia.org/wiki/List_of_Columbus_Blue_Jackets_captains,FALSE
 8473422,Nick Foligno,exact,Columbus Blue Jackets,CBJ,20162017,https://en.wikipedia.org/wiki/List_of_Columbus_Blue_Jackets_captains,FALSE
 8473422,Nick Foligno,exact,Columbus Blue Jackets,CBJ,20172018,https://en.wikipedia.org/wiki/List_of_Columbus_Blue_Jackets_captains,FALSE
@@ -67,6 +91,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8476432,Boone Jenner,exact,Columbus Blue Jackets,CBJ,20222023,https://en.wikipedia.org/wiki/List_of_Columbus_Blue_Jackets_captains,FALSE
 8476432,Boone Jenner,exact,Columbus Blue Jackets,CBJ,20232024,https://en.wikipedia.org/wiki/List_of_Columbus_Blue_Jackets_captains,FALSE
 8476432,Boone Jenner,exact,Columbus Blue Jackets,CBJ,20242025,https://en.wikipedia.org/wiki/List_of_Columbus_Blue_Jackets_captains,FALSE
+8473994,Jamie Benn,exact,Dallas Stars,DAL,20122013,https://en.wikipedia.org/wiki/List_of_Dallas_Stars_captains,FALSE
+8473994,Jamie Benn,exact,Dallas Stars,DAL,20132014,https://en.wikipedia.org/wiki/List_of_Dallas_Stars_captains,FALSE
+8473994,Jamie Benn,exact,Dallas Stars,DAL,20142015,https://en.wikipedia.org/wiki/List_of_Dallas_Stars_captains,FALSE
 8473994,Jamie Benn,exact,Dallas Stars,DAL,20152016,https://en.wikipedia.org/wiki/List_of_Dallas_Stars_captains,FALSE
 8473994,Jamie Benn,exact,Dallas Stars,DAL,20162017,https://en.wikipedia.org/wiki/List_of_Dallas_Stars_captains,FALSE
 8473994,Jamie Benn,exact,Dallas Stars,DAL,20172018,https://en.wikipedia.org/wiki/List_of_Dallas_Stars_captains,FALSE
@@ -77,6 +104,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8473994,Jamie Benn,exact,Dallas Stars,DAL,20222023,https://en.wikipedia.org/wiki/List_of_Dallas_Stars_captains,FALSE
 8473994,Jamie Benn,exact,Dallas Stars,DAL,20232024,https://en.wikipedia.org/wiki/List_of_Dallas_Stars_captains,FALSE
 8473994,Jamie Benn,exact,Dallas Stars,DAL,20242025,https://en.wikipedia.org/wiki/List_of_Dallas_Stars_captains,FALSE
+8468083,Henrik Zetterberg,exact,Detroit Red Wings,DET,20122013,https://en.wikipedia.org/wiki/List_of_Detroit_Red_Wings_captains,FALSE
+8468083,Henrik Zetterberg,exact,Detroit Red Wings,DET,20132014,https://en.wikipedia.org/wiki/List_of_Detroit_Red_Wings_captains,FALSE
+8468083,Henrik Zetterberg,exact,Detroit Red Wings,DET,20142015,https://en.wikipedia.org/wiki/List_of_Detroit_Red_Wings_captains,FALSE
 8468083,Henrik Zetterberg,exact,Detroit Red Wings,DET,20152016,https://en.wikipedia.org/wiki/List_of_Detroit_Red_Wings_captains,FALSE
 8468083,Henrik Zetterberg,exact,Detroit Red Wings,DET,20162017,https://en.wikipedia.org/wiki/List_of_Detroit_Red_Wings_captains,FALSE
 8468083,Henrik Zetterberg,exact,Detroit Red Wings,DET,20172018,https://en.wikipedia.org/wiki/List_of_Detroit_Red_Wings_captains,FALSE
@@ -84,6 +114,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8477946,Dylan Larkin,exact,Detroit Red Wings,DET,20222023,https://en.wikipedia.org/wiki/List_of_Detroit_Red_Wings_captains,FALSE
 8477946,Dylan Larkin,exact,Detroit Red Wings,DET,20232024,https://en.wikipedia.org/wiki/List_of_Detroit_Red_Wings_captains,FALSE
 8477946,Dylan Larkin,exact,Detroit Red Wings,DET,20242025,https://en.wikipedia.org/wiki/List_of_Detroit_Red_Wings_captains,FALSE
+8466333,Andrew Ference,exact,Edmonton Oilers,EDM,20122013,https://en.wikipedia.org/wiki/List_of_Edmonton_Oilers_captains,FALSE
+8466333,Andrew Ference,exact,Edmonton Oilers,EDM,20132014,https://en.wikipedia.org/wiki/List_of_Edmonton_Oilers_captains,FALSE
+8466333,Andrew Ference,exact,Edmonton Oilers,EDM,20142015,https://en.wikipedia.org/wiki/List_of_Edmonton_Oilers_captains,FALSE
 8466333,Andrew Ference,exact,Edmonton Oilers,EDM,20152016,https://en.wikipedia.org/wiki/List_of_Edmonton_Oilers_captains,FALSE
 8478402,Connor McDavid,exact,Edmonton Oilers,EDM,20162017,https://en.wikipedia.org/wiki/List_of_Edmonton_Oilers_captains,FALSE
 8478402,Connor McDavid,exact,Edmonton Oilers,EDM,20172018,https://en.wikipedia.org/wiki/List_of_Edmonton_Oilers_captains,FALSE
@@ -94,6 +127,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8478402,Connor McDavid,exact,Edmonton Oilers,EDM,20222023,https://en.wikipedia.org/wiki/List_of_Edmonton_Oilers_captains,FALSE
 8478402,Connor McDavid,exact,Edmonton Oilers,EDM,20232024,https://en.wikipedia.org/wiki/List_of_Edmonton_Oilers_captains,FALSE
 8478402,Connor McDavid,exact,Edmonton Oilers,EDM,20242025,https://en.wikipedia.org/wiki/List_of_Edmonton_Oilers_captains,FALSE
+8465185,Willie Mitchell,exact,Florida Panthers,FLA,20122013,https://en.wikipedia.org/wiki/List_of_Florida_Panthers_captains,FALSE
+8465185,Willie Mitchell,exact,Florida Panthers,FLA,20132014,https://en.wikipedia.org/wiki/List_of_Florida_Panthers_captains,FALSE
+8465185,Willie Mitchell,exact,Florida Panthers,FLA,20142015,https://en.wikipedia.org/wiki/List_of_Florida_Panthers_captains,FALSE
 8465185,Willie Mitchell,exact,Florida Panthers,FLA,20152016,https://en.wikipedia.org/wiki/List_of_Florida_Panthers_captains,FALSE
 8468001,Derek MacKenzie,exact,Florida Panthers,FLA,20162017,https://en.wikipedia.org/wiki/List_of_Florida_Panthers_captains,FALSE
 8468001,Derek MacKenzie,exact,Florida Panthers,FLA,20172018,https://en.wikipedia.org/wiki/List_of_Florida_Panthers_captains,FALSE
@@ -104,6 +140,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8477493,Aleksander Barkov,exact,Florida Panthers,FLA,20222023,https://en.wikipedia.org/wiki/List_of_Florida_Panthers_captains,FALSE
 8477493,Aleksander Barkov,exact,Florida Panthers,FLA,20232024,https://en.wikipedia.org/wiki/List_of_Florida_Panthers_captains,FALSE
 8477493,Aleksander Barkov,exact,Florida Panthers,FLA,20242025,https://en.wikipedia.org/wiki/List_of_Florida_Panthers_captains,FALSE
+8470606,Dustin Brown,exact,Los Angeles Kings,LAK,20122013,https://en.wikipedia.org/wiki/List_of_Los_Angeles_Kings_captains,FALSE
+8470606,Dustin Brown,exact,Los Angeles Kings,LAK,20132014,https://en.wikipedia.org/wiki/List_of_Los_Angeles_Kings_captains,FALSE
+8470606,Dustin Brown,exact,Los Angeles Kings,LAK,20142015,https://en.wikipedia.org/wiki/List_of_Los_Angeles_Kings_captains,FALSE
 8470606,Dustin Brown,exact,Los Angeles Kings,LAK,20152016,https://en.wikipedia.org/wiki/List_of_Los_Angeles_Kings_captains,FALSE
 8471685,Anze Kopitar,exact,Los Angeles Kings,LAK,20162017,https://en.wikipedia.org/wiki/List_of_Los_Angeles_Kings_captains,FALSE
 8471685,Anze Kopitar,exact,Los Angeles Kings,LAK,20172018,https://en.wikipedia.org/wiki/List_of_Los_Angeles_Kings_captains,FALSE
@@ -114,6 +153,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8471685,Anze Kopitar,exact,Los Angeles Kings,LAK,20222023,https://en.wikipedia.org/wiki/List_of_Los_Angeles_Kings_captains,FALSE
 8471685,Anze Kopitar,exact,Los Angeles Kings,LAK,20232024,https://en.wikipedia.org/wiki/List_of_Los_Angeles_Kings_captains,FALSE
 8471685,Anze Kopitar,exact,Los Angeles Kings,LAK,20242025,https://en.wikipedia.org/wiki/List_of_Los_Angeles_Kings_captains,FALSE
+8469459,Mikko Koivu,exact,Minnesota Wild,MIN,20122013,https://en.wikipedia.org/wiki/List_of_Minnesota_Wild_captains,FALSE
+8469459,Mikko Koivu,exact,Minnesota Wild,MIN,20132014,https://en.wikipedia.org/wiki/List_of_Minnesota_Wild_captains,FALSE
+8469459,Mikko Koivu,exact,Minnesota Wild,MIN,20142015,https://en.wikipedia.org/wiki/List_of_Minnesota_Wild_captains,FALSE
 8469459,Mikko Koivu,exact,Minnesota Wild,MIN,20152016,https://en.wikipedia.org/wiki/List_of_Minnesota_Wild_captains,FALSE
 8469459,Mikko Koivu,exact,Minnesota Wild,MIN,20162017,https://en.wikipedia.org/wiki/List_of_Minnesota_Wild_captains,FALSE
 8469459,Mikko Koivu,exact,Minnesota Wild,MIN,20172018,https://en.wikipedia.org/wiki/List_of_Minnesota_Wild_captains,FALSE
@@ -124,6 +166,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8474716,Jared Spurgeon,exact,Minnesota Wild,MIN,20222023,https://en.wikipedia.org/wiki/List_of_Minnesota_Wild_captains,FALSE
 8474716,Jared Spurgeon,exact,Minnesota Wild,MIN,20232024,https://en.wikipedia.org/wiki/List_of_Minnesota_Wild_captains,FALSE
 8474716,Jared Spurgeon,exact,Minnesota Wild,MIN,20242025,https://en.wikipedia.org/wiki/List_of_Minnesota_Wild_captains,FALSE
+8474157,Max Pacioretty,exact,Montreal Canadiens,MTL,20122013,https://en.wikipedia.org/wiki/List_of_Montreal_Canadiens_captains,FALSE
+8474157,Max Pacioretty,exact,Montreal Canadiens,MTL,20132014,https://en.wikipedia.org/wiki/List_of_Montreal_Canadiens_captains,FALSE
+8474157,Max Pacioretty,exact,Montreal Canadiens,MTL,20142015,https://en.wikipedia.org/wiki/List_of_Montreal_Canadiens_captains,FALSE
 8474157,Max Pacioretty,exact,Montreal Canadiens,MTL,20152016,https://en.wikipedia.org/wiki/List_of_Montreal_Canadiens_captains,FALSE
 8474157,Max Pacioretty,exact,Montreal Canadiens,MTL,20162017,https://en.wikipedia.org/wiki/List_of_Montreal_Canadiens_captains,FALSE
 8474157,Max Pacioretty,exact,Montreal Canadiens,MTL,20172018,https://en.wikipedia.org/wiki/List_of_Montreal_Canadiens_captains,FALSE
@@ -134,6 +179,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8480018,Nick Suzuki,exact,Montreal Canadiens,MTL,20222023,https://en.wikipedia.org/wiki/List_of_Montreal_Canadiens_captains,FALSE
 8480018,Nick Suzuki,exact,Montreal Canadiens,MTL,20232024,https://en.wikipedia.org/wiki/List_of_Montreal_Canadiens_captains,FALSE
 8480018,Nick Suzuki,exact,Montreal Canadiens,MTL,20242025,https://en.wikipedia.org/wiki/List_of_Montreal_Canadiens_captains,FALSE
+8470642,Shea Weber,exact,Nashville Predators,NSH,20122013,https://en.wikipedia.org/wiki/List_of_Nashville_Predators_captains,FALSE
+8470642,Shea Weber,exact,Nashville Predators,NSH,20132014,https://en.wikipedia.org/wiki/List_of_Nashville_Predators_captains,FALSE
+8470642,Shea Weber,exact,Nashville Predators,NSH,20142015,https://en.wikipedia.org/wiki/List_of_Nashville_Predators_captains,FALSE
 8470642,Shea Weber,exact,Nashville Predators,NSH,20152016,https://en.wikipedia.org/wiki/List_of_Nashville_Predators_captains,FALSE
 8467370,Mike Fisher,exact,Nashville Predators,NSH,20162017,https://en.wikipedia.org/wiki/List_of_Nashville_Predators_captains,FALSE
 8474600,Roman Josi,exact,Nashville Predators,NSH,20172018,https://en.wikipedia.org/wiki/List_of_Nashville_Predators_captains,FALSE
@@ -144,6 +192,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8474600,Roman Josi,exact,Nashville Predators,NSH,20222023,https://en.wikipedia.org/wiki/List_of_Nashville_Predators_captains,FALSE
 8474600,Roman Josi,exact,Nashville Predators,NSH,20232024,https://en.wikipedia.org/wiki/List_of_Nashville_Predators_captains,FALSE
 8474600,Roman Josi,exact,Nashville Predators,NSH,20242025,https://en.wikipedia.org/wiki/List_of_Nashville_Predators_captains,FALSE
+8472382,Andy Greene,exact,New Jersey Devils,NJD,20122013,https://en.wikipedia.org/wiki/List_of_New_Jersey_Devils_captains,FALSE
+8472382,Andy Greene,exact,New Jersey Devils,NJD,20132014,https://en.wikipedia.org/wiki/List_of_New_Jersey_Devils_captains,FALSE
+8472382,Andy Greene,exact,New Jersey Devils,NJD,20142015,https://en.wikipedia.org/wiki/List_of_New_Jersey_Devils_captains,FALSE
 8472382,Andy Greene,exact,New Jersey Devils,NJD,20152016,https://en.wikipedia.org/wiki/List_of_New_Jersey_Devils_captains,FALSE
 8472382,Andy Greene,exact,New Jersey Devils,NJD,20162017,https://en.wikipedia.org/wiki/List_of_New_Jersey_Devils_captains,FALSE
 8472382,Andy Greene,exact,New Jersey Devils,NJD,20172018,https://en.wikipedia.org/wiki/List_of_New_Jersey_Devils_captains,FALSE
@@ -153,6 +204,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8480002,Nico Hischier,exact,New Jersey Devils,NJD,20222023,https://en.wikipedia.org/wiki/List_of_New_Jersey_Devils_captains,FALSE
 8480002,Nico Hischier,exact,New Jersey Devils,NJD,20232024,https://en.wikipedia.org/wiki/List_of_New_Jersey_Devils_captains,FALSE
 8480002,Nico Hischier,exact,New Jersey Devils,NJD,20242025,https://en.wikipedia.org/wiki/List_of_New_Jersey_Devils_captains,FALSE
+8475166,John Tavares,exact,New York Islanders,NYI,20122013,https://en.wikipedia.org/wiki/List_of_New_York_Islanders_captains,FALSE
+8475166,John Tavares,exact,New York Islanders,NYI,20132014,https://en.wikipedia.org/wiki/List_of_New_York_Islanders_captains,FALSE
+8475166,John Tavares,exact,New York Islanders,NYI,20142015,https://en.wikipedia.org/wiki/List_of_New_York_Islanders_captains,FALSE
 8475166,John Tavares,exact,New York Islanders,NYI,20152016,https://en.wikipedia.org/wiki/List_of_New_York_Islanders_captains,FALSE
 8475166,John Tavares,exact,New York Islanders,NYI,20162017,https://en.wikipedia.org/wiki/List_of_New_York_Islanders_captains,FALSE
 8475166,John Tavares,exact,New York Islanders,NYI,20172018,https://en.wikipedia.org/wiki/List_of_New_York_Islanders_captains,FALSE
@@ -163,12 +217,18 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8475314,Anders Lee,exact,New York Islanders,NYI,20222023,https://en.wikipedia.org/wiki/List_of_New_York_Islanders_captains,FALSE
 8475314,Anders Lee,exact,New York Islanders,NYI,20232024,https://en.wikipedia.org/wiki/List_of_New_York_Islanders_captains,FALSE
 8475314,Anders Lee,exact,New York Islanders,NYI,20242025,https://en.wikipedia.org/wiki/List_of_New_York_Islanders_captains,FALSE
+8474151,Ryan McDonagh,exact,New York Rangers,NYR,20122013,https://en.wikipedia.org/wiki/List_of_New_York_Rangers_captains,FALSE
+8474151,Ryan McDonagh,exact,New York Rangers,NYR,20132014,https://en.wikipedia.org/wiki/List_of_New_York_Rangers_captains,FALSE
+8474151,Ryan McDonagh,exact,New York Rangers,NYR,20142015,https://en.wikipedia.org/wiki/List_of_New_York_Rangers_captains,FALSE
 8474151,Ryan McDonagh,exact,New York Rangers,NYR,20152016,https://en.wikipedia.org/wiki/List_of_New_York_Rangers_captains,FALSE
 8474151,Ryan McDonagh,exact,New York Rangers,NYR,20162017,https://en.wikipedia.org/wiki/List_of_New_York_Rangers_captains,FALSE
 8474151,Ryan McDonagh,exact,New York Rangers,NYR,20172018,https://en.wikipedia.org/wiki/List_of_New_York_Rangers_captains,FALSE
 8476885,Jacob Trouba,exact,New York Rangers,NYR,20222023,https://en.wikipedia.org/wiki/List_of_New_York_Rangers_captains,FALSE
 8476885,Jacob Trouba,exact,New York Rangers,NYR,20232024,https://en.wikipedia.org/wiki/List_of_New_York_Rangers_captains,FALSE
 8476885,Jacob Trouba,exact,New York Rangers,NYR,20242025,https://en.wikipedia.org/wiki/List_of_New_York_Rangers_captains,FALSE
+8474578,Erik Karlsson,exact,Ottawa Senators,OTT,20122013,https://en.wikipedia.org/wiki/List_of_Ottawa_Senators_captains,FALSE
+8474578,Erik Karlsson,exact,Ottawa Senators,OTT,20132014,https://en.wikipedia.org/wiki/List_of_Ottawa_Senators_captains,FALSE
+8474578,Erik Karlsson,exact,Ottawa Senators,OTT,20142015,https://en.wikipedia.org/wiki/List_of_Ottawa_Senators_captains,FALSE
 8474578,Erik Karlsson,exact,Ottawa Senators,OTT,20152016,https://en.wikipedia.org/wiki/List_of_Ottawa_Senators_captains,FALSE
 8474578,Erik Karlsson,exact,Ottawa Senators,OTT,20162017,https://en.wikipedia.org/wiki/List_of_Ottawa_Senators_captains,FALSE
 8474578,Erik Karlsson,exact,Ottawa Senators,OTT,20172018,https://en.wikipedia.org/wiki/List_of_Ottawa_Senators_captains,FALSE
@@ -176,6 +236,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8480801,Brady Tkachuk,exact,Ottawa Senators,OTT,20222023,https://en.wikipedia.org/wiki/List_of_Ottawa_Senators_captains,FALSE
 8480801,Brady Tkachuk,exact,Ottawa Senators,OTT,20232024,https://en.wikipedia.org/wiki/List_of_Ottawa_Senators_captains,FALSE
 8480801,Brady Tkachuk,exact,Ottawa Senators,OTT,20242025,https://en.wikipedia.org/wiki/List_of_Ottawa_Senators_captains,FALSE
+8473512,Claude Giroux,exact,Philadelphia Flyers,PHI,20122013,https://en.wikipedia.org/wiki/List_of_Philadelphia_Flyers_captains,FALSE
+8473512,Claude Giroux,exact,Philadelphia Flyers,PHI,20132014,https://en.wikipedia.org/wiki/List_of_Philadelphia_Flyers_captains,FALSE
+8473512,Claude Giroux,exact,Philadelphia Flyers,PHI,20142015,https://en.wikipedia.org/wiki/List_of_Philadelphia_Flyers_captains,FALSE
 8473512,Claude Giroux,exact,Philadelphia Flyers,PHI,20152016,https://en.wikipedia.org/wiki/List_of_Philadelphia_Flyers_captains,FALSE
 8473512,Claude Giroux,exact,Philadelphia Flyers,PHI,20162017,https://en.wikipedia.org/wiki/List_of_Philadelphia_Flyers_captains,FALSE
 8473512,Claude Giroux,exact,Philadelphia Flyers,PHI,20172018,https://en.wikipedia.org/wiki/List_of_Philadelphia_Flyers_captains,FALSE
@@ -184,6 +247,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8473512,Claude Giroux,exact,Philadelphia Flyers,PHI,20202021,https://en.wikipedia.org/wiki/List_of_Philadelphia_Flyers_captains,FALSE
 8473512,Claude Giroux,exact,Philadelphia Flyers,PHI,20212022,https://en.wikipedia.org/wiki/List_of_Philadelphia_Flyers_captains,FALSE
 8476461,Sean Couturier,exact,Philadelphia Flyers,PHI,20242025,https://en.wikipedia.org/wiki/List_of_Philadelphia_Flyers_captains,FALSE
+8471675,Sidney Crosby,exact,Pittsburgh Penguins,PIT,20122013,https://en.wikipedia.org/wiki/List_of_Pittsburgh_Penguins_captains,FALSE
+8471675,Sidney Crosby,exact,Pittsburgh Penguins,PIT,20132014,https://en.wikipedia.org/wiki/List_of_Pittsburgh_Penguins_captains,FALSE
+8471675,Sidney Crosby,exact,Pittsburgh Penguins,PIT,20142015,https://en.wikipedia.org/wiki/List_of_Pittsburgh_Penguins_captains,FALSE
 8471675,Sidney Crosby,exact,Pittsburgh Penguins,PIT,20152016,https://en.wikipedia.org/wiki/List_of_Pittsburgh_Penguins_captains,FALSE
 8471675,Sidney Crosby,exact,Pittsburgh Penguins,PIT,20162017,https://en.wikipedia.org/wiki/List_of_Pittsburgh_Penguins_captains,FALSE
 8471675,Sidney Crosby,exact,Pittsburgh Penguins,PIT,20172018,https://en.wikipedia.org/wiki/List_of_Pittsburgh_Penguins_captains,FALSE
@@ -194,6 +260,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8471675,Sidney Crosby,exact,Pittsburgh Penguins,PIT,20222023,https://en.wikipedia.org/wiki/List_of_Pittsburgh_Penguins_captains,FALSE
 8471675,Sidney Crosby,exact,Pittsburgh Penguins,PIT,20232024,https://en.wikipedia.org/wiki/List_of_Pittsburgh_Penguins_captains,FALSE
 8471675,Sidney Crosby,exact,Pittsburgh Penguins,PIT,20242025,https://en.wikipedia.org/wiki/List_of_Pittsburgh_Penguins_captains,FALSE
+8470794,Joe Pavelski,exact,San Jose Sharks,SJS,20122013,https://en.wikipedia.org/wiki/List_of_San_Jose_Sharks_captains,FALSE
+8470794,Joe Pavelski,exact,San Jose Sharks,SJS,20132014,https://en.wikipedia.org/wiki/List_of_San_Jose_Sharks_captains,FALSE
+8470794,Joe Pavelski,exact,San Jose Sharks,SJS,20142015,https://en.wikipedia.org/wiki/List_of_San_Jose_Sharks_captains,FALSE
 8470794,Joe Pavelski,exact,San Jose Sharks,SJS,20152016,https://en.wikipedia.org/wiki/List_of_San_Jose_Sharks_captains,FALSE
 8470794,Joe Pavelski,exact,San Jose Sharks,SJS,20162017,https://en.wikipedia.org/wiki/List_of_San_Jose_Sharks_captains,FALSE
 8470794,Joe Pavelski,exact,San Jose Sharks,SJS,20172018,https://en.wikipedia.org/wiki/List_of_San_Jose_Sharks_captains,FALSE
@@ -204,8 +273,20 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8474053,Logan Couture,exact,San Jose Sharks,SJS,20222023,https://en.wikipedia.org/wiki/List_of_San_Jose_Sharks_captains,FALSE
 8474053,Logan Couture,exact,San Jose Sharks,SJS,20232024,https://en.wikipedia.org/wiki/List_of_San_Jose_Sharks_captains,FALSE
 8474053,Logan Couture,exact,San Jose Sharks,SJS,20242025,https://en.wikipedia.org/wiki/List_of_San_Jose_Sharks_captains,FALSE
+8470966,Mark Giordano,exact,Seattle Kraken,SEA,20122013,https://en.wikipedia.org/wiki/List_of_Seattle_Kraken_captains,FALSE
+8470966,Mark Giordano,exact,Seattle Kraken,SEA,20132014,https://en.wikipedia.org/wiki/List_of_Seattle_Kraken_captains,FALSE
+8470966,Mark Giordano,exact,Seattle Kraken,SEA,20142015,https://en.wikipedia.org/wiki/List_of_Seattle_Kraken_captains,FALSE
+8470966,Mark Giordano,exact,Seattle Kraken,SEA,20152016,https://en.wikipedia.org/wiki/List_of_Seattle_Kraken_captains,FALSE
+8470966,Mark Giordano,exact,Seattle Kraken,SEA,20162017,https://en.wikipedia.org/wiki/List_of_Seattle_Kraken_captains,FALSE
+8470966,Mark Giordano,exact,Seattle Kraken,SEA,20172018,https://en.wikipedia.org/wiki/List_of_Seattle_Kraken_captains,FALSE
+8470966,Mark Giordano,exact,Seattle Kraken,SEA,20182019,https://en.wikipedia.org/wiki/List_of_Seattle_Kraken_captains,FALSE
+8470966,Mark Giordano,exact,Seattle Kraken,SEA,20192020,https://en.wikipedia.org/wiki/List_of_Seattle_Kraken_captains,FALSE
+8470966,Mark Giordano,exact,Seattle Kraken,SEA,20202021,https://en.wikipedia.org/wiki/List_of_Seattle_Kraken_captains,FALSE
 8470966,Mark Giordano,exact,Seattle Kraken,SEA,20212022,https://en.wikipedia.org/wiki/List_of_Seattle_Kraken_captains,FALSE
 8474586,Jordan Eberle,exact,Seattle Kraken,SEA,20242025,https://en.wikipedia.org/wiki/List_of_Seattle_Kraken_captains,FALSE
+8470655,David Backes,exact,St. Louis Blues,STL,20122013,https://en.wikipedia.org/wiki/List_of_St._Louis_Blues_captains,FALSE
+8470655,David Backes,exact,St. Louis Blues,STL,20132014,https://en.wikipedia.org/wiki/List_of_St._Louis_Blues_captains,FALSE
+8470655,David Backes,exact,St. Louis Blues,STL,20142015,https://en.wikipedia.org/wiki/List_of_St._Louis_Blues_captains,FALSE
 8470655,David Backes,exact,St. Louis Blues,STL,20152016,https://en.wikipedia.org/wiki/List_of_St._Louis_Blues_captains,FALSE
 8474565,Alex Pietrangelo,exact,St. Louis Blues,STL,20162017,https://en.wikipedia.org/wiki/List_of_St._Louis_Blues_captains,FALSE
 8474565,Alex Pietrangelo,exact,St. Louis Blues,STL,20172018,https://en.wikipedia.org/wiki/List_of_St._Louis_Blues_captains,FALSE
@@ -216,6 +297,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8475158,Ryan O'Reilly,exact,St. Louis Blues,STL,20222023,https://en.wikipedia.org/wiki/List_of_St._Louis_Blues_captains,FALSE
 8475170,Brayden Schenn,exact,St. Louis Blues,STL,20232024,https://en.wikipedia.org/wiki/List_of_St._Louis_Blues_captains,FALSE
 8475170,Brayden Schenn,exact,St. Louis Blues,STL,20242025,https://en.wikipedia.org/wiki/List_of_St._Louis_Blues_captains,FALSE
+8474564,Steven Stamkos,exact,Tampa Bay Lightning,TBL,20122013,https://en.wikipedia.org/wiki/List_of_Tampa_Bay_Lightning_captains,FALSE
+8474564,Steven Stamkos,exact,Tampa Bay Lightning,TBL,20132014,https://en.wikipedia.org/wiki/List_of_Tampa_Bay_Lightning_captains,FALSE
+8474564,Steven Stamkos,exact,Tampa Bay Lightning,TBL,20142015,https://en.wikipedia.org/wiki/List_of_Tampa_Bay_Lightning_captains,FALSE
 8474564,Steven Stamkos,exact,Tampa Bay Lightning,TBL,20152016,https://en.wikipedia.org/wiki/List_of_Tampa_Bay_Lightning_captains,FALSE
 8474564,Steven Stamkos,exact,Tampa Bay Lightning,TBL,20162017,https://en.wikipedia.org/wiki/List_of_Tampa_Bay_Lightning_captains,FALSE
 8474564,Steven Stamkos,exact,Tampa Bay Lightning,TBL,20172018,https://en.wikipedia.org/wiki/List_of_Tampa_Bay_Lightning_captains,FALSE
@@ -226,6 +310,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8474564,Steven Stamkos,exact,Tampa Bay Lightning,TBL,20222023,https://en.wikipedia.org/wiki/List_of_Tampa_Bay_Lightning_captains,FALSE
 8474564,Steven Stamkos,exact,Tampa Bay Lightning,TBL,20232024,https://en.wikipedia.org/wiki/List_of_Tampa_Bay_Lightning_captains,FALSE
 8475167,Victor Hedman,exact,Tampa Bay Lightning,TBL,20242025,https://en.wikipedia.org/wiki/List_of_Tampa_Bay_Lightning_captains,FALSE
+8470602,Dion Phaneuf,exact,Toronto Maple Leafs,TOR,20122013,https://en.wikipedia.org/wiki/List_of_Toronto_Maple_Leafs_captains,FALSE
+8470602,Dion Phaneuf,exact,Toronto Maple Leafs,TOR,20132014,https://en.wikipedia.org/wiki/List_of_Toronto_Maple_Leafs_captains,FALSE
+8470602,Dion Phaneuf,exact,Toronto Maple Leafs,TOR,20142015,https://en.wikipedia.org/wiki/List_of_Toronto_Maple_Leafs_captains,FALSE
 8470602,Dion Phaneuf,exact,Toronto Maple Leafs,TOR,20152016,https://en.wikipedia.org/wiki/List_of_Toronto_Maple_Leafs_captains,FALSE
 8475166,John Tavares,exact,Toronto Maple Leafs,TOR,20192020,https://en.wikipedia.org/wiki/List_of_Toronto_Maple_Leafs_captains,FALSE
 8475166,John Tavares,exact,Toronto Maple Leafs,TOR,20202021,https://en.wikipedia.org/wiki/List_of_Toronto_Maple_Leafs_captains,FALSE
@@ -233,12 +320,18 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8475166,John Tavares,exact,Toronto Maple Leafs,TOR,20222023,https://en.wikipedia.org/wiki/List_of_Toronto_Maple_Leafs_captains,FALSE
 8475166,John Tavares,exact,Toronto Maple Leafs,TOR,20232024,https://en.wikipedia.org/wiki/List_of_Toronto_Maple_Leafs_captains,FALSE
 8475166,John Tavares,exact,Toronto Maple Leafs,TOR,20242025,https://en.wikipedia.org/wiki/List_of_Toronto_Maple_Leafs_captains,FALSE
+8462038,Shane Doan,exact,Utah Hockey Club,UTA,20122013,https://en.wikipedia.org/wiki/List_of_Arizona_Coyotes_captains,FALSE
+8462038,Shane Doan,exact,Utah Hockey Club,UTA,20132014,https://en.wikipedia.org/wiki/List_of_Arizona_Coyotes_captains,FALSE
+8462038,Shane Doan,exact,Utah Hockey Club,UTA,20142015,https://en.wikipedia.org/wiki/List_of_Arizona_Coyotes_captains,FALSE
 8462038,Shane Doan,exact,Utah Hockey Club,UTA,20152016,https://en.wikipedia.org/wiki/List_of_Arizona_Coyotes_captains,FALSE
 8462038,Shane Doan,exact,Utah Hockey Club,UTA,20162017,https://en.wikipedia.org/wiki/List_of_Arizona_Coyotes_captains,FALSE
 8475171,Oliver Ekman-Larsson,exact,Utah Hockey Club,UTA,20182019,https://en.wikipedia.org/wiki/List_of_Arizona_Coyotes_captains,FALSE
 8475171,Oliver Ekman-Larsson,exact,Utah Hockey Club,UTA,20192020,https://en.wikipedia.org/wiki/List_of_Arizona_Coyotes_captains,FALSE
 8475171,Oliver Ekman-Larsson,exact,Utah Hockey Club,UTA,20202021,https://en.wikipedia.org/wiki/List_of_Arizona_Coyotes_captains,FALSE
 8479343,Clayton Keller,exact,Utah Hockey Club,UTA,20242025,https://en.wikipedia.org/wiki/List_of_Utah_Hockey_Club_captains,FALSE
+8467876,Henrik Sedin,exact,Vancouver Canucks,VAN,20122013,https://en.wikipedia.org/wiki/List_of_Vancouver_Canucks_captains,FALSE
+8467876,Henrik Sedin,exact,Vancouver Canucks,VAN,20132014,https://en.wikipedia.org/wiki/List_of_Vancouver_Canucks_captains,FALSE
+8467876,Henrik Sedin,exact,Vancouver Canucks,VAN,20142015,https://en.wikipedia.org/wiki/List_of_Vancouver_Canucks_captains,FALSE
 8467876,Henrik Sedin,exact,Vancouver Canucks,VAN,20152016,https://en.wikipedia.org/wiki/List_of_Vancouver_Canucks_captains,FALSE
 8467876,Henrik Sedin,exact,Vancouver Canucks,VAN,20162017,https://en.wikipedia.org/wiki/List_of_Vancouver_Canucks_captains,FALSE
 8467876,Henrik Sedin,exact,Vancouver Canucks,VAN,20172018,https://en.wikipedia.org/wiki/List_of_Vancouver_Canucks_captains,FALSE
@@ -248,10 +341,22 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8477500,Bo Horvat,exact,Vancouver Canucks,VAN,20222023,https://en.wikipedia.org/wiki/List_of_Vancouver_Canucks_captains,FALSE
 8480800,Quinn Hughes,exact,Vancouver Canucks,VAN,20232024,https://en.wikipedia.org/wiki/List_of_Vancouver_Canucks_captains,FALSE
 8480800,Quinn Hughes,exact,Vancouver Canucks,VAN,20242025,https://en.wikipedia.org/wiki/List_of_Vancouver_Canucks_captains,FALSE
+8475913,Mark Stone,exact,Vegas Golden Knights,VGK,20122013,https://en.wikipedia.org/wiki/List_of_Vegas_Golden_Knights_captains,FALSE
+8475913,Mark Stone,exact,Vegas Golden Knights,VGK,20132014,https://en.wikipedia.org/wiki/List_of_Vegas_Golden_Knights_captains,FALSE
+8475913,Mark Stone,exact,Vegas Golden Knights,VGK,20142015,https://en.wikipedia.org/wiki/List_of_Vegas_Golden_Knights_captains,FALSE
+8475913,Mark Stone,exact,Vegas Golden Knights,VGK,20152016,https://en.wikipedia.org/wiki/List_of_Vegas_Golden_Knights_captains,FALSE
+8475913,Mark Stone,exact,Vegas Golden Knights,VGK,20162017,https://en.wikipedia.org/wiki/List_of_Vegas_Golden_Knights_captains,FALSE
+8475913,Mark Stone,exact,Vegas Golden Knights,VGK,20172018,https://en.wikipedia.org/wiki/List_of_Vegas_Golden_Knights_captains,FALSE
+8475913,Mark Stone,exact,Vegas Golden Knights,VGK,20182019,https://en.wikipedia.org/wiki/List_of_Vegas_Golden_Knights_captains,FALSE
+8475913,Mark Stone,exact,Vegas Golden Knights,VGK,20192020,https://en.wikipedia.org/wiki/List_of_Vegas_Golden_Knights_captains,FALSE
+8475913,Mark Stone,exact,Vegas Golden Knights,VGK,20202021,https://en.wikipedia.org/wiki/List_of_Vegas_Golden_Knights_captains,FALSE
 8475913,Mark Stone,exact,Vegas Golden Knights,VGK,20212022,https://en.wikipedia.org/wiki/List_of_Vegas_Golden_Knights_captains,FALSE
 8475913,Mark Stone,exact,Vegas Golden Knights,VGK,20222023,https://en.wikipedia.org/wiki/List_of_Vegas_Golden_Knights_captains,FALSE
 8475913,Mark Stone,exact,Vegas Golden Knights,VGK,20232024,https://en.wikipedia.org/wiki/List_of_Vegas_Golden_Knights_captains,FALSE
 8475913,Mark Stone,exact,Vegas Golden Knights,VGK,20242025,https://en.wikipedia.org/wiki/List_of_Vegas_Golden_Knights_captains,FALSE
+8471214,Alex Ovechkin,exact,Washington Capitals,WSH,20122013,https://en.wikipedia.org/wiki/List_of_Washington_Capitals_captains,FALSE
+8471214,Alex Ovechkin,exact,Washington Capitals,WSH,20132014,https://en.wikipedia.org/wiki/List_of_Washington_Capitals_captains,FALSE
+8471214,Alex Ovechkin,exact,Washington Capitals,WSH,20142015,https://en.wikipedia.org/wiki/List_of_Washington_Capitals_captains,FALSE
 8471214,Alex Ovechkin,exact,Washington Capitals,WSH,20152016,https://en.wikipedia.org/wiki/List_of_Washington_Capitals_captains,FALSE
 8471214,Alex Ovechkin,exact,Washington Capitals,WSH,20162017,https://en.wikipedia.org/wiki/List_of_Washington_Capitals_captains,FALSE
 8471214,Alex Ovechkin,exact,Washington Capitals,WSH,20172018,https://en.wikipedia.org/wiki/List_of_Washington_Capitals_captains,FALSE
@@ -262,6 +367,9 @@ player_id,captain_name,match_status,team,team_abbr,season,source_page,alternate_
 8471214,Alex Ovechkin,exact,Washington Capitals,WSH,20222023,https://en.wikipedia.org/wiki/List_of_Washington_Capitals_captains,FALSE
 8471214,Alex Ovechkin,exact,Washington Capitals,WSH,20232024,https://en.wikipedia.org/wiki/List_of_Washington_Capitals_captains,FALSE
 8471214,Alex Ovechkin,exact,Washington Capitals,WSH,20242025,https://en.wikipedia.org/wiki/List_of_Washington_Capitals_captains,FALSE
+8471217,Andrew Ladd,exact,Winnipeg Jets,WPG,20122013,https://en.wikipedia.org/wiki/List_of_Winnipeg_Jets_captains,FALSE
+8471217,Andrew Ladd,exact,Winnipeg Jets,WPG,20132014,https://en.wikipedia.org/wiki/List_of_Winnipeg_Jets_captains,FALSE
+8471217,Andrew Ladd,exact,Winnipeg Jets,WPG,20142015,https://en.wikipedia.org/wiki/List_of_Winnipeg_Jets_captains,FALSE
 8471217,Andrew Ladd,exact,Winnipeg Jets,WPG,20152016,https://en.wikipedia.org/wiki/List_of_Winnipeg_Jets_captains,FALSE
 8471218,Blake Wheeler,exact,Winnipeg Jets,WPG,20162017,https://en.wikipedia.org/wiki/List_of_Winnipeg_Jets_captains,FALSE
 8471218,Blake Wheeler,exact,Winnipeg Jets,WPG,20172018,https://en.wikipedia.org/wiki/List_of_Winnipeg_Jets_captains,FALSE

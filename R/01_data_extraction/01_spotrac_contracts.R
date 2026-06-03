@@ -16,7 +16,7 @@ suppressPackageStartupMessages({
   library(tibble)
 })
 
-start_year <- 2015L
+start_year <- 2012L
 end_year <- 2025L
 contract_years <- start_year:end_year
 fallback_url <- "https://raw.githubusercontent.com/Chief-Zach/Sports-Data/master/NHL/data/salaries/all_players.jsonl"

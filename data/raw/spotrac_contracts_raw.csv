@@ -1,4 +1,309 @@
 player_name,position,signing_team,previous_team,contract_value,aav,contract_years,signing_year,signing_date,contract_type
+Alex Killorn,"LW, RW",Tampa Bay Lightning,NA,1750000,875000,2,2012,2012-03-19,other
+Anders Lee,"LW, RW",New York Islanders,NA,3500000,1750000,2,2012,2012-04-01,RFA
+Boone Jenner,C,Columbus Blue Jackets,NA,2775000,925000,3,2012,2012-03-28,RFA
+Brad Marchand,"LW, RW, C",Boston Bruins,Boston Bruins,18000000,4500000,4,2012,2012-09-07,UFA
+Brendan Gaunce,"C, RW",Vancouver Canucks,NA,3262500,1087500,3,2012,2012-08-13,RFA
+Brian Dumoulin,LD,Carolina Hurricanes,NA,2700000,900000,3,2012,2012-04-10,other
+Brock Nelson,"C, LW",New York Islanders,NA,8475000,2825000,3,2012,2012-04-03,RFA
+Calle Jarnkrok,"RW, LW, C",Detroit Red Wings,NA,2700000,900000,3,2012,2012-05-31,RFA
+Cam Fowler,"LD, RD",Anaheim Ducks,Anaheim Ducks,20000000,4000000,5,2012,2012-09-15,UFA
+Cam Talbot,G,New York Rangers,NA,550000,550000,1,2012,2012-07-26,other
+Carey Price,G,Montreal Canadiens,Montréal Canadiens,39000000,6500000,6,2012,2012-07-02,UFA
+Charlie Coyle,C,Minnesota Wild,NA,2925000,975000,3,2012,2012-03-01,RFA
+Chris Kreider,"LW, RW",New York Rangers,New York Rangers,3975000,1325000,3,2012,2012-04-10,other
+Chris Wagner,"C, RW",Anaheim Ducks,NA,2700000,900000,3,2012,2012-04-03,other
+Cody Ceci,"RD, LD",Ottawa Senators,NA,4200000,1400000,3,2012,2012-08-23,RFA
+Colton Sissons,C,Nashville Predators,NA,2725000,900000,3,2012,2012-09-15,RFA
+Craig Smith,"RW, LW, C",Nashville Predators,Nashville Predators,4000000,2000000,2,2012,2012-09-14,other
+Damon Severson,"RD, LD",New Jersey Devils,NA,2850000,933333,3,2012,2012-09-10,RFA
+David Perron,"LW, RW",St. Louis Blues,St. Louis Blues,15250000,3812500,4,2012,2012-07-05,UFA
+Derrick Pouliot,"LD, RD",Pittsburgh Penguins,NA,4050000,1350000,3,2012,2012-09-14,RFA
+Dylan DeMelo,RD,San Jose Sharks,NA,2250000,750000,3,2012,2012-04-20,RFA
+Erik Johnson,RD,Colorado Avalanche,Colorado Avalanche,15000000,3750000,4,2012,2012-07-03,UFA
+Erik Karlsson,RD,Ottawa Senators,Ottawa Senators,45500000,6500000,7,2012,2012-06-19,UFA
+Evander Kane,"LW, RW",Winnipeg Jets,Winnipeg Jets,31500000,5250000,6,2012,2012-09-15,UFA
+Filip Forsberg,LW,Washington Capitals,NA,4475000,1491667,3,2012,2012-07-16,RFA
+Frederik Andersen,G,Anaheim Ducks,NA,3550000,1775000,2,2012,2012-07-10,other
+Hampus Lindholm,LD,Anaheim Ducks,NA,5325000,1775000,3,2012,2012-07-16,RFA
+Jaden Schwartz,"RW, LW, C",St. Louis Blues,St. Louis Blues,3500000,1166667,3,2012,2012-03-12,other
+Jason Zucker,"LW, RW",Minnesota Wild,Minnesota Wild,2500000,833333,3,2012,2012-03-27,RFA
+Jean-Gabriel Pageau,C,Ottawa Senators,NA,1840000,613333,3,2012,2012-06-08,RFA
+Jeff Petry,RD,Edmonton Oilers,Edmonton Oilers,3500000,1750000,2,2012,2012-07-05,other
+Jeff Skinner,"LW, RW, C",Carolina Hurricanes,Carolina Hurricanes,34350000,5725000,6,2012,2012-08-08,UFA
+Jesper Fast,"RW, LW",New York Rangers,NA,2700000,900000,3,2012,2012-05-31,RFA
+Joel Armia,"LW, RW",Buffalo Sabres,NA,3825000,1275000,3,2012,2012-06-17,RFA
+John Carlson,"RD, LD",Washington Capitals,Washington Capitals,23800000,3966667,6,2012,2012-09-15,UFA
+John Gibson,G,Anaheim Ducks,NA,2775000,925000,3,2012,2012-03-15,RFA
+Jonathan Marchessault,"RW, C",Columbus Blue Jackets,NA,2775000,925000,3,2012,2012-07-01,other
+Jonathan Quick,G,Los Angeles Kings,Los Angeles Kings,58000000,5800000,10,2012,2012-07-01,UFA
+Jordan Binnington,G,St. Louis Blues,NA,2775000,925000,3,2012,2012-05-31,RFA
+Jordan Eberle,RW,Edmonton Oilers,Edmonton Oilers,36000000,6000000,6,2012,2012-08-30,UFA
+Jordan Martinook,LW,Arizona Coyotes,NA,2552500,840833,3,2012,2012-09-06,RFA
+Jordan Staal,C,Carolina Hurricanes,Pittsburgh Penguins,60000000,6000000,10,2012,2012-07-01,UFA
+Kurtis MacDermid,LW,Los Angeles Kings,NA,1795000,573333,3,2012,2012-09-15,other
+Lars Eller,"C, LW, RW",Montreal Canadiens,Montréal Canadiens,2650000,1150000,2,2012,2012-07-07,other
+Magnus Hellberg,G,Nashville Predators,NA,2775000,925000,3,2012,2012-06-16,other
+Marc-Edouard Vlasic,"LD, RD",San Jose Sharks,San Jose Sharks,21250000,4250000,5,2012,2012-07-11,UFA
+Martin Frk,RW,Detroit Red Wings,NA,2775000,925000,3,2012,2012-07-31,RFA
+Mathew Dumba,RD,Minnesota Wild,NA,4900000,1633333,3,2012,2012-07-19,RFA
+Matt Duchene,"RW, C",Colorado Avalanche,Colorado Avalanche,7000000,3500000,2,2012,2012-06-23,other
+Matt Martin,"LW, RW",New York Islanders,New York Islanders,4000000,1000000,4,2012,2012-09-15,UFA
+Max Pacioretty,"LW, RW",Montreal Canadiens,Montréal Canadiens,27000000,4500000,6,2012,2012-08-16,UFA
+Mikael Backlund,C,Calgary Flames,Calgary Flames,725000,725000,1,2012,2012-07-05,other
+Mikael Granlund,C,Minnesota Wild,NA,6300000,2100000,3,2012,2012-05-25,RFA
+Morgan Rielly,LD,Toronto Maple Leafs,NA,5325000,1775000,3,2012,2012-08-07,RFA
+Nick Foligno,"LW, C",Columbus Blue Jackets,Ottawa Senators,9250000,3083333,3,2012,2012-07-06,UFA
+Nikita Kucherov,RW,Tampa Bay Lightning,NA,2775000,925000,3,2012,2012-09-11,RFA
+Olli Maatta,"RD, LD",Pittsburgh Penguins,NA,2775000,925000,3,2012,2012-09-14,RFA
+Pat Maroon,"RW, LW",Anaheim Ducks,Anaheim Ducks,550000,550000,1,2012,2012-06-07,UFA
+Phillip Danault,C,Chicago Blackhawks,NA,3075000,1025000,3,2012,2012-01-01,RFA
+Radek Faksa,"C, LW, RW",Dallas Stars,NA,4200000,1400000,3,2012,2012-07-06,RFA
+Reilly Smith,"RW, LW",Dallas Stars,Dallas Stars,2700000,900000,3,2012,2012-03-26,RFA
+Rickard Rakell,"RW, LW",Anaheim Ducks,NA,2775000,925000,3,2012,2012-07-02,RFA
+Robert Bortuzzo,RD,Pittsburgh Penguins,Pittsburgh Penguins,525000,525000,1,2012,2012-08-30,other
+Ryan Reaves,"RW, LW",St. Louis Blues,St. Louis Blues,1200000,600000,2,2012,2012-01-09,UFA
+Ryan Suter,"RD, LD",Minnesota Wild,Nashville Predators,98000000,7538462,13,2012,2012-07-04,UFA
+Sam Carrick,C,Toronto Maple Leafs,NA,1895000,631667,3,2012,2012-03-31,RFA
+Scott Laughton,"C, LW",Philadelphia Flyers,NA,3412500,1137500,3,2012,2012-08-12,RFA
+Scott Wedgewood,G,New Jersey Devils,NA,2725000,908333,3,2012,2012-03-16,RFA
+Shea Weber,RD,Nashville Predators,Nashville Predators,110000000,7857143,14,2012,2012-07-24,UFA
+Sidney Crosby,C,Pittsburgh Penguins,Pittsburgh Penguins,104400000,8700000,12,2012,2012-07-01,UFA
+T.J. Oshie,RW,St. Louis Blues,St. Louis Blues,20875000,4175000,5,2012,2012-07-19,UFA
+Tanner Pearson,"LW, RW",Los Angeles Kings,NA,2775000,925000,3,2012,2012-08-07,RFA
+Taylor Hall,LW,Edmonton Oilers,Edmonton Oilers,42000000,6000000,7,2012,2012-08-22,UFA
+Tom Wilson,RW,Washington Capitals,NA,3975000,1325000,3,2012,2012-07-19,RFA
+Torey Krug,LD,Boston Bruins,Boston Bruins,5112500,1704167,3,2012,2012-03-25,other
+Troy Grosenick,G,San Jose Sharks,NA,1250000,625000,2,2012,2012-07-02,other
+Tyler Seguin,C,Boston Bruins,Boston Bruins,34500000,5750000,6,2012,2012-09-11,UFA
+Vincent Trocheck,C,Florida Panthers,NA,2775000,925000,3,2012,2012-04-23,RFA
+Vladimir Tarasenko,"RW, LW",St. Louis Blues,NA,5250000,1750000,3,2012,2012-07-02,RFA
+Vladislav Namestnikov,"RW, C",Tampa Bay Lightning,NA,3037500,1012500,3,2012,2012-03-13,RFA
+Zemgus Girgensons,"LW, C",Buffalo Sabres,NA,4200000,1400000,3,2012,2012-07-15,RFA
+Adam Henrique,"C, RW, LW",New Jersey Devils,New Jersey Devils,24000000,4000000,6,2013,2013-08-27,UFA
+Adam Lowry,C,Winnipeg Jets,NA,2775000,925000,3,2013,2013-04-16,RFA
+Alec Martinez,"LD, RD",Los Angeles Kings,Los Angeles Kings,2200000,1100000,2,2013,2013-07-17,UFA
+Aleksander Barkov,C,Florida Panthers,NA,10725000,3575000,3,2013,2013-07-14,RFA
+Alex Pietrangelo,RD,St. Louis Blues,St. Louis Blues,45500000,6500000,7,2013,2013-09-14,UFA
+Andre Burakovsky,"LW, RW",Washington Capitals,NA,2775000,925000,3,2013,2013-09-08,RFA
+Andreas Athanasiou,"C, RW",Detroit Red Wings,NA,2775000,925000,3,2013,2013-11-15,RFA
+Andrew Agozzino,LW,Colorado Avalanche,NA,1180000,590000,2,2013,2013-03-25,other
+Anthony Mantha,RW,Detroit Red Wings,NA,2775000,925000,3,2013,2013-10-19,RFA
+Anthony Stolarz,G,Philadelphia Flyers,NA,2775000,925000,3,2013,2013-03-01,RFA
+Anton Forsberg,G,Columbus Blue Jackets,NA,2100000,700000,3,2013,2013-05-28,RFA
+Bo Horvat,"C, RW, LW",Vancouver Canucks,NA,5325000,1775000,3,2013,2013-08-08,RFA
+Brendan Smith,"LD, RD",Detroit Red Wings,Detroit Red Wings,2525000,1262500,2,2013,2013-07-17,other
+Brock McGinn,LW,Carolina Hurricanes,NA,2775000,925000,3,2013,2013-04-07,RFA
+Cam Atkinson,"RW, LW",Columbus Blue Jackets,Columbus Blue Jackets,2300000,1150000,2,2013,2013-08-26,other
+Cam Talbot,G,New York Rangers,NA,1125000,562500,2,2013,2013-02-18,UFA
+Chad Ruhwedel,RD,Buffalo Sabres,Buffalo Sabres,1950000,975000,2,2013,2013-04-13,other
+Chris Tanev,RD,Vancouver Canucks,Vancouver Canucks,1500000,1500000,1,2013,2013-08-22,other
+Claude Giroux,"C, RW",Philadelphia Flyers,Philadelphia Flyers,66200000,8275000,8,2013,2013-07-04,UFA
+Colin Miller,RD,Los Angeles Kings,NA,1807500,602500,3,2013,2013-07-29,RFA
+Connor Brown,RW,Toronto Maple Leafs,NA,2775000,925000,3,2013,2013-11-22,RFA
+Connor Carrick,RD,Washington Capitals,NA,2350000,783333,3,2013,2013-09-23,RFA
+Corey Perry,RW,Anaheim Ducks,Anaheim Ducks,69000000,8625000,8,2013,2013-03-18,UFA
+Curtis Lazar,"LW, C, RW",Ottawa Senators,NA,3855000,1285000,3,2013,2013-09-17,RFA
+Darnell Nurse,"LD, RD",Edmonton Oilers,NA,5325000,1775000,3,2013,2013-07-27,RFA
+David Savard,"RD, LD",Columbus Blue Jackets,Columbus Blue Jackets,709275,709275,1,2013,2013-07-17,other
+Derek Forbort,"LD, RD",Los Angeles Kings,NA,2700000,900000,3,2013,2013-04-06,other
+Dmitry Kulikov,"LD, RD",Florida Panthers,Florida Panthers,5000000,2500000,2,2013,2013-01-18,other
+Dustin Tokarski,G,Montreal Canadiens,Tampa Bay Lightning,575000,575000,1,2013,2013-08-20,other
+Elias Lindholm,"C, RW, LW",Carolina Hurricanes,NA,5325000,1775000,3,2013,2013-07-15,RFA
+Eric Comrie,G,Winnipeg Jets,NA,2892500,955833,3,2013,2013-12-26,RFA
+Erik Haula,"C, LW",Minnesota Wild,NA,3500000,1750000,2,2013,2013-04-10,other
+Evgeni Malkin,C,Pittsburgh Penguins,Pittsburgh Penguins,76000000,9500000,8,2013,2013-07-01,UFA
+Frederik Andersen,G,Anaheim Ducks,NA,2300000,1150000,2,2013,2013-10-25,other
+Gabriel Landeskog,LW,Colorado Avalanche,Colorado Avalanche,39000000,5571429,7,2013,2013-08-16,UFA
+Gustav Nyquist,"RW, C",Detroit Red Wings,Detroit Red Wings,1900000,950000,2,2013,2013-08-21,other
+Ian Cole,"LD, RD",St. Louis Blues,St. Louis Blues,1650000,825000,2,2013,2013-05-28,other
+Jacob Markstrom,G,Florida Panthers,Florida Panthers,2400000,1200000,2,2013,2013-07-17,other
+Jacob Trouba,RD,Winnipeg Jets,NA,5575000,1858333,3,2013,2013-04-02,RFA
+Jake Allen,G,St. Louis Blues,St. Louis Blues,1600000,800000,2,2013,2013-07-25,other
+Jamie Benn,"LW, C",Dallas Stars,Dallas Stars,26250000,5250000,5,2013,2013-01-24,UFA
+Jared Spurgeon,RD,Minnesota Wild,Minnesota Wild,8000000,2666667,3,2013,2013-07-05,other
+Joel Edmundson,"LD, RD",St. Louis Blues,NA,2775000,925000,3,2013,2013-03-06,RFA
+Jon Merrill,"RD, LD",New Jersey Devils,NA,2700000,900000,3,2013,2013-04-30,other
+Jonathan Drouin,"LW, RW",Tampa Bay Lightning,NA,9675000,3225000,3,2013,2013-07-05,RFA
+Josh Anderson,"RW, LW",Columbus Blue Jackets,NA,2775000,925000,3,2013,2013-11-12,RFA
+Josh Morrissey,LD,Winnipeg Jets,NA,4275000,1425000,3,2013,2013-10-09,RFA
+Kevin Connauton,"LD, RD",Dallas Stars,NA,2050000,683333,3,2013,2013-06-13,other
+Kris Letang,"RD, LD",Pittsburgh Penguins,Pittsburgh Penguins,58000000,7250000,8,2013,2013-07-01,UFA
+Kyle Palmieri,"RW, LW, C",Anaheim Ducks,Anaheim Ducks,4400000,1466667,3,2013,2013-07-26,other
+Laurent Brossoit,G,Calgary Flames,NA,2775000,925000,3,2013,2013-04-04,RFA
+Logan Couture,C,San Jose Sharks,San Jose Sharks,30000000,6000000,5,2013,2013-06-18,UFA
+Luke Glendening,C,Detroit Red Wings,NA,575000,575000,1,2013,2013-07-18,other
+Marcus Johansson,"LW, RW",Washington Capitals,Washington Capitals,4000000,2000000,2,2013,2013-09-08,other
+Mats Zuccarello,"RW, LW",New York Rangers,New York Rangers,700000,700000,1,2013,2013-03-29,other
+Mats Zuccarello,"RW, LW",New York Rangers,New York Rangers,1150000,1150000,1,2013,2013-07-30,other
+Matt Duchene,"RW, C",Colorado Avalanche,Colorado Avalanche,30000000,6000000,5,2013,2013-07-18,UFA
+Matt Murray,G,Pittsburgh Penguins,NA,2775000,925000,3,2013,2013-09-08,RFA
+Matt Nieto,LW,San Jose Sharks,NA,2775000,925000,3,2013,2013-04-01,RFA
+Max Domi,"C, RW, LW",Arizona Coyotes,NA,4275000,1425000,3,2013,2013-07-14,RFA
+Michael McCarron,"C, RW",Montreal Canadiens,NA,3412500,1137500,3,2013,2013-07-14,RFA
+Mikael Backlund,C,Calgary Flames,Calgary Flames,3000000,1500000,2,2013,2013-07-10,other
+Nate Schmidt,"RD, LD",Washington Capitals,NA,2700000,1350000,2,2013,2013-04-02,other
+Nathan MacKinnon,C,Colorado Avalanche,NA,11325000,3775000,3,2013,2013-07-09,RFA
+Nazem Kadri,C,Toronto Maple Leafs,Toronto Maple Leafs,5800000,2900000,2,2013,2013-09-10,other
+Nick Bjugstad,C,Florida Panthers,Florida Panthers,3300000,1100000,3,2013,2013-04-03,other
+Nick Cousins,"RW, LW, C",Philadelphia Flyers,NA,2775000,925000,3,2013,2013-03-27,other
+Nick Jensen,"RD, LD",Detroit Red Wings,NA,1800000,900000,2,2013,2013-05-02,other
+Nick Leddy,LD,Chicago Blackhawks,Chicago Blackhawks,5400000,2700000,2,2013,2013-07-03,other
+Nikita Zadorov,"LD, RD",Buffalo Sabres,NA,5325000,1775000,3,2013,2013-09-25,RFA
+Oliver Bjorkstrand,RW,Columbus Blue Jackets,NA,2800000,925000,3,2013,2013-12-26,RFA
+Oliver Ekman-Larsson,"RD, LD",Arizona Coyotes,Phoenix Coyotes,33000000,5500000,6,2013,2013-03-15,UFA
+Pat Maroon,"RW, LW",Anaheim Ducks,Anaheim Ducks,1150000,575000,2,2013,2013-03-21,UFA
+Radko Gudas,RD,Tampa Bay Lightning,Tampa Bay Lightning,2975000,991667,3,2013,2013-05-07,other
+Rasmus Ristolainen,RD,Buffalo Sabres,NA,5325000,1775000,3,2013,2013-07-12,RFA
+Riley Nash,C,Carolina Hurricanes,Carolina Hurricanes,1150000,575000,2,2013,2013-07-08,other
+Robert Bortuzzo,RD,Pittsburgh Penguins,Pittsburgh Penguins,1200000,600000,2,2013,2013-07-24,other
+Roman Josi,LD,Nashville Predators,Nashville Predators,28000000,4000000,7,2013,2013-06-10,UFA
+Ryan Hartman,"C, RW",Chicago Blackhawks,NA,2775000,925000,3,2013,2013-11-19,RFA
+Ryan McDonagh,"LD, RD",New York Rangers,New York Rangers,28200000,4700000,6,2013,2013-07-08,UFA
+Ryan Nugent-Hopkins,"RW, C",Edmonton Oilers,Edmonton Oilers,42000000,6000000,7,2013,2013-09-19,UFA
+Ryan O'Reilly,C,Colorado Avalanche,Colorado Avalanche,10000000,5000000,2,2013,2013-02-28,other
+Ryan Pulock,RD,New York Islanders,NA,4275000,1425000,3,2013,2013-10-01,RFA
+Scott Mayfield,RD,New York Islanders,NA,5325000,1775000,3,2013,2013-04-05,RFA
+Scott Sabourin,RW,Los Angeles Kings,NA,2775000,925000,3,2013,2013-10-09,other
+Sean Couturier,C,Philadelphia Flyers,Philadelphia Flyers,3500000,1750000,2,2013,2013-07-20,other
+Sean Monahan,C,Calgary Flames,NA,5325000,1775000,3,2013,2013-07-22,RFA
+Sergei Bobrovsky,G,Columbus Blue Jackets,Columbus Blue Jackets,11250000,5625000,2,2013,2013-07-01,other
+Seth Jones,RD,Nashville Predators,NA,9675000,3225000,3,2013,2013-07-10,RFA
+Shea Theodore,LD,Anaheim Ducks,NA,2775000,925000,3,2013,2013-10-01,RFA
+TJ Brodie,"RD, LD",Calgary Flames,Calgary Flames,4250000,2125000,2,2013,2013-07-31,other
+Teuvo Teravainen,"LW, RW, C",Chicago Blackhawks,NA,4475000,1425000,3,2013,2013-08-21,RFA
+Tomas Hertl,C,San Jose Sharks,NA,4050000,1350000,3,2013,2013-06-03,RFA
+Travis Hamonic,RD,New York Islanders,New York Islanders,27000000,3857143,7,2013,2013-07-05,UFA
+Trevor Lewis,"C, RW, LW",Los Angeles Kings,Los Angeles Kings,1325000,1325000,1,2013,2013-07-23,UFA
+Tristan Jarry,G,Pittsburgh Penguins,NA,2775000,925000,3,2013,2013-09-08,RFA
+Troy Grosenick,G,San Jose Sharks,NA,925000,1268571,1,2013,2013-04-08,RFA
+Valeri Nichushkin,"LW, RW",Dallas Stars,NA,6375000,2125000,3,2013,2013-07-06,other
+William Carrier,LW,St. Louis Blues,NA,2725000,908333,3,2013,2013-08-19,RFA
+William Karlsson,C,Anaheim Ducks,NA,2775000,925000,3,2013,2013-05-19,RFA
+Zac Dalpe,C,Carolina Hurricanes,Carolina Hurricanes,550000,550000,1,2013,2013-07-23,UFA
+Zach Bogosian,RD,Winnipeg Jets,Winnipeg Jets,36000000,5142857,7,2013,2013-07-29,UFA
+Aaron Ekblad,RD,Florida Panthers,NA,11325000,3775000,3,2014,2014-09-07,RFA
+Adam Larsson,"RD, LD",New Jersey Devils,New Jersey Devils,900000,900000,1,2014,2014-07-01,other
+Adam Pelech,LD,New York Islanders,NA,2775000,925000,3,2014,2014-03-15,RFA
+Alec Martinez,"LD, RD",Los Angeles Kings,Los Angeles Kings,24000000,4000000,6,2014,2014-12-04,UFA
+Alex Killorn,"LW, RW",Tampa Bay Lightning,Tampa Bay Lightning,5100000,2550000,2,2014,2014-06-20,other
+Alexander Wennberg,C,Columbus Blue Jackets,NA,4200000,1400000,3,2014,2014-05-26,RFA
+Anders Lee,"LW, RW",New York Islanders,New York Islanders,850500,850500,1,2014,2014-07-11,other
+Andrei Vasilevskiy,G,Tampa Bay Lightning,NA,4425000,1475000,3,2014,2014-05-06,RFA
+Anthony Duclair,LW,New York Rangers,NA,2775000,925000,3,2014,2014-01-09,RFA
+Barclay Goodrow,"C, RW",San Jose Sharks,NA,1880000,626667,3,2014,2014-03-06,other
+Ben Chiarot,"LD, RD",Winnipeg Jets,Winnipeg Jets,600000,600000,1,2014,2014-07-26,other
+Ben Harpur,LD,Ottawa Senators,NA,2320000,748333,3,2014,2014-11-06,RFA
+Brayden McNabb,"RD, LD",Los Angeles Kings,Buffalo Sabres,1300000,650000,2,2014,2014-07-15,other
+Brayden Schenn,"C, LW, RW",Philadelphia Flyers,Philadelphia Flyers,5000000,2500000,2,2014,2014-06-26,other
+Brendan Gallagher,RW,Montreal Canadiens,Montréal Canadiens,22500000,3750000,6,2014,2014-11-29,UFA
+Brenden Dillon,"LD, RD",Dallas Stars,Dallas Stars,1250000,1250000,1,2014,2014-10-05,other
+Brett Kulak,"LD, RD",Calgary Flames,NA,2450000,816667,3,2014,2014-03-18,RFA
+Bryan Rust,"RW, LW",Pittsburgh Penguins,NA,1800000,900000,2,2014,2014-04-01,other
+Calvin de Haan,"LD, RD",New York Islanders,New York Islanders,5900000,1966667,3,2014,2014-07-15,other
+Cam Talbot,G,New York Rangers,New York Rangers,1450000,1450000,1,2014,2014-12-20,UFA
+Carter Verhaeghe,"RW, LW, C",Toronto Maple Leafs,NA,2775000,925000,3,2014,2014-04-02,RFA
+Casey Cizikas,"LW, C",New York Islanders,New York Islanders,2000000,1000000,2,2014,2014-07-15,other
+Chad Ruhwedel,RD,Buffalo Sabres,Buffalo Sabres,1300000,650000,2,2014,2014-07-16,other
+Chandler Stephenson,C,Washington Capitals,NA,2775000,925000,3,2014,2014-05-26,RFA
+Charlie Coyle,C,Minnesota Wild,Minnesota Wild,16000000,3200000,5,2014,2014-10-23,UFA
+Chris Driedger,G,Ottawa Senators,NA,2400000,800000,3,2014,2014-04-01,RFA
+Chris Kreider,"LW, RW",New York Rangers,New York Rangers,4950000,2475000,2,2014,2014-07-23,other
+Chris Tanev,RD,Vancouver Canucks,Vancouver Canucks,2000000,2000000,1,2014,2014-07-05,other
+Connor Hellebuyck,G,Winnipeg Jets,NA,2775000,925000,3,2014,2014-05-26,other
+Darcy Kuemper,G,Minnesota Wild,Minnesota Wild,2500000,1250000,2,2014,2014-09-20,other
+David Pastrnak,RW,Boston Bruins,NA,2775000,925000,3,2014,2014-07-15,RFA
+David Savard,"RD, LD",Columbus Blue Jackets,Columbus Blue Jackets,2600000,1300000,2,2014,2014-07-05,other
+Dmitry Kulikov,"LD, RD",Florida Panthers,Florida Panthers,13000000,4333333,3,2014,2014-07-18,UFA
+Dmitry Orlov,"LD, RD",Washington Capitals,Washington Capitals,4000000,2000000,2,2014,2014-03-13,other
+Dustin Tokarski,G,Montreal Canadiens,Montréal Canadiens,1125000,562500,2,2014,2014-05-26,other
+Erik Gudbranson,RD,Florida Panthers,Florida Panthers,5000000,2500000,2,2014,2014-07-10,other
+Esa Lindell,"LD, RD",Dallas Stars,NA,2775000,925000,3,2014,2014-05-26,RFA
+Gustav Olofsson,LD,Minnesota Wild,NA,2775000,925000,3,2014,2014-03-24,other
+Haydn Fleury,"LD, RD",Carolina Hurricanes,NA,5325000,1775000,3,2014,2014-08-12,RFA
+Ivan Barbashev,"LW, C",St. Louis Blues,NA,2775000,925000,3,2014,2014-07-23,RFA
+Jaden Schwartz,"RW, LW, C",St. Louis Blues,St. Louis Blues,4700000,2350000,2,2014,2014-10-05,other
+Jake McCabe,"LD, RD",Buffalo Sabres,Buffalo Sabres,2775000,925000,3,2014,2014-04-02,RFA
+Jakub Vrana,LW,Washington Capitals,NA,4275000,1325000,3,2014,2014-07-15,RFA
+James Reimer,G,Toronto Maple Leafs,Toronto Maple Leafs,4600000,2300000,2,2014,2014-07-26,UFA
+Jared McCann,"LW, C",Vancouver Canucks,NA,3412500,1137500,3,2014,2014-07-26,RFA
+Jason Dickinson,"C, RW",Dallas Stars,NA,2775000,925000,3,2014,2014-05-31,RFA
+Jason Zucker,"LW, RW",Minnesota Wild,Minnesota Wild,1800500,900250,2,2014,2014-07-15,other
+Jaycob Megna,"RD, LD",Anaheim Ducks,NA,2775000,925000,3,2014,2014-04-04,other
+Jeff Petry,RD,Edmonton Oilers,Edmonton Oilers,3075000,3075000,1,2014,2014-07-08,UFA
+Joe Hicketts,LD,Detroit Red Wings,NA,1975000,600000,3,2014,2014-10-05,RFA
+Johnny Gaudreau,"LW, RW",Calgary Flames,Calgary Flames,5550000,1850000,3,2014,2014-04-11,other
+Jonas Brodin,LD,Minnesota Wild,Minnesota Wild,25000000,4166667,6,2014,2014-10-13,UFA
+Joonas Korpisalo,G,Columbus Blue Jackets,NA,2775000,925000,3,2014,2014-03-21,RFA
+Jordan Oesterle,"LD, RD",Edmonton Oilers,NA,1850000,925000,2,2014,2014-03-31,other
+Josh Manson,RD,Anaheim Ducks,NA,1850000,925000,2,2014,2014-03-25,other
+Justin Bailey,RW,Buffalo Sabres,NA,2682500,661666,3,2014,2014-11-02,RFA
+Justin Dowling,C,Dallas Stars,NA,1220000,610000,2,2014,2014-03-26,other
+Justin Faulk,RD,Carolina Hurricanes,Carolina Hurricanes,29000000,4833333,6,2014,2014-03-24,UFA
+Kasperi Kapanen,"RW, LW",Pittsburgh Penguins,NA,2775000,925000,3,2014,2014-07-12,RFA
+Kevin Fiala,"RW, LW",Nashville Predators,NA,2775000,1425000,3,2014,2014-07-15,RFA
+Kevin Hayes,"C, RW",New York Rangers,NA,7500000,3750000,2,2014,2014-08-20,other
+Lars Eller,"C, LW, RW",Montreal Canadiens,Montréal Canadiens,14000000,3500000,4,2014,2014-07-24,UFA
+Leon Draisaitl,"C, RW",Edmonton Oilers,NA,10200000,3400000,3,2014,2014-08-12,RFA
+Liam O'Brien,"RW, LW, C",Washington Capitals,NA,1925000,641667,3,2014,2014-10-05,RFA
+Linus Ullmark,G,Buffalo Sabres,NA,2775000,925000,3,2014,2014-05-31,other
+Luke Glendening,C,Detroit Red Wings,Detroit Red Wings,1885000,628333,3,2014,2014-04-05,UFA
+MacKenzie Weegar,"LD, RD",Florida Panthers,NA,2400000,800000,3,2014,2014-05-31,RFA
+Marc-Andre Fleury,G,Pittsburgh Penguins,Pittsburgh Penguins,23000000,5750000,4,2014,2014-11-05,UFA
+Marcus Foligno,"LW, RW",Buffalo Sabres,Buffalo Sabres,3750000,1875000,2,2014,2014-07-01,other
+Mats Zuccarello,"RW, LW",New York Rangers,New York Rangers,3500000,3500000,1,2014,2014-07-22,UFA
+Mattias Ekholm,"LD, RD",Nashville Predators,Nashville Predators,2075000,1037500,2,2014,2014-07-09,other
+Max McCormick,LW,Ottawa Senators,NA,1600000,800000,2,2014,2014-05-31,other
+Nate Schmidt,"RD, LD",Washington Capitals,Washington Capitals,625000,625000,1,2014,2014-07-13,other
+Nathan Walker,LW,Washington Capitals,NA,2050000,683333,3,2014,2014-07-26,RFA
+Nic Dowd,C,Los Angeles Kings,NA,900000,900000,1,2014,2014-04-01,other
+Nicholas Paul,"C, LW",Ottawa Senators,NA,2682500,670000,3,2014,2014-12-21,RFA
+Nick Bjugstad,C,Florida Panthers,Florida Panthers,24600000,4100000,6,2014,2014-12-31,UFA
+Nick Foligno,"LW, C",Columbus Blue Jackets,Columbus Blue Jackets,33000000,5500000,6,2014,2014-12-31,UFA
+Nicolas Aube-Kubel,RW,Philadelphia Flyers,NA,2775000,925000,3,2014,2014-10-05,RFA
+Nicolas Deslauriers,LW,Buffalo Sabres,Buffalo Sabres,1275000,637500,2,2014,2014-05-26,other
+Nikolaj Ehlers,"LW, RW",Winnipeg Jets,NA,4875000,1625000,3,2014,2014-09-07,RFA
+Nino Niederreiter,RW,Minnesota Wild,Minnesota Wild,8000000,2666667,3,2014,2014-09-20,other
+Ondrej Palat,LW,Tampa Bay Lightning,Tampa Bay Lightning,10000000,3333333,3,2014,2014-06-09,other
+Oscar Dansk,G,Columbus Blue Jackets,NA,2775000,925000,3,2014,2014-05-26,other
+Oskar Sundqvist,C,Pittsburgh Penguins,NA,2775000,925000,3,2014,2014-06-05,RFA
+Pat Maroon,"RW, LW",Anaheim Ducks,Anaheim Ducks,6000000,2000000,3,2014,2014-08-12,UFA
+Patrick Brown,"RW, LW, C",Carolina Hurricanes,NA,1315000,657500,2,2014,2014-05-26,other
+Patrick Kane,"RW, LW",Chicago Blackhawks,Chicago Blackhawks,84000000,10500000,8,2014,2014-07-09,UFA
+Petr Mrazek,G,Detroit Red Wings,Detroit Red Wings,737500,737500,1,2014,2014-07-01,other
+Pheonix Copley,G,Washington Capitals,NA,1850000,925000,2,2014,2014-03-19,other
+Phillip Di Giuseppe,LW,Carolina Hurricanes,NA,2775000,925000,3,2014,2014-03-26,RFA
+Reilly Smith,"RW, LW",Boston Bruins,Boston Bruins,1400000,1400000,1,2014,2014-09-28,other
+Robby Fabbri,"LW, RW, C",St. Louis Blues,NA,3412500,925000,3,2014,2014-09-07,other
+Robert Hagg,"LD, RD",Philadelphia Flyers,NA,2775000,925000,3,2014,2014-03-21,RFA
+Ryan Ellis,RD,Nashville Predators,Nashville Predators,12500000,2500000,5,2014,2014-10-05,UFA
+Ryan Graves,"LD, RD",New York Rangers,NA,2540000,850000,3,2014,2014-03-17,RFA
+Ryan Johansen,C,Columbus Blue Jackets,Columbus Blue Jackets,12000000,4000000,3,2014,2014-10-06,other
+Ryan O'Reilly,C,Colorado Avalanche,Colorado Avalanche,12000000,6000000,2,2014,2014-07-23,UFA
+Ryan Reaves,"RW, LW",St. Louis Blues,St. Louis Blues,4500000,1125000,4,2014,2014-01-09,UFA
+Sam Bennett,C,Calgary Flames,NA,9675000,3225000,3,2014,2014-07-26,RFA
+Sam Reinhart,"LW, RW, C",Buffalo Sabres,NA,10725000,3575000,3,2014,2014-07-12,RFA
+Semyon Varlamov,G,Colorado Avalanche,Colorado Avalanche,29500000,5900000,5,2014,2014-01-30,UFA
+Shayne Gostisbehere,"LD, RD",Philadelphia Flyers,NA,4262500,1420833,3,2014,2014-05-26,other
+Sonny Milano,"LW, RW",Columbus Blue Jackets,NA,3882500,1325000,3,2014,2014-09-20,RFA
+Spencer Martin,G,Colorado Avalanche,NA,2775000,728333,3,2014,2014-10-17,RFA
+T.J. Tynan,C,Columbus Blue Jackets,NA,1850000,925000,2,2014,2014-04-01,other
+TJ Brodie,"RD, LD",Calgary Flames,Calgary Flames,23252000,4650400,5,2014,2014-10-20,UFA
+Tomas Nosek,"C, LW",Detroit Red Wings,NA,1850000,925000,2,2014,2014-06-18,other
+Tomas Tatar,"RW, LW",Detroit Red Wings,Detroit Red Wings,8250000,2750000,3,2014,2014-07-27,other
+Tony DeAngelo,"RD, LD",Tampa Bay Lightning,NA,2775000,925000,3,2014,2014-12-02,RFA
+Torey Krug,LD,Boston Bruins,Boston Bruins,1400000,1400000,1,2014,2014-10-05,other
+Travis Sanheim,"RD, LD",Philadelphia Flyers,NA,2775000,1325000,3,2014,2014-10-05,RFA
+Trevor Lewis,"C, RW, LW",Los Angeles Kings,Los Angeles Kings,3050000,1525000,2,2014,2014-04-08,UFA
+Trevor van Riemsdyk,"RD, LD",Chicago Blackhawks,NA,1850000,925000,2,2014,2014-03-26,other
+Tyler Bertuzzi,LW,Detroit Red Wings,NA,2732500,925000,3,2014,2014-10-17,RFA
+Tyler Pitlick,"RW, C",Edmonton Oilers,Edmonton Oilers,725000,725000,1,2014,2014-07-15,other
+Tyson Barrie,"RD, LD",Colorado Avalanche,Colorado Avalanche,5200000,2600000,2,2014,2014-09-07,other
+Viktor Arvidsson,"RW, LW",Nashville Predators,NA,1950000,650000,3,2014,2014-07-15,other
+Vitek Vanecek,G,Washington Capitals,NA,2775000,925000,3,2014,2014-07-15,RFA
+William Nylander,RW,Toronto Maple Leafs,NA,5232500,1775000,3,2014,2014-08-18,RFA
+Yanni Gourde,"C, LW",Tampa Bay Lightning,NA,1175000,587500,2,2014,2014-03-10,other
+Zac Dalpe,C,Buffalo Sabres,Vancouver Canucks,700000,700000,1,2014,2014-07-15,other
 Adam Larsson,"RD, LD",New Jersey Devils,New Jersey Devils,25000000,4166666,6,2015,2015-07-25,UFA
 Adrian Kempe,"LW, RW",Los Angeles Kings,NA,2775000,925000,3,2015,2015-04-15,RFA
 Alex Nedeljkovic,G,Carolina Hurricanes,NA,2775000,925000,3,2015,2015-03-28,RFA
