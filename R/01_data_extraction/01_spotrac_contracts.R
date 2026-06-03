@@ -21,6 +21,24 @@ end_year <- 2025L
 contract_years <- start_year:end_year
 fallback_url <- "https://raw.githubusercontent.com/Chief-Zach/Sports-Data/master/NHL/data/salaries/all_players.jsonl"
 output_path <- here::here("data", "raw", "spotrac_contracts_raw.csv")
+CONTRACT_SOURCE <- Sys.getenv("CONTRACT_SOURCE", unset = "github")
+
+# Standard contract schema expected by all downstream pipeline stages.
+# Any source adapter must return these columns with compatible types:
+# player_name, position, signing_team, previous_team, contract_value, aav,
+# contract_years, signing_year, signing_date, contract_type
+CONTRACT_SCHEMA_COLUMNS <- c(
+  "player_name",
+  "position",
+  "signing_team",
+  "previous_team",
+  "contract_value",
+  "aav",
+  "contract_years",
+  "signing_year",
+  "signing_date",
+  "contract_type"
+)
 
 dir.create(dirname(output_path), recursive = TRUE, showWarnings = FALSE)
 
@@ -139,28 +157,85 @@ extract_contract_rows <- function(player_row) {
   contract_tbl
 }
 
-message("Downloading fallback contract snapshot...")
-source_file <- tempfile(fileext = ".jsonl")
-download.file(fallback_url, source_file, mode = "wb", quiet = TRUE)
+extract_contracts_github_source <- function() {
+  message("Downloading fallback contract snapshot...")
+  source_file <- tempfile(fileext = ".jsonl")
+  download.file(fallback_url, source_file, mode = "wb", quiet = TRUE)
 
-players <- jsonlite::stream_in(file(source_file), verbose = FALSE)
+  players <- jsonlite::stream_in(file(source_file), verbose = FALSE)
 
-contracts_raw <- purrr::map_dfr(seq_len(nrow(players)), function(i) {
-  extract_contract_rows(players[i, , drop = FALSE])
-}) %>%
-  dplyr::filter(!is.na(.data$player_name), .data$player_name != "") %>%
-  dplyr::distinct(
-    .data$player_name,
-    .data$signing_team,
-    .data$signing_date,
-    .data$contract_value,
-    .keep_all = TRUE
-  ) %>%
-  dplyr::arrange(.data$signing_year, .data$player_name)
+  contracts_raw <- purrr::map_dfr(seq_len(nrow(players)), function(i) {
+    extract_contract_rows(players[i, , drop = FALSE])
+  }) %>%
+    dplyr::filter(!is.na(.data$player_name), .data$player_name != "") %>%
+    dplyr::distinct(
+      .data$player_name,
+      .data$signing_team,
+      .data$signing_date,
+      .data$contract_value,
+      .keep_all = TRUE
+    ) %>%
+    dplyr::arrange(.data$signing_year, .data$player_name)
+
+  contracts_raw
+}
+
+extract_contracts_capwages <- function() {
+  # Future adapter placeholder (do not implement without source permission).
+  # This adapter will need to:
+  # 1) Pull contracts from a permitted CapWages API/export.
+  # 2) Reformat names from "Last, First" to "First Last".
+  # 3) Confirm/match team abbreviations against nhlscraper conventions.
+  # 4) Map CapWages contract type fields (Std/Ext) to contract_type.
+  # 5) Return the standard CONTRACT_SCHEMA_COLUMNS schema.
+  stop(
+    paste0(
+      "CONTRACT_SOURCE='capwages' is not implemented yet. ",
+      "Implement extract_contracts_capwages() only after source permission and access method are approved."
+    )
+  )
+}
+
+validate_contract_schema <- function(contracts_df) {
+  missing_columns <- setdiff(CONTRACT_SCHEMA_COLUMNS, names(contracts_df))
+  extra_columns <- setdiff(names(contracts_df), CONTRACT_SCHEMA_COLUMNS)
+
+  if (length(missing_columns) > 0) {
+    stop("Contract adapter output is missing required columns: ", paste(missing_columns, collapse = ", "))
+  }
+
+  if (length(extra_columns) > 0) {
+    warning("Contract adapter output has extra columns that will be dropped: ", paste(extra_columns, collapse = ", "))
+  }
+
+  contracts_df %>%
+    dplyr::select(dplyr::all_of(CONTRACT_SCHEMA_COLUMNS))
+}
+
+dispatch_contract_source <- function(contract_source) {
+  source_key <- tolower(trimws(contract_source))
+
+  if (source_key == "github") {
+    return(extract_contracts_github_source())
+  }
+
+  if (source_key == "capwages") {
+    return(extract_contracts_capwages())
+  }
+
+  stop(
+    "Unknown CONTRACT_SOURCE='", contract_source,
+    "'. Supported sources: github, capwages"
+  )
+}
+
+contracts_raw <- dispatch_contract_source(CONTRACT_SOURCE) %>%
+  validate_contract_schema()
 
 readr::write_csv(contracts_raw, output_path)
 
 message("Spotrac contracts QA summary")
+message(sprintf("- contract source: %s", CONTRACT_SOURCE))
 message(sprintf("- total rows: %s", nrow(contracts_raw)))
 message("- rows per year:")
 print(contracts_raw %>% count(.data$signing_year, name = "rows"))
