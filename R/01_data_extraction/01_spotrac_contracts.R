@@ -124,16 +124,16 @@ extract_contract_rows <- function(player_row) {
     dplyr::filter(!is.na(.data$signing_year), .data$signing_year >= start_year, .data$signing_year <= end_year) %>%
     dplyr::arrange(.data$signing_date, .by_group = FALSE) %>%
     dplyr::select(
-      .data$player_name,
-      .data$position,
-      .data$signing_team,
-      .data$previous_team,
-      .data$contract_value,
-      .data$aav,
-      .data$contract_years,
-      .data$signing_year,
-      .data$signing_date,
-      .data$contract_type
+      player_name,
+      position,
+      signing_team,
+      previous_team,
+      contract_value,
+      aav,
+      contract_years,
+      signing_year,
+      signing_date,
+      contract_type
     )
 
   contract_tbl
@@ -150,10 +150,10 @@ contracts_raw <- purrr::map_dfr(seq_len(nrow(players)), function(i) {
 }) %>%
   dplyr::filter(!is.na(.data$player_name), .data$player_name != "") %>%
   dplyr::distinct(
-    .data$player_name,
-    .data$signing_team,
-    .data$signing_date,
-    .data$contract_value,
+    player_name,
+    signing_team,
+    signing_date,
+    contract_value,
     .keep_all = TRUE
   ) %>%
   dplyr::arrange(.data$signing_year, .data$player_name)

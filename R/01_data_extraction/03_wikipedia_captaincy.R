@@ -98,7 +98,7 @@ captain_tenures <- tibble::tribble(
 
 captaincy_raw <- captain_tenures %>%
   mutate(season_start_year = purrr::map2(.data$start_year, .data$end_year, seq)) %>%
-  tidyr::unnest_longer(.data$season_start_year) %>%
+  tidyr::unnest_longer(season_start_year) %>%
   transmute(
     team = .data$team,
     season = season_label(.data$season_start_year),
