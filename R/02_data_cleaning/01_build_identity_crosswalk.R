@@ -25,7 +25,7 @@ normalize_name_key_ascii <- function(x) {
 split_first_last <- function(name) {
   name <- stringr::str_squish(as.character(name))
   first <- stringr::word(name, 1)
-  last <- stringr::str_remove(name, "^\\S+\\s*")
+  last <- stringr::word(name, -1)
 
   tibble::tibble(first_name = first, last_name = last)
 }
@@ -38,6 +38,7 @@ get_first_name_variant_table <- function() {
     "mike", "michael",
     "chris", "christopher",
     "matt", "matthew",
+    "max", "maxime",
     "joe", "joseph",
     "nick", "nicholas",
     "zach", "zachary",
@@ -66,7 +67,9 @@ get_first_name_variant_table <- function() {
 
   bind_rows(
     pairs,
-    transmute(pairs, name_a = name_b, name_b = name_a)
+    pairs %>%
+      rename(tmp_a = .data$name_a, tmp_b = .data$name_b) %>%
+      transmute(name_a = .data$tmp_b, name_b = .data$tmp_a)
   ) %>%
     distinct()
 }
@@ -96,7 +99,8 @@ identity_name_variants <- bios %>%
   bind_cols(split_first_last(.$player_name)) %>%
   mutate(
     first_name_key = normalize_name_key(.data$first_name),
-    last_name_key = normalize_name_key(.data$last_name)
+    last_name_key = normalize_name_key(.data$last_name),
+    name_key_first_last = normalize_name_key(paste(.data$first_name, .data$last_name))
   )
 
 canonical_names <- bios %>%

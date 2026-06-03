@@ -133,10 +133,10 @@ Easton Cowan,TOR,20232024,NA,NA
 Eduard Sale,SEA,20232024,NA,NA
 Eemil Viro,DET,20212022,NA,NA
 Eetu Liukas,NYI,20232024,NA,NA
-Elias Pettersson,VAN,20182019,NA,NA
-Elias Pettersson,VAN,20212022,NA,NA
-Elias Pettersson,VAN,20232024,NA,NA
-Elias Pettersson,VAN,20242025,8480012,manual override: 8y/11.6M AAV 2024 VAN UFA deal is C Elias Pettersson (8480012)
+Elias Pettersson,VAN,20182019,8480012,manual collision override: VAN center Elias Pettersson
+Elias Pettersson,VAN,20212022,8480012,manual collision override: VAN center Elias Pettersson
+Elias Pettersson,VAN,20232024,8480012,manual collision override: VAN center Elias Pettersson
+Elias Pettersson,VAN,20242025,8480012,manual collision override: 8y/11.6M AAV 2024 VAN UFA deal
 Emil Andrae,PHI,20232024,NA,NA
 Emil Hemming,DAL,20242025,NA,NA
 Emil Pieniniemi,PIT,20232024,NA,NA
@@ -447,13 +447,13 @@ Sandis Vilmanis,FLA,20242025,NA,NA
 Sasha Pastujov,ANA,20212022,NA,NA
 Sawyer Mynio,VAN,20232024,NA,NA
 Sean Behrens,COL,20242025,NA,NA
-Sebastian Aho,CAR,20162017,NA,NA
-Sebastian Aho,NYI,20172018,NA,NA
-Sebastian Aho,CAR,20192020,NA,NA
-Sebastian Aho,NYI,20202021,NA,NA
-Sebastian Aho,NYI,20222023,NA,NA
-Sebastian Aho,CAR,20232024,NA,NA
-Sebastian Aho,PIT,20242025,NA,NA
+Sebastian Aho,CAR,20162017,8478427,manual collision override: CAR Sebastian Aho
+Sebastian Aho,NYI,20172018,8480222,manual collision override: NYI Sebastian Aho
+Sebastian Aho,CAR,20192020,8478427,manual collision override: CAR Sebastian Aho
+Sebastian Aho,NYI,20202021,8480222,manual collision override: NYI Sebastian Aho
+Sebastian Aho,NYI,20222023,8480222,manual collision override: NYI Sebastian Aho
+Sebastian Aho,CAR,20232024,8478427,manual collision override: CAR Sebastian Aho
+Sebastian Aho,PIT,20242025,8480222,manual collision override: PIT contract is NYI Sebastian Aho
 Shai Buium,DET,20242025,NA,NA
 Simon Lundmark,WPG,20212022,NA,NA
 Simon Lundmark,WPG,20242025,NA,NA

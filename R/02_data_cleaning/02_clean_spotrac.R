@@ -28,7 +28,7 @@ split_first_last <- function(name) {
   name <- stringr::str_squish(as.character(name))
   tibble::tibble(
     first_name = stringr::word(name, 1),
-    last_name = stringr::str_remove(name, "^\\S+\\s*")
+    last_name = stringr::word(name, -1)
   )
 }
 
@@ -125,10 +125,12 @@ apply_name_matching <- function(df, identity_variants, first_name_variants, name
     bind_cols(split_first_last(.$raw_name)) %>%
     mutate(
       first_name_key = normalize_name_key(.data$first_name),
-      last_name_key = normalize_name_key(.data$last_name)
+      last_name_key = normalize_name_key(.data$last_name),
+      name_key_first_last = normalize_name_key(paste(.data$first_name, .data$last_name)),
+      last_initial_key = stringr::str_sub(.data$first_name_key, 1, 1)
     )
 
-  exact_candidates <- working %>%
+  exact_candidates_full <- working %>%
     select(row_id, name_key) %>%
     left_join(
       identity_variants %>% select(player_id, name_key),
@@ -137,7 +139,7 @@ apply_name_matching <- function(df, identity_variants, first_name_variants, name
     ) %>%
     filter(!is.na(.data$player_id))
 
-  exact_resolved <- exact_candidates %>%
+  exact_resolved_full <- exact_candidates_full %>%
     group_by(.data$row_id) %>%
     summarise(
       player_id = ifelse(n_distinct(.data$player_id) == 1, first(.data$player_id), NA_integer_),
@@ -145,15 +147,39 @@ apply_name_matching <- function(df, identity_variants, first_name_variants, name
     ) %>%
     mutate(match_status = ifelse(!is.na(.data$player_id), "exact", "ambiguous_exact"))
 
-  exact_matched_row_ids <- exact_resolved %>%
+  exact_full_matched_row_ids <- exact_resolved_full %>%
     filter(!is.na(.data$player_id)) %>%
     pull(row_id)
 
-  unmatched_after_exact <- working %>%
-    filter(!(.data$row_id %in% exact_matched_row_ids))
+  unmatched_after_exact_full <- working %>%
+    filter(!(.data$row_id %in% exact_full_matched_row_ids))
+
+  exact_candidates_first_last <- unmatched_after_exact_full %>%
+    select(row_id, name_key_first_last) %>%
+    left_join(
+      identity_variants %>% select(player_id, name_key_first_last),
+      by = "name_key_first_last",
+      relationship = "many-to-many"
+    ) %>%
+    filter(!is.na(.data$player_id))
+
+  exact_resolved_first_last <- exact_candidates_first_last %>%
+    group_by(.data$row_id) %>%
+    summarise(
+      player_id = ifelse(n_distinct(.data$player_id) == 1, first(.data$player_id), NA_integer_),
+      .groups = "drop"
+    ) %>%
+    mutate(match_status = ifelse(!is.na(.data$player_id), "exact_first_last", "ambiguous_exact_first_last"))
+
+  exact_first_last_matched_row_ids <- exact_resolved_first_last %>%
+    filter(!is.na(.data$player_id)) %>%
+    pull(row_id)
+
+  unmatched_after_exact <- unmatched_after_exact_full %>%
+    filter(!(.data$row_id %in% exact_first_last_matched_row_ids))
 
   variant_candidates <- unmatched_after_exact %>%
-    left_join(first_name_variants, by = c("first_name_key" = "name_a")) %>%
+    left_join(first_name_variants, by = c("first_name_key" = "name_a"), relationship = "many-to-many") %>%
     mutate(candidate_first = coalesce(.data$name_b, .data$first_name_key)) %>%
     mutate(candidate_key = stringr::str_squish(paste(.data$candidate_first, .data$last_name_key))) %>%
     select(row_id, candidate_key) %>%
@@ -198,17 +224,72 @@ apply_name_matching <- function(df, identity_variants, first_name_variants, name
     mutate(match_status = ifelse(!is.na(.data$player_id), "accent_fallback", "ambiguous_ascii"))
 
   working %>%
-    left_join(exact_resolved %>% transmute(row_id, exact_player_id = player_id, exact_status = match_status), by = "row_id") %>%
+    left_join(exact_resolved_full %>% transmute(row_id, exact_player_id = player_id, exact_status = match_status), by = "row_id") %>%
+    left_join(exact_resolved_first_last %>% transmute(row_id, exact_fl_player_id = player_id, exact_fl_status = match_status), by = "row_id") %>%
     left_join(variant_resolved %>% transmute(row_id, variant_player_id = player_id, variant_status = match_status), by = "row_id") %>%
     left_join(ascii_resolved %>% transmute(row_id, ascii_player_id = player_id, ascii_status = match_status), by = "row_id") %>%
     mutate(
-      player_id = coalesce(.data$exact_player_id, .data$variant_player_id, .data$ascii_player_id),
+      player_id = coalesce(.data$exact_player_id, .data$exact_fl_player_id, .data$variant_player_id, .data$ascii_player_id),
       match_status = case_when(
         !is.na(.data$exact_player_id) ~ .data$exact_status,
+        !is.na(.data$exact_fl_player_id) ~ .data$exact_fl_status,
         !is.na(.data$variant_player_id) ~ .data$variant_status,
         !is.na(.data$ascii_player_id) ~ .data$ascii_status,
         TRUE ~ "unmatched"
       )
+    )
+}
+
+seed_known_collision_overrides <- function(override_map) {
+  seeded <- tibble::tribble(
+    ~player_name, ~signing_team_abbr, ~season, ~player_id, ~override_note,
+    "Sebastian Aho", "CAR", 20162017L, 8478427L, "manual collision override: CAR Sebastian Aho",
+    "Sebastian Aho", "CAR", 20192020L, 8478427L, "manual collision override: CAR Sebastian Aho",
+    "Sebastian Aho", "CAR", 20232024L, 8478427L, "manual collision override: CAR Sebastian Aho",
+    "Sebastian Aho", "NYI", 20172018L, 8480222L, "manual collision override: NYI Sebastian Aho",
+    "Sebastian Aho", "NYI", 20202021L, 8480222L, "manual collision override: NYI Sebastian Aho",
+    "Sebastian Aho", "NYI", 20222023L, 8480222L, "manual collision override: NYI Sebastian Aho",
+    "Sebastian Aho", "PIT", 20242025L, 8480222L, "manual collision override: PIT contract is NYI Sebastian Aho",
+    "Elias Pettersson", "VAN", 20182019L, 8480012L, "manual collision override: VAN center Elias Pettersson",
+    "Elias Pettersson", "VAN", 20212022L, 8480012L, "manual collision override: VAN center Elias Pettersson",
+    "Elias Pettersson", "VAN", 20232024L, 8480012L, "manual collision override: VAN center Elias Pettersson",
+    "Elias Pettersson", "VAN", 20242025L, 8480012L, "manual collision override: 8y/11.6M AAV 2024 VAN UFA deal"
+  )
+
+  override_map %>%
+    full_join(
+      seeded,
+      by = c("player_name", "signing_team_abbr", "season"),
+      suffix = c("", "_seed")
+    ) %>%
+    mutate(
+      player_id = coalesce(.data$player_id_seed, .data$player_id),
+      override_note = ifelse(!is.na(.data$player_id_seed), .data$override_note_seed, .data$override_note)
+    ) %>%
+    select(.data$player_name, .data$signing_team_abbr, .data$season, .data$player_id, .data$override_note) %>%
+    arrange(.data$player_name, .data$season, .data$signing_team_abbr)
+}
+
+add_bios_presence_flags <- function(df, identity_variants) {
+  bios_name_keys <- unique(identity_variants$name_key)
+  bios_first_last_keys <- unique(identity_variants$name_key_first_last)
+  bios_last_initial_keys <- identity_variants %>%
+    mutate(
+      first_name_key = stringr::word(.data$name_key_first_last, 1),
+      last_name_key = stringr::word(.data$name_key_first_last, -1),
+      last_initial_key = stringr::str_sub(.data$first_name_key, 1, 1),
+      li_key = paste(.data$last_name_key, .data$last_initial_key, sep = "|")
+    ) %>%
+    pull(.data$li_key) %>%
+    unique()
+
+  df %>%
+    mutate(
+      appears_in_bios_exact = .data$name_key %in% bios_name_keys,
+      appears_in_bios_first_last = .data$name_key_first_last %in% bios_first_last_keys,
+      li_key = paste(.data$last_name_key, .data$last_initial_key, sep = "|"),
+      appears_in_bios_last_initial = .data$li_key %in% bios_last_initial_keys,
+      appears_in_bios_any = .data$appears_in_bios_exact | .data$appears_in_bios_first_last | .data$appears_in_bios_last_initial
     )
 }
 
@@ -288,6 +369,8 @@ build_or_update_override_map <- function(df, override_map_path) {
     updated <- unresolved %>%
       arrange(.data$player_name, .data$season, .data$signing_team_abbr)
   }
+
+  updated <- seed_known_collision_overrides(updated)
 
   readr::write_csv(updated, override_map_path)
   updated
@@ -394,6 +477,7 @@ override_map <- build_or_update_override_map(collision_pass$data, override_map_p
 override_result <- apply_manual_overrides(collision_pass$data, override_map)
 
 spotrac_final <- override_result$data
+spotrac_final <- add_bios_presence_flags(spotrac_final, identity_variants)
 
 spotrac_clean <- spotrac_final %>%
   transmute(
@@ -422,9 +506,17 @@ matched_rows <- sum(!is.na(spotrac_clean$player_id))
 unmatched_rows <- sum(is.na(spotrac_clean$player_id))
 match_rate <- ifelse(total_rows > 0, 100 * matched_rows / total_rows, NA_real_)
 
+bios_scope_rows <- sum(spotrac_final$appears_in_bios_any)
+bios_scope_matched_rows <- sum(!is.na(spotrac_clean$player_id) & spotrac_final$appears_in_bios_any)
+bios_scope_match_rate <- ifelse(bios_scope_rows > 0, 100 * bios_scope_matched_rows / bios_scope_rows, NA_real_)
+
 unmatched_names <- spotrac_clean %>%
   filter(is.na(.data$player_id)) %>%
   count(.data$player_name, sort = TRUE)
+
+unmatched_names_in_bios <- spotrac_final %>%
+  filter(is.na(.data$player_id), .data$appears_in_bios_any) %>%
+  count(.data$raw_name, sort = TRUE)
 
 readr::write_csv(unmatched_names, unmatched_out_path)
 
@@ -433,6 +525,7 @@ message(sprintf("- rows after goalie filter: %s", total_rows))
 message(sprintf("- matched to player_id: %s", matched_rows))
 message(sprintf("- unmatched: %s", unmatched_rows))
 message(sprintf("- Spotrac-to-player_id match rate: %.2f%%", match_rate))
+message(sprintf("- in-bios-contract match rate: %.2f%% (%s/%s)", bios_scope_match_rate, bios_scope_matched_rows, bios_scope_rows))
 message("- match_status distribution:")
 print(spotrac_clean %>% count(.data$match_status, sort = TRUE))
 message(sprintf("- colliding name keys discovered in identity crosswalk: %s", length(collision_pass$colliding_name_keys)))
@@ -448,4 +541,10 @@ if (nrow(unmatched_names) == 0) {
   message("none")
 } else {
   print(unmatched_names)
+}
+message("- unmatched names that still appear in bios (true remaining failures):")
+if (nrow(unmatched_names_in_bios) == 0) {
+  message("none")
+} else {
+  print(unmatched_names_in_bios)
 }

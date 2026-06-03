@@ -142,7 +142,7 @@ player_id,player_name,match_status,position,signing_team,signing_team_abbr,previ
 8479337,Alex DeBrincat,exact,"RW, LW",Chicago Blackhawks,CHI,NA,NA,2775000,925000,3,2016,2016,20162017,2016-11-07,RFA
 8473986,Alex Killorn,exact,"LW, RW",Tampa Bay Lightning,TBL,Tampa Bay Lightning,TBL,31150000,4450000,7,2016,2016,20162017,2016-07-17,UFA
 8477949,Alex Tuch,exact,"RW, C",Minnesota Wild,MIN,NA,NA,4050000,1350000,3,2016,2016,20162017,2016-04-13,RFA
-NA,Alexander Nylander,unmatched,"LW, RW",Buffalo Sabres,BUF,NA,NA,5325000,1775000,3,2016,2016,20162017,2016-07-15,other
+8479423,Alexander Nylander,first_name_variant,"LW, RW",Buffalo Sabres,BUF,NA,NA,5325000,1775000,3,2016,2016,20162017,2016-07-15,other
 8477971,Andreas Englund,exact,LD,Ottawa Senators,OTT,NA,NA,2775000,925000,3,2016,2016,20162017,2016-04-06,RFA
 8475461,Andrew Agozzino,exact,LW,St. Louis Blues,STL,Colorado Avalanche,COL,600000,600000,1,2016,2016,20162017,2016-07-01,other
 8478233,Andrew Mangiapane,exact,LW,Calgary Flames,CGY,NA,NA,2400000,800000,3,2016,2016,20162017,2016-03-23,RFA
@@ -247,7 +247,7 @@ NA,Alexander Nylander,unmatched,"LW, RW",Buffalo Sabres,BUF,NA,NA,5325000,177500
 8476442,Matt Nieto,exact,LW,San Jose Sharks,SJS,San Jose Sharks,SJS,735000,735000,1,2016,2016,20162017,2016-07-15,other
 8479314,Matthew Tkachuk,exact,LW,Calgary Flames,CGY,NA,NA,5325000,1775000,3,2016,2016,20162017,2016-07-07,RFA
 8479368,Max Jones,exact,"LW, RW",Anaheim Ducks,ANA,NA,NA,2775000,925000,3,2016,2016,20162017,2016-08-26,RFA
-NA,Max Lajoie,unmatched,"LD, RD",Ottawa Senators,OTT,NA,NA,2500000,800000,3,2016,2016,20162017,2016-10-03,RFA
+8479320,Max Lajoie,first_name_variant,"LD, RD",Ottawa Senators,OTT,NA,NA,2500000,800000,3,2016,2016,20162017,2016-10-03,RFA
 8476323,Max McCormick,exact,LW,Ottawa Senators,OTT,Ottawa Senators,OTT,650000,650000,1,2016,2016,20162017,2016-07-01,other
 8478020,Michael Amadio,exact,"RW, C",Los Angeles Kings,LAK,NA,NA,2775000,925000,3,2016,2016,20162017,2016-03-13,RFA
 8479619,Michael Carcone,exact,"LW, RW",Vancouver Canucks,VAN,NA,NA,2025000,675000,3,2016,2016,20162017,2016-07-15,RFA
@@ -286,7 +286,7 @@ NA,Max Lajoie,unmatched,"LD, RD",Ottawa Senators,OTT,NA,NA,2500000,800000,3,2016
 8476429,Scott Mayfield,exact,RD,New York Islanders,NYI,New York Islanders,NYI,1250000,625000,2,2016,2016,20162017,2016-07-12,other
 8476374,Sean Kuraly,exact,C,Boston Bruins,BOS,NA,NA,1850000,925000,2,2016,2016,20162017,2016-03-29,other
 8477497,Sean Monahan,exact,C,Calgary Flames,CGY,Calgary Flames,CGY,44625000,6375000,7,2016,2016,20162017,2016-08-19,UFA
-8478427,Sebastian Aho,collision_team_era,"C, LW",Carolina Hurricanes,CAR,NA,NA,5325000,1775000,3,2016,2016,20162017,2016-06-13,RFA
+8478427,Sebastian Aho,manual_override,"C, LW",Carolina Hurricanes,CAR,NA,NA,5325000,1775000,3,2016,2016,20162017,2016-06-13,RFA
 8477495,Seth Jones,exact,RD,Columbus Blue Jackets,CBJ,Nashville Predators,NSH,32400000,5400000,6,2016,2016,20162017,2016-06-29,UFA
 8476474,Stefan Noesen,exact,RW,Anaheim Ducks,ANA,Anaheim Ducks,ANA,600000,600000,1,2016,2016,20162017,2016-07-23,RFA
 8477463,Steven Santini,exact,RD,New Jersey Devils,NJD,New Jersey Devils,NJD,2775000,925000,3,2016,2016,20162017,2016-04-08,other
@@ -473,7 +473,7 @@ NA,Cameron Hebig,unmatched,C,Edmonton Oilers,EDM,NA,NA,2775000,925000,3,2017,201
 8475842,Sam Carrick,exact,C,Anaheim Ducks,ANA,Toronto Maple Leafs,TOR,1300000,650000,2,2017,2017,20172018,2017-06-05,UFA
 8476872,Scott Laughton,exact,"C, LW",Philadelphia Flyers,PHI,Philadelphia Flyers,PHI,1925000,962500,2,2017,2017,20172018,2017-07-11,other
 8477149,Scott Sabourin,exact,RW,Anaheim Ducks,ANA,NA,NA,650000,650000,1,2017,2017,20172018,2017-07-02,other
-8480222,Sebastian Aho,collision_team_era,"LD, RD",New York Islanders,NYI,NA,NA,2775000,925000,3,2017,2017,20172018,2017-07-05,other
+8480222,Sebastian Aho,manual_override,"LD, RD",New York Islanders,NYI,NA,NA,2775000,925000,3,2017,2017,20172018,2017-07-05,other
 8476906,Shayne Gostisbehere,exact,"LD, RD",Philadelphia Flyers,PHI,Philadelphia Flyers,PHI,27000000,4500000,6,2017,2017,20172018,2017-06-09,UFA
 NA,Spencer Smallman,unmatched,RW,Carolina Hurricanes,CAR,NA,NA,2275000,758333,3,2017,2017,20172018,2017-03-31,other
 8476474,Stefan Noesen,exact,RW,New Jersey Devils,NJD,Anaheim Ducks,ANA,660000,660000,1,2017,2017,20172018,2017-07-26,other
@@ -568,7 +568,7 @@ NA,Spencer Smallman,unmatched,RW,Carolina Hurricanes,CAR,NA,NA,2275000,758333,3,
 8480009,Eeli Tolvanen,exact,"LW, RW",Nashville Predators,NSH,Nashville Predators,NSH,9437500,3145833,3,2018,2018,20182019,2018-03-29,RFA
 8481178,Egor Zamula,exact,"LD, RD",Philadelphia Flyers,PHI,NA,NA,2500000,783333,3,2018,2018,20182019,2018-09-20,RFA
 8477496,Elias Lindholm,exact,"C, RW, LW",Calgary Flames,CGY,Carolina Hurricanes,CAR,29100000,4850000,6,2018,2018,20182019,2018-07-16,UFA
-8480012,Elias Pettersson,collision_team_era,"C, LW",Vancouver Canucks,VAN,NA,NA,11325000,3775000,3,2018,2018,20182019,2018-05-25,RFA
+8480012,Elias Pettersson,manual_override,"C, LW",Vancouver Canucks,VAN,NA,NA,11325000,3775000,3,2018,2018,20182019,2018-05-25,RFA
 8480762,Eric Robinson,exact,"LW, RW",Columbus Blue Jackets,CBJ,Columbus Blue Jackets,CBJ,1850000,925000,2,2018,2018,20182019,2018-03-26,other
 8475790,Erik Gudbranson,exact,RD,Vancouver Canucks,VAN,Vancouver Canucks,VAN,12000000,4000000,3,2018,2018,20182019,2018-02-20,UFA
 8476979,Erik Gustafsson,exact,LD,Chicago Blackhawks,CHI,Chicago Blackhawks,CHI,2400000,1200000,2,2018,2018,20182019,2018-03-06,UFA
@@ -978,7 +978,7 @@ NA,Ryan Suzuki,unmatched,C,Carolina Hurricanes,CAR,NA,NA,2775000,925000,3,2019,2
 8476872,Scott Laughton,exact,"C, LW",Philadelphia Flyers,PHI,Philadelphia Flyers,PHI,4600000,2300000,2,2019,2019,20192020,2019-07-12,UFA
 8477149,Scott Sabourin,exact,RW,Ottawa Senators,OTT,NA,NA,700000,700000,1,2019,2019,20192020,2019-09-27,UFA
 8480434,Sean Durzi,exact,"RD, LD",Los Angeles Kings,LAK,NA,NA,2775000,925000,3,2019,2019,20192020,2019-04-01,RFA
-8478427,Sebastian Aho,collision_team_era,"C, LW",Carolina Hurricanes,CAR,Carolina Hurricanes,CAR,42295000,8454000,5,2019,2019,20192020,2019-07-01,UFA
+8478427,Sebastian Aho,manual_override,"C, LW",Carolina Hurricanes,CAR,Carolina Hurricanes,CAR,42295000,8454000,5,2019,2019,20192020,2019-07-01,UFA
 8480032,Shane Bowers,exact,"C, RW",Colorado Avalanche,COL,NA,NA,3225000,1075000,3,2019,2019,20192020,2019-03-29,RFA
 8480326,Sheldon Dries,exact,C,Colorado Avalanche,COL,Colorado Avalanche,COL,735000,735000,1,2019,2019,20192020,2019-07-25,other
 8481122,Simon Benoit,exact,"RD, LD",Anaheim Ducks,ANA,NA,NA,2775000,925000,3,2019,2019,20192020,2019-03-04,RFA
@@ -1241,7 +1241,7 @@ NA,Philip Kemp,unmatched,RD,Edmonton Oilers,EDM,NA,NA,2360000,786667,3,2020,2020
 8481541,Samuel Bolduc,exact,"LD, RD",New York Islanders,NYI,NA,NA,2775000,925000,3,2020,2020,20202021,2020-04-30,RFA
 8481059,Scott Perunovich,exact,LD,St. Louis Blues,STL,NA,NA,4350000,2175000,2,2020,2020,20202021,2020-07-13,RFA
 8480336,Sean Walker,exact,RD,Los Angeles Kings,LAK,Los Angeles Kings,LAK,10600000,2650000,4,2020,2020,20202021,2020-09-11,UFA
-8480222,Sebastian Aho,collision_team_era,"LD, RD",New York Islanders,NYI,New York Islanders,NYI,1450000,725000,2,2020,2020,20202021,2020-10-05,other
+8480222,Sebastian Aho,manual_override,"LD, RD",New York Islanders,NYI,New York Islanders,NYI,1450000,725000,2,2020,2020,20202021,2020-10-05,other
 8482093,Seth Jarvis,exact,"RW, LW, C",Carolina Hurricanes,CAR,NA,NA,4275000,1425000,3,2020,2020,20202021,2020-12-28,RFA
 8480326,Sheldon Dries,exact,C,Colorado Avalanche,COL,Colorado Avalanche,COL,771750,771750,1,2020,2020,20202021,2020-10-09,UFA
 8477947,Sonny Milano,exact,"LW, RW",Anaheim Ducks,ANA,Columbus Blue Jackets,CBJ,3400000,1700000,2,2020,2020,20202021,2020-07-28,other
@@ -1310,7 +1310,7 @@ NA,Aleksi Heimosalmi,unmatched,RD,Carolina Hurricanes,CAR,NA,NA,2825000,925000,3
 8471214,Alex Ovechkin,exact,"LW, RW",Washington Capitals,WSH,Washington Capitals,WSH,47500000,9500000,5,2021,2021,20212022,2021-07-27,UFA
 8482634,Alex Steeves,exact,C,Toronto Maple Leafs,TOR,NA,NA,2502500,834167,3,2021,2021,20212022,2021-03-29,other
 8482125,Alexander Holtz,exact,"RW, LW",New Jersey Devils,NJD,NA,NA,5325000,1775000,3,2021,2021,20212022,2021-04-19,RFA
-NA,Alexander Nylander,unmatched,"LW, RW",Chicago Blackhawks,CHI,Chicago Blackhawks,CHI,874125,874125,1,2021,2021,20212022,2021-08-16,RFA
+8479423,Alexander Nylander,first_name_variant,"LW, RW",Chicago Blackhawks,CHI,Chicago Blackhawks,CHI,874125,874125,1,2021,2021,20212022,2021-08-16,RFA
 8475755,Alexander Petrovic,exact,RD,Dallas Stars,DAL,Florida Panthers,FLA,750000,750000,1,2021,2021,20212022,2021-07-28,UFA
 8477505,Alexander Wennberg,exact,C,Seattle Kraken,SEA,Florida Panthers,FLA,13500000,4500000,3,2021,2021,20212022,2021-07-28,UFA
 8480074,Alexandre Texier,exact,"LW, RW, C",Columbus Blue Jackets,CBJ,Columbus Blue Jackets,CBJ,3050000,1525000,3,2021,2021,20212022,2021-07-28,other
@@ -1430,7 +1430,7 @@ NA,Dmitry Kuzmin,unmatched,LD,Winnipeg Jets,WPG,NA,NA,2650000,866667,3,2021,2021
 8478062,Dysin Mayo,exact,RD,Arizona Coyotes,ARI,NA,NA,750000,750000,1,2021,2021,20212022,2021-08-02,other
 8480009,Eeli Tolvanen,exact,"LW, RW",Nashville Predators,NSH,Nashville Predators,NSH,4350000,1450000,3,2021,2021,20212022,2021-08-30,other
 NA,Eemil Viro,unmatched,LD,Detroit Red Wings,DET,NA,NA,2800000,925000,3,2021,2021,20212022,2021-05-19,RFA
-8480012,Elias Pettersson,collision_team_era,"C, LW",Vancouver Canucks,VAN,Vancouver Canucks,VAN,22050000,7350000,3,2021,2021,20212022,2021-10-01,other
+8480012,Elias Pettersson,manual_override,"C, LW",Vancouver Canucks,VAN,Vancouver Canucks,VAN,22050000,7350000,3,2021,2021,20212022,2021-10-01,other
 8482452,Elliot Desnoyers,exact,LW,Philadelphia Flyers,PHI,NA,NA,2650000,875000,3,2021,2021,20212022,2021-05-05,RFA
 8480762,Eric Robinson,exact,"LW, RW",Columbus Blue Jackets,CBJ,Columbus Blue Jackets,CBJ,3200000,1600000,2,2021,2021,20212022,2021-07-28,UFA
 8475790,Erik Gudbranson,exact,RD,Calgary Flames,CGY,Ottawa Senators,OTT,1950000,1950000,1,2021,2021,20212022,2021-09-10,UFA
@@ -1576,7 +1576,7 @@ NA,Martin Chromiak,unmatched,RW,Los Angeles Kings,LAK,NA,NA,2540000,838333,3,202
 NA,Matvey Petrov,unmatched,LW,Edmonton Oilers,EDM,NA,NA,2610000,853333,3,2021,2021,20212022,2021-11-11,RFA
 8482145,Mavrik Bourque,exact,C,Dallas Stars,DAL,NA,NA,2775000,925000,3,2021,2021,20212022,2021-03-01,RFA
 8479368,Max Jones,exact,"LW, RW",Anaheim Ducks,ANA,Anaheim Ducks,ANA,3885000,1295000,3,2021,2021,20212022,2021-08-09,other
-NA,Max Lajoie,unmatched,"LD, RD",Carolina Hurricanes,CAR,Carolina Hurricanes,CAR,750000,750000,1,2021,2021,20212022,2021-08-12,other
+8479320,Max Lajoie,first_name_variant,"LD, RD",Carolina Hurricanes,CAR,Carolina Hurricanes,CAR,750000,750000,1,2021,2021,20212022,2021-08-12,other
 8476323,Max McCormick,exact,LW,Seattle Kraken,SEA,Carolina Hurricanes,CAR,750000,750000,1,2021,2021,20212022,2021-09-29,UFA
 8478051,Max Willman,exact,"LW, C",Philadelphia Flyers,PHI,NA,NA,1500000,750000,2,2021,2021,20212022,2021-03-24,UFA
 8481679,Maxence Guenette,exact,RD,Ottawa Senators,OTT,NA,NA,2440000,813333,3,2021,2021,20212022,2021-04-03,RFA
@@ -1748,7 +1748,7 @@ NA,Aleksandr Kisakov,unmatched,LW,Buffalo Sabres,BUF,NA,NA,2775000,925000,3,2022
 8475968,Alex Belzile,exact,RW,Montreal Canadiens,MTL,Montréal Canadiens,MTL,750000,750000,1,2022,2022,20222023,2022-07-13,UFA
 NA,Alex Limoges,unmatched,C,Winnipeg Jets,WPG,NA,NA,780000,780000,1,2022,2022,20222023,2022-07-14,other
 8481568,Alex Vlasic,exact,"LD, RD",Chicago Blackhawks,CHI,Chicago Blackhawks,CHI,4475000,1491667,3,2022,2022,20222023,2022-03-15,other
-NA,Alexander Nylander,unmatched,"LW, RW",Pittsburgh Penguins,PIT,Chicago Blackhawks,CHI,750000,750000,1,2022,2022,20222023,2022-07-11,other
+8479423,Alexander Nylander,first_name_variant,"LW, RW",Pittsburgh Penguins,PIT,Chicago Blackhawks,CHI,750000,750000,1,2022,2022,20222023,2022-07-11,other
 NA,Alexander Pashin,unmatched,RW,Carolina Hurricanes,CAR,NA,NA,2480000,826667,3,2022,2022,20222023,2022-05-02,other
 8475755,Alexander Petrovic,exact,RD,Dallas Stars,DAL,Florida Panthers,FLA,750000,750000,1,2022,2022,20222023,2022-06-07,UFA
 8481014,Alexander Romanov,exact,LD,New York Islanders,NYI,Montréal Canadiens,MTL,7500000,2500000,3,2022,2022,20222023,2022-08-22,other
@@ -2042,7 +2042,7 @@ NA,Marc-Andre Gaudet,unmatched,LD,St. Louis Blues,STL,NA,NA,2572500,849167,3,202
 8482641,Matt Kiersted,exact,LD,Florida Panthers,FLA,Florida Panthers,FLA,1525000,762500,2,2022,2022,20222023,2022-06-27,other
 8478146,Matthew Highmore,exact,"RW, C",St. Louis Blues,STL,Vancouver Canucks,VAN,750000,750000,1,2022,2022,20222023,2022-07-14,UFA
 8482516,Matthew Kessel,exact,RD,St. Louis Blues,STL,NA,NA,1850000,925000,2,2022,2022,20222023,2022-03-27,other
-NA,Matthew Savoie,unmatched,C,Buffalo Sabres,BUF,NA,NA,5850000,1950000,3,2022,2022,20222023,2022-07-15,RFA
+8483512,Matthew Savoie,first_name_variant,C,Buffalo Sabres,BUF,NA,NA,5850000,1950000,3,2022,2022,20222023,2022-07-15,RFA
 8479314,Matthew Tkachuk,exact,LW,Calgary Flames,CGY,Calgary Flames,CGY,76000000,9500000,8,2022,2022,20222023,2022-07-22,UFA
 8477406,Mattias Janmark,exact,"LW, RW, C",Edmonton Oilers,EDM,Vegas Golden Knights,VGK,1250000,1250000,1,2022,2022,20222023,2022-07-17,UFA
 8480807,Mattias Samuelsson,exact,"RD, LD",Buffalo Sabres,BUF,Buffalo Sabres,BUF,30000000,4285714,7,2022,2022,20222023,2022-10-12,UFA
@@ -2050,7 +2050,7 @@ NA,Matthew Savoie,unmatched,C,Buffalo Sabres,BUF,NA,NA,5850000,1950000,3,2022,20
 NA,Matyas Sapovaliv,unmatched,C,Vegas Golden Knights,VGK,NA,NA,2580000,860000,3,2022,2022,20222023,2022-12-27,RFA
 NA,Maveric Lamoureux,unmatched,RD,Arizona Coyotes,ARI,NA,NA,2850000,950000,3,2022,2022,20222023,2022-08-17,RFA
 8477503,Max Domi,exact,"C, RW, LW",Chicago Blackhawks,CHI,Columbus Blue Jackets,CBJ,3000000,3000000,1,2022,2022,20222023,2022-07-13,UFA
-NA,Max Lajoie,unmatched,"LD, RD",Carolina Hurricanes,CAR,Carolina Hurricanes,CAR,750000,750000,1,2022,2022,20222023,2022-08-06,other
+8479320,Max Lajoie,first_name_variant,"LD, RD",Carolina Hurricanes,CAR,Carolina Hurricanes,CAR,750000,750000,1,2022,2022,20222023,2022-08-06,other
 8476323,Max McCormick,exact,LW,Seattle Kraken,SEA,Seattle Kraken,SEA,1525000,762500,2,2022,2022,20222023,2022-05-09,UFA
 NA,Maximus Wanner,unmatched,RD,Edmonton Oilers,EDM,NA,NA,2565000,846667,3,2022,2022,20222023,2022-09-30,RFA
 8478020,Michael Amadio,exact,"RW, C",Vegas Golden Knights,VGK,Toronto Maple Leafs,TOR,1525000,762500,2,2022,2022,20222023,2022-01-30,UFA
@@ -2069,7 +2069,7 @@ NA,Mitchell Russell,unmatched,RW,San Jose Sharks,SJS,NA,NA,2510000,836667,3,2022
 8479987,Morgan Geekie,exact,"C, RW, LW",Seattle Kraken,SEA,Seattle Kraken,SEA,1400000,1400000,1,2022,2022,20222023,2022-07-24,other
 NA,Nathan Gaucher,unmatched,C,Anaheim Ducks,ANA,NA,NA,3577500,1192500,3,2022,2022,20222023,2022-07-28,RFA
 8477492,Nathan MacKinnon,exact,C,Colorado Avalanche,COL,Colorado Avalanche,COL,100800000,12600000,8,2022,2022,20222023,2022-09-20,UFA
-NA,Nathan Smith,unmatched,C,Arizona Coyotes,ARI,Arizona Coyotes,ARI,2700000,1350000,2,2022,2022,20222023,2022-04-10,other
+8480979,Nathan Smith,first_name_variant,C,Arizona Coyotes,ARI,Arizona Coyotes,ARI,2700000,1350000,2,2022,2022,20222023,2022-04-10,other
 NA,Nathan Staios,unmatched,LD,Florida Panthers,FLA,NA,NA,2775000,925000,3,2022,2022,20222023,2022-07-13,other
 NA,Nathan Todd,unmatched,C,St. Louis Blues,STL,NA,NA,750000,750000,1,2022,2022,20222023,2022-07-25,UFA
 8477573,Nathan Walker,exact,LW,St. Louis Blues,STL,St. Louis Blues,STL,775000,775000,1,2022,2022,20222023,2022-07-14,UFA
@@ -2157,7 +2157,7 @@ NA,Ryder Korczak,unmatched,C,New York Rangers,NYR,NA,NA,2775000,925000,3,2022,20
 8481059,Scott Perunovich,exact,LD,St. Louis Blues,STL,St. Louis Blues,STL,750000,750000,1,2022,2022,20222023,2022-07-14,other
 8477149,Scott Sabourin,exact,RW,Ottawa Senators,OTT,Ottawa Senators,OTT,750000,750000,1,2022,2022,20222023,2022-07-13,UFA
 8480434,Sean Durzi,exact,"RD, LD",Los Angeles Kings,LAK,Los Angeles Kings,LAK,3400000,1700000,2,2022,2022,20222023,2022-09-15,other
-8480222,Sebastian Aho,collision_team_era,"LD, RD",New York Islanders,NYI,New York Islanders,NYI,1650000,825000,2,2022,2022,20222023,2022-07-09,UFA
+8480222,Sebastian Aho,manual_override,"LD, RD",New York Islanders,NYI,New York Islanders,NYI,1650000,825000,2,2022,2022,20222023,2022-07-09,UFA
 8480032,Shane Bowers,exact,"C, RW",Colorado Avalanche,COL,NA,NA,750000,750000,1,2022,2022,20222023,2022-08-17,other
 8483524,Shane Wright,exact,"C, LW",Seattle Kraken,SEA,NA,NA,12037500,4012500,3,2022,2022,20222023,2022-07-13,RFA
 8480326,Sheldon Dries,exact,C,Vancouver Canucks,VAN,Vancouver Canucks,VAN,1525000,762500,2,2022,2022,20222023,2022-06-27,UFA
@@ -2234,7 +2234,7 @@ NA,Aku Raty,unmatched,RW,Arizona Coyotes,ARI,NA,NA,1850000,925000,2,2023,2023,20
 NA,Alex Limoges,unmatched,C,Washington Capitals,WSH,NA,NA,775000,775000,1,2023,2023,20232024,2023-07-03,other
 8481618,Alex Newhook,exact,"C, LW, RW",Montreal Canadiens,MTL,Colorado Avalanche,COL,11600000,2900000,4,2023,2023,20232024,2023-07-11,other
 8480823,Alexander Alexeyev,exact,"LD, RD",Washington Capitals,WSH,Washington Capitals,WSH,1650000,825000,2,2023,2023,20232024,2023-05-02,other
-NA,Alexander Nylander,unmatched,"LW, RW",Pittsburgh Penguins,PIT,Pittsburgh Penguins,PIT,775000,775000,1,2023,2023,20232024,2023-04-29,UFA
+8479423,Alexander Nylander,first_name_variant,"LW, RW",Pittsburgh Penguins,PIT,Pittsburgh Penguins,PIT,775000,775000,1,2023,2023,20232024,2023-04-29,UFA
 8475755,Alexander Petrovic,exact,RD,Dallas Stars,DAL,Florida Panthers,FLA,775000,775000,1,2023,2023,20232024,2023-06-07,UFA
 8478851,Alexandre Carrier,exact,RD,Nashville Predators,NSH,Nashville Predators,NSH,2500000,2500000,1,2023,2023,20232024,2023-07-01,UFA
 NA,Alexandre Doucet,unmatched,LW,Detroit Red Wings,DET,NA,NA,2850000,950000,3,2023,2023,20232024,2023-03-01,RFA
@@ -2364,7 +2364,7 @@ NA,Eetu Liukas,unmatched,LW,New York Islanders,NYI,NA,NA,2775000,925000,3,2023,2
 8480185,Eetu Luostarinen,exact,"LW, RW, C",Florida Panthers,FLA,Florida Panthers,FLA,9000000,3000000,3,2023,2023,20232024,2023-07-25,UFA
 8481102,Egor Sokolov,exact,LW,Ottawa Senators,OTT,Ottawa Senators,OTT,775000,775000,1,2023,2023,20232024,2023-09-19,other
 8481178,Egor Zamula,exact,"LD, RD",Philadelphia Flyers,PHI,Philadelphia Flyers,PHI,775000,775000,1,2023,2023,20232024,2023-05-02,other
-8480012,Elias Pettersson,collision_team_era,LD,Vancouver Canucks,VAN,NA,NA,2850000,950000,3,2023,2023,20232024,2023-04-19,RFA
+8480012,Elias Pettersson,manual_override,LD,Vancouver Canucks,VAN,NA,NA,2850000,950000,3,2023,2023,20232024,2023-04-19,RFA
 NA,Emil Andrae,unmatched,"RD, LD",Philadelphia Flyers,PHI,NA,NA,2775000,925000,3,2023,2023,20232024,2023-03-27,RFA
 8482929,Emil Lilleberg,exact,"LD, RD",Tampa Bay Lightning,TBL,NA,NA,1900000,950000,2,2023,2023,20232024,2023-06-05,RFA
 NA,Emil Pieniniemi,unmatched,LD,Pittsburgh Penguins,PIT,NA,NA,2850000,950000,3,2023,2023,20232024,2023-07-14,RFA
@@ -2555,7 +2555,7 @@ NA,Matthew Maggio,unmatched,RW,New York Islanders,NYI,NA,NA,2850000,950000,3,202
 NA,Matthew Seminoff,unmatched,RW,Dallas Stars,DAL,NA,NA,2550000,850000,3,2023,2023,20232024,2023-03-29,RFA
 8477406,Mattias Janmark,exact,"LW, RW, C",Edmonton Oilers,EDM,Edmonton Oilers,EDM,1000000,1000000,1,2023,2023,20232024,2023-06-30,UFA
 8477503,Max Domi,exact,"C, RW, LW",Toronto Maple Leafs,TOR,Chicago Blackhawks,CHI,3000000,3000000,1,2023,2023,20232024,2023-07-02,UFA
-NA,Max Lajoie,unmatched,"LD, RD",Toronto Maple Leafs,TOR,Carolina Hurricanes,CAR,775000,775000,1,2023,2023,20232024,2023-07-01,other
+8479320,Max Lajoie,first_name_variant,"LD, RD",Toronto Maple Leafs,TOR,Carolina Hurricanes,CAR,775000,775000,1,2023,2023,20232024,2023-07-01,other
 8474157,Max Pacioretty,exact,"LW, RW",Washington Capitals,WSH,Carolina Hurricanes,CAR,4000000,4000000,1,2023,2023,20232024,2023-07-01,UFA
 NA,Max Sasson,unmatched,C,Vancouver Canucks,VAN,NA,NA,1900000,950000,2,2023,2023,20232024,2023-03-26,other
 8478051,Max Willman,exact,"LW, C",New Jersey Devils,NJD,Philadelphia Flyers,PHI,775000,775000,1,2023,2023,20232024,2023-10-07,UFA
@@ -2582,7 +2582,7 @@ NA,Montana Onyebuchi,unmatched,RD,Arizona Coyotes,ARI,NA,NA,1650000,825000,2,202
 NA,Nate Clurman,unmatched,RD,Colorado Avalanche,COL,NA,NA,775000,775000,1,2023,2023,20232024,2023-05-30,other
 NA,Nate Danielson,unmatched,C,Detroit Red Wings,DET,NA,NA,5850000,1950000,3,2023,2023,20232024,2023-07-12,RFA
 8479414,Nathan Bastian,exact,"RW, LW",New Jersey Devils,NJD,New Jersey Devils,NJD,2700000,1350000,2,2023,2023,20232024,2023-07-01,UFA
-NA,Nathan Smith,unmatched,C,Arizona Coyotes,ARI,Arizona Coyotes,ARI,775000,775000,1,2023,2023,20232024,2023-07-07,other
+8480979,Nathan Smith,first_name_variant,C,Arizona Coyotes,ARI,Arizona Coyotes,ARI,775000,775000,1,2023,2023,20232024,2023-07-07,other
 NA,Nathan Todd,unmatched,C,San Jose Sharks,SJS,NA,NA,1550000,775000,2,2023,2023,20232024,2023-07-03,UFA
 8481720,Nick Abruzzese,exact,C,Toronto Maple Leafs,TOR,Toronto Maple Leafs,TOR,1550000,775000,2,2023,2023,20232024,2023-07-31,other
 8475760,Nick Bjugstad,exact,C,Arizona Coyotes,ARI,Arizona Coyotes,ARI,4200000,2100000,2,2023,2023,20232024,2023-07-01,UFA
@@ -2675,7 +2675,7 @@ NA,Sawyer Mynio,unmatched,LD,Vancouver Canucks,VAN,NA,NA,2850000,950000,3,2023,2
 8477149,Scott Sabourin,exact,RW,San Jose Sharks,SJS,Ottawa Senators,OTT,1550000,775000,2,2023,2023,20232024,2023-07-01,UFA
 8482081,Sean Farrell,exact,C,Montreal Canadiens,MTL,Montréal Canadiens,MTL,3775000,1139367,3,2023,2023,20232024,2023-03-26,RFA
 8477497,Sean Monahan,exact,C,Montreal Canadiens,MTL,Montréal Canadiens,MTL,2000000,2000000,1,2023,2023,20232024,2023-06-20,UFA
-8478427,Sebastian Aho,collision_team_era,"C, LW",Carolina Hurricanes,CAR,Carolina Hurricanes,CAR,78000000,9750000,8,2023,2023,20232024,2023-07-26,UFA
+8478427,Sebastian Aho,manual_override,"C, LW",Carolina Hurricanes,CAR,Carolina Hurricanes,CAR,78000000,9750000,8,2023,2023,20232024,2023-07-26,UFA
 8480032,Shane Bowers,exact,"C, RW",New Jersey Devils,NJD,Colorado Avalanche,COL,775000,775000,1,2023,2023,20232024,2023-06-29,other
 8476906,Shayne Gostisbehere,exact,"LD, RD",Detroit Red Wings,DET,Arizona Coyotes,ARI,4125000,4125000,1,2023,2023,20232024,2023-07-01,UFA
 8481122,Simon Benoit,exact,"RD, LD",Toronto Maple Leafs,TOR,Anaheim Ducks,ANA,775000,775000,1,2023,2023,20232024,2023-08-28,other
@@ -2770,7 +2770,7 @@ NA,Alex Limoges,unmatched,C,Washington Capitals,WSH,NA,NA,775000,775000,1,2024,2
 8482634,Alex Steeves,exact,C,Toronto Maple Leafs,TOR,Toronto Maple Leafs,TOR,775000,775000,1,2024,2024,20242025,2024-08-21,other
 8481532,Alex Turcotte,exact,"LW, RW, C",Los Angeles Kings,LAK,Los Angeles Kings,LAK,2325000,775000,3,2024,2024,20242025,2024-06-22,other
 8481568,Alex Vlasic,exact,"LD, RD",Chicago Blackhawks,CHI,Chicago Blackhawks,CHI,27600000,4600000,6,2024,2024,20242025,2024-04-25,UFA
-NA,Alexander Nylander,unmatched,"LW, RW",Toronto Maple Leafs,TOR,Pittsburgh Penguins,PIT,775000,775000,1,2024,2024,20242025,2024-11-22,UFA
+8479423,Alexander Nylander,first_name_variant,"LW, RW",Toronto Maple Leafs,TOR,Pittsburgh Penguins,PIT,775000,775000,1,2024,2024,20242025,2024-11-22,UFA
 8475755,Alexander Petrovic,exact,RD,Dallas Stars,DAL,Dallas Stars,DAL,1550000,775000,2,2024,2024,20242025,2024-06-28,UFA
 8477505,Alexander Wennberg,exact,C,San Jose Sharks,SJS,Seattle Kraken,SEA,10000000,5000000,2,2024,2024,20242025,2024-07-01,UFA
 8478851,Alexandre Carrier,exact,RD,Nashville Predators,NSH,Nashville Predators,NSH,11250000,3750000,3,2024,2024,20242025,2024-07-01,UFA
@@ -3163,7 +3163,7 @@ NA,Matvei Gridin,unmatched,RW,Calgary Flames,CGY,NA,NA,2925000,975000,3,2024,202
 8484387,Matvei Michkov,exact,RW,Philadelphia Flyers,PHI,NA,NA,13350000,4250000,3,2024,2024,20242025,2024-07-01,RFA
 8477503,Max Domi,exact,"C, RW, LW",Toronto Maple Leafs,TOR,Toronto Maple Leafs,TOR,15000000,3750000,4,2024,2024,20242025,2024-06-30,UFA
 8479368,Max Jones,exact,"LW, RW",Boston Bruins,BOS,Anaheim Ducks,ANA,2000000,1000000,2,2024,2024,20242025,2024-07-01,UFA
-NA,Max Lajoie,unmatched,"LD, RD",Seattle Kraken,SEA,Toronto Maple Leafs,TOR,775000,775000,1,2024,2024,20242025,2024-07-01,UFA
+8479320,Max Lajoie,first_name_variant,"LD, RD",Seattle Kraken,SEA,Toronto Maple Leafs,TOR,775000,775000,1,2024,2024,20242025,2024-07-01,UFA
 8476323,Max McCormick,exact,LW,Seattle Kraken,SEA,Seattle Kraken,SEA,1550000,775000,2,2024,2024,20242025,2024-06-30,UFA
 NA,Max McCue,unmatched,C,Columbus Blue Jackets,CBJ,NA,NA,2575000,858333,3,2024,2024,20242025,2024-03-01,RFA
 8474157,Max Pacioretty,exact,"LW, RW",Toronto Maple Leafs,TOR,Washington Capitals,WSH,1473770,1473770,1,2024,2024,20242025,2024-10-07,UFA
@@ -3188,7 +3188,7 @@ NA,Milo Roelens,unmatched,C,Tampa Bay Lightning,TBL,NA,NA,2850000,950000,3,2024,
 NA,Nate Clurman,unmatched,RD,Pittsburgh Penguins,PIT,NA,NA,775000,775000,1,2024,2024,20242025,2024-07-01,UFA
 8477220,Nate Schmidt,exact,"RD, LD",Florida Panthers,FLA,Winnipeg Jets,WPG,800000,800000,1,2024,2024,20242025,2024-07-03,UFA
 8481594,Nathan Legare,accent_fallback,RW,New Jersey Devils,NJD,NA,NA,775000,775000,1,2024,2024,20242025,2024-05-07,other
-NA,Nathan Smith,unmatched,C,Vancouver Canucks,VAN,Arizona Coyotes,ARI,775000,775000,1,2024,2024,20242025,2024-07-01,other
+8480979,Nathan Smith,first_name_variant,C,Vancouver Canucks,VAN,Arizona Coyotes,ARI,775000,775000,1,2024,2024,20242025,2024-07-01,other
 8477573,Nathan Walker,exact,LW,St. Louis Blues,STL,St. Louis Blues,STL,1550000,775000,2,2024,2024,20242025,2024-01-09,UFA
 8481582,Nicholas Robertson,exact,"LW, RW",Toronto Maple Leafs,TOR,Toronto Maple Leafs,TOR,875000,875000,1,2024,2024,20242025,2024-09-10,other
 8483565,Nick Blankenburg,exact,"RD, LD",Nashville Predators,NSH,Columbus Blue Jackets,CBJ,1550000,775000,2,2024,2024,20242025,2024-07-01,UFA
@@ -3291,7 +3291,7 @@ NA,Sean Behrens,unmatched,LD,Colorado Avalanche,COL,NA,NA,2775000,925000,3,2024,
 8480434,Sean Durzi,exact,"RD, LD",Utah Hockey Club,UTA,Arizona Coyotes,ARI,24000000,6000000,4,2024,2024,20242025,2024-06-30,UFA
 8477497,Sean Monahan,exact,C,Columbus Blue Jackets,CBJ,Montréal Canadiens,MTL,27500000,5500000,5,2024,2024,20242025,2024-07-01,UFA
 8480336,Sean Walker,exact,RD,Carolina Hurricanes,CAR,Philadelphia Flyers,PHI,18000000,3600000,5,2024,2024,20242025,2024-07-01,UFA
-8478427,Sebastian Aho,collision_team_era,"LD, RD",Pittsburgh Penguins,PIT,New York Islanders,NYI,1550000,775000,2,2024,2024,20242025,2024-07-02,UFA
+8480222,Sebastian Aho,manual_override,"LD, RD",Pittsburgh Penguins,PIT,New York Islanders,NYI,1550000,775000,2,2024,2024,20242025,2024-07-02,UFA
 8482093,Seth Jarvis,exact,"RW, LW, C",Carolina Hurricanes,CAR,Carolina Hurricanes,CAR,63200000,7900000,8,2024,2024,20242025,2024-08-31,UFA
 NA,Shai Buium,unmatched,LD,Detroit Red Wings,DET,NA,NA,2775000,925000,3,2024,2024,20242025,2024-04-17,RFA
 8480032,Shane Bowers,exact,"C, RW",New Jersey Devils,NJD,New Jersey Devils,NJD,1550000,775000,2,2024,2024,20242025,2024-04-30,other
