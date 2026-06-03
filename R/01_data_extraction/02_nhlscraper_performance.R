@@ -14,6 +14,11 @@ suppressPackageStartupMessages({
   library(tibble)
 })
 
+nhlscraper_available <- requireNamespace("nhlscraper", quietly = TRUE)
+if (!nhlscraper_available) {
+  message("nhlscraper package not installed; using snapshot fallback sources.")
+}
+
 season_ids <- c(
   20152016L, 20162017L, 20172018L, 20182019L, 20192020L,
   20202021L, 20212022L, 20222023L, 20232024L, 20242025L
@@ -41,6 +46,33 @@ read_remote_csv <- function(url) {
   tmp <- tempfile(fileext = ".csv")
   download.file(url, tmp, mode = "wb", quiet = TRUE)
   readr::read_csv(tmp, show_col_types = FALSE)
+}
+
+parse_toi_minutes <- function(x) {
+  if (is.numeric(x)) {
+    return(as.numeric(x) / 60)
+  }
+
+  x <- as.character(x)
+  hh_mm_ss <- stringr::str_detect(x, "^\\d+:\\d{2}:\\d{2}$")
+  mm_ss <- stringr::str_detect(x, "^\\d+:\\d{2}$")
+
+  out <- suppressWarnings(as.numeric(x) / 60)
+
+  if (any(hh_mm_ss, na.rm = TRUE)) {
+    split_vals <- stringr::str_split_fixed(x[hh_mm_ss], ":", 3)
+    out[hh_mm_ss] <- as.numeric(split_vals[, 1]) * 60 +
+      as.numeric(split_vals[, 2]) +
+      as.numeric(split_vals[, 3]) / 60
+  }
+
+  if (any(mm_ss, na.rm = TRUE)) {
+    split_vals <- stringr::str_split_fixed(x[mm_ss], ":", 2)
+    out[mm_ss] <- as.numeric(split_vals[, 1]) +
+      as.numeric(split_vals[, 2]) / 60
+  }
+
+  out
 }
 
 build_bios <- function(url, season_id) {
@@ -83,7 +115,27 @@ player_bios_raw <- purrr::imap_dfr(roster_urls, function(url, season_id) {
   arrange(.data$season, .data$team, .data$player_name)
 
 message("Downloading player-season performance snapshot...")
-performance_raw <- read_remote_csv(performance_url) %>%
+performance_snapshot <- read_remote_csv(performance_url)
+
+toi_total_col <- c("timeOnIce", "timeOnIceTotal", "toi")
+toi_per_game_col <- c("timeOnIcePerGame", "toiPerGame", "timeOnIcePerGameMinutes")
+
+available_toi_total_col <- toi_total_col[toi_total_col %in% names(performance_snapshot)]
+available_toi_per_game_col <- toi_per_game_col[toi_per_game_col %in% names(performance_snapshot)]
+
+if (length(available_toi_per_game_col) == 0) {
+  stop("No TOI per-game column found in performance snapshot.")
+}
+
+toi_per_game_minutes <- parse_toi_minutes(performance_snapshot[[available_toi_per_game_col[[1]]]])
+
+toi_total_minutes <- if (length(available_toi_total_col) > 0) {
+  parse_toi_minutes(performance_snapshot[[available_toi_total_col[[1]]]])
+} else {
+  toi_per_game_minutes * as.numeric(performance_snapshot$gamesPlayed)
+}
+
+performance_raw <- performance_snapshot %>%
   transmute(
     player_id = as.integer(.data$playerId),
     player_name = .data$fullName,
@@ -94,8 +146,8 @@ performance_raw <- read_remote_csv(performance_url) %>%
     goals = as.integer(.data$goals),
     assists = as.integer(.data$assists),
     points = as.integer(.data$points),
-    time_on_ice_total_minutes = as.numeric(.data$timeOnIce) / 60,
-    time_on_ice_per_game_minutes = as.numeric(.data$timeOnIcePerGame) / 60
+    time_on_ice_total_minutes = toi_total_minutes,
+    time_on_ice_per_game_minutes = toi_per_game_minutes
   ) %>%
   filter(.data$season %in% season_ids) %>%
   arrange(.data$season, .data$player_name)
@@ -113,7 +165,7 @@ message(sprintf(
 ))
 message(sprintf(
   "- players with birthdate present: %s",
-  n_distinct(player_bios_raw$player_id[!is.na(player_bios_raw$birth_date) & player_bios_raw$birth_date != ""])
+  n_distinct(player_bios_raw$player_id[!is.na(player_bios_raw$birth_date)])
 ))
 message("- season coverage:")
 print(performance_raw %>% count(.data$season, name = "rows"))
