@@ -1,0 +1,30 @@
+# R
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rproj
+
+# R package / docs build artifacts
+*.Rcheck/
+.Rbuildignore
+.Renviron
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs / temp
+*.log
+*.tmp
+/tmp/
+
+# Python / Node helpers if used during reproducibility
+__pycache__/
+node_modules/
+
+# Local raw download scratch space
+/data/raw/cache/
