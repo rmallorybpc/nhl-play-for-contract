@@ -6,6 +6,7 @@ suppressPackageStartupMessages({
   library(dplyr)
   library(here)
   library(readr)
+  library(tidyr)
 })
 
 contracts_path <- here::here("data", "processed", "spotrac_contracts_clean.csv")
@@ -58,6 +59,24 @@ player_bio <- skaters %>%
     .groups = "drop"
   )
 
+player_perf_bounds <- skaters %>%
+  filter(!is.na(.data$player_id), !is.na(.data$season)) %>%
+  group_by(.data$player_id) %>%
+  summarise(
+    first_perf_season = min(.data$season, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+walk_year_team_lookup <- skaters %>%
+  filter(!is.na(.data$player_id), !is.na(.data$season), !is.na(.data$team)) %>%
+  distinct(.data$player_id, .data$season, .data$team) %>%
+  arrange(.data$player_id, .data$season, .data$team) %>%
+  group_by(.data$player_id, .data$season) %>%
+  summarise(
+    walk_year_team = dplyr::first(.data$team),
+    .groups = "drop"
+  )
+
 captaincy <- captaincy_raw %>%
   filter(!is.na(.data$player_id), !is.na(.data$season)) %>%
   distinct(.data$player_id, .data$season) %>%
@@ -97,6 +116,8 @@ panel_full <- contracts_in_analysis %>%
   ) %>%
   left_join(identity %>% select(player_id, canonical_name_identity = canonical_name), by = "player_id") %>%
   left_join(player_bio, by = "player_id") %>%
+  left_join(player_perf_bounds, by = "player_id") %>%
+  left_join(walk_year_team_lookup, by = c("player_id", "walk_year_season" = "season")) %>%
   left_join(captaincy, by = c("player_id", "walk_year_season" = "season")) %>%
   mutate(
     player_name = dplyr::coalesce(.data$canonical_name_identity, .data$canonical_name_nhl, .data$player_name),
@@ -106,13 +127,17 @@ panel_full <- contracts_in_analysis %>%
       NA_real_
     ),
     captaincy_status = dplyr::coalesce(.data$captaincy_status, "none"),
+    previous_team_filled = dplyr::coalesce(.data$previous_team_abbr, .data$walk_year_team),
+    has_prior_perf_season = !is.na(.data$first_perf_season) & .data$first_perf_season <= .data$walk_year_season,
+    is_entry = .data$first_observed & !.data$has_prior_perf_season,
     retention_status = dplyr::case_when(
-      is.na(.data$previous_team_abbr) ~ "unknown",
-      .data$signing_team_abbr == .data$previous_team_abbr ~ "same_team",
-      TRUE ~ "new_team"
+      .data$is_entry ~ "entry",
+      !is.na(.data$previous_team_filled) & .data$signing_team_abbr == .data$previous_team_filled ~ "same_team",
+      !is.na(.data$previous_team_filled) & .data$signing_team_abbr != .data$previous_team_filled ~ "new_team",
+      TRUE ~ "unknown"
     ),
     signing_team = .data$signing_team_abbr,
-    previous_team = .data$previous_team_abbr
+    previous_team = .data$previous_team_filled
   ) %>%
   mutate(contract_id = dplyr::row_number())
 
@@ -167,7 +192,16 @@ captain_n <- sum(panel$captaincy_status == "C", na.rm = TRUE)
 
 retention_dist <- panel %>%
   count(retention_status, name = "n") %>%
+  complete(retention_status = c("same_team", "new_team", "entry", "unknown"), fill = list(n = 0L)) %>%
   mutate(pct = 100 * .data$n / sum(.data$n))
+
+inferred_previous_team_n <- panel_full %>%
+  summarise(n = sum(is.na(.data$previous_team_abbr) & !is.na(.data$walk_year_team), na.rm = TRUE)) %>%
+  pull(n)
+
+unknown_retention_n <- retention_dist %>%
+  filter(.data$retention_status == "unknown") %>%
+  pull(.data$n)
 
 age_min <- suppressWarnings(min(panel_full$age_at_signing, na.rm = TRUE))
 age_max <- suppressWarnings(max(panel_full$age_at_signing, na.rm = TRUE))
@@ -216,6 +250,8 @@ if (nrow(extension_examples) > 0) {
 message(sprintf("- captaincy_status = C: %s", captain_n))
 message("- retention status distribution:")
 print(retention_dist)
+message(sprintf("- previous_team inferred from walk-year nhlscraper team: %s", inferred_previous_team_n))
+message(sprintf("- retention_status unknown after inference: %s", unknown_retention_n))
 message(sprintf("- age_at_signing range: %.1f to %.1f", age_min, age_max))
 message(sprintf("- age outliers (<18 or >42): %s", nrow(age_outliers)))
 if (nrow(age_outliers) > 0) {
