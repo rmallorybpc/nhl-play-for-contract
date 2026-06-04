@@ -65,6 +65,7 @@ skaters_raw <- readr::read_csv(skaters_path, show_col_types = FALSE)
 required_panel_cols <- c(
   "contract_id", "player_id", "player_name", "signing_year", "walk_year_season",
   "first_contract_season", "contract_years", "age_at_signing", "retention_status",
+  "signing_team", "previous_team",
   "captaincy_status", "tier", "trajectory", "eligible_walk_year", "eligible_overpay",
   "walk_year_toi_per_game", "post_signing_toi_change", "post_signing_points_change",
   "aav_cap_share", "overpay_residual"
@@ -518,6 +519,8 @@ material_discounts <- material_base %>%
 
 overpay_extremes_material <- bind_rows(material_overpays, material_discounts) %>%
   mutate(
+    previous_team = dplyr::na_if(.data$previous_team, "NA"),
+    signing_team = dplyr::na_if(.data$signing_team, "NA"),
     material_cap_share_floor = material_cap_share_floor,
     material_games_floor = material_games_floor,
     material_toi_floor = material_toi_floor
@@ -527,6 +530,8 @@ overpay_extremes_material <- bind_rows(material_overpays, material_discounts) %>
     rank,
     player_name,
     signing_year,
+    previous_team,
+    signing_team,
     retention_status,
     tier,
     trajectory,

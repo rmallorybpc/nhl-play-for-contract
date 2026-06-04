@@ -239,16 +239,20 @@
     }
 
     const tableRows = rows.map(function (row) {
+      const previousTeam = row.previous_team && row.previous_team !== "NA" ? row.previous_team : "";
+      const signingTeam = row.signing_team && row.signing_team !== "NA" ? row.signing_team : "";
       return [
         String(row.rank),
         row.player_name,
         row.signing_year,
+        previousTeam,
+        signingTeam,
         fmt(row.overpay_residual, 2)
       ];
     });
 
     extremesNode.appendChild(makeTable(
-      ["Rank", "Player", "Signing year", "Residual"],
+      ["Rank", "Player", "Signing year", "Previous team", "New team", "Residual"],
       tableRows
     ));
 
