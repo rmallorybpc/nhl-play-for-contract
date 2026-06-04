@@ -1,0 +1,13 @@
+level,n,profile_dimension,share,age_mean,age_median,age_p25,age_p75
+overall,905,age_distribution,1,25.008839779005523,24,23,27
+same_team,648,retention_status,0.7160220994475138,NA,NA,NA,NA
+new_team,246,retention_status,0.2718232044198895,NA,NA,NA,NA
+unknown,11,retention_status,0.012154696132596685,NA,NA,NA,NA
+middle,323,tier,0.3569060773480663,NA,NA,NA,NA
+top,274,tier,0.3027624309392265,NA,NA,NA,NA
+fringe,157,tier,0.1734806629834254,NA,NA,NA,NA
+unknown,151,tier,0.16685082872928178,NA,NA,NA,NA
+insufficient_history,319,trajectory,0.3524861878453039,NA,NA,NA,NA
+rising,293,trajectory,0.3237569060773481,NA,NA,NA,NA
+declining,195,trajectory,0.2154696132596685,NA,NA,NA,NA
+stable,98,trajectory,0.10828729281767956,NA,NA,NA,NA

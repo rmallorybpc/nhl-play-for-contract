@@ -1,0 +1,8 @@
+term,estimate,std_error,t_value,p_value,model
+(Intercept),5.752158808849282,0.4858982407812171,11.83819640836954,7.258848139093014e-31,post_signing_toi_change ~ tier + trajectory + age_at_signing
+tiermiddle,-1.2556164612354215,0.1435404939901593,-8.747472064026077,6.225018394619172e-18,post_signing_toi_change ~ tier + trajectory + age_at_signing
+tiertop,-1.6809794646056366,0.15681980980282972,-10.719178059960282,8.280026433687183e-26,post_signing_toi_change ~ tier + trajectory + age_at_signing
+trajectorydeclining,0.03008246964990719,0.17746786888491325,0.1695093869043724,0.8654207973711183,post_signing_toi_change ~ tier + trajectory + age_at_signing
+trajectoryrising,0.026947197131361893,0.15630349782242353,0.17240303324482614,0.8631459308116959,post_signing_toi_change ~ tier + trajectory + age_at_signing
+trajectorystable,0.17312619159114664,0.20917410179097132,0.8276655193392558,0.4080028456672563,post_signing_toi_change ~ tier + trajectory + age_at_signing
+age_at_signing,-0.17333146590340281,0.019736292045487675,-8.782372367814233,4.641846858172844e-18,post_signing_toi_change ~ tier + trajectory + age_at_signing

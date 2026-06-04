@@ -1,0 +1,13 @@
+tier,trajectory,n
+fringe,insufficient_history,281
+middle,insufficient_history,210
+top,rising,203
+middle,rising,188
+middle,declining,142
+fringe,declining,128
+fringe,rising,109
+top,insufficient_history,90
+top,stable,87
+top,declining,74
+middle,stable,69
+fringe,stable,43

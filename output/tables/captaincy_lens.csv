@@ -1,0 +1,25 @@
+row_type,captain_group,n,mean_overpay_residual,median_overpay_residual,sd_overpay_residual,iqr_overpay_residual,player_name,signing_year,retention_status,tier,trajectory,overpay_residual
+summary,captain,22,-0.35275684261362095,-0.14109567474415385,2.1944850894368573,3.1733984805724864,NA,NA,NA,NA,NA,NA
+summary,non_captain,1738,0.004465276488733231,0.07695168753887316,2.4209953693058024,3.1025361286602937,NA,NA,NA,NA,NA,NA
+captain_contract,captain,NA,NA,NA,NA,NA,Mark Stone,2015,same_team,top,rising,4.280062357739013
+captain_contract,captain,NA,NA,NA,NA,NA,Ryan O'Reilly,2023,new_team,top,declining,3.4525586862908515
+captain_contract,captain,NA,NA,NA,NA,NA,Gabriel Landeskog,2021,same_team,NA,stable,1.6254052915119424
+captain_contract,captain,NA,NA,NA,NA,NA,Jamie Benn,2013,same_team,top,rising,1.338442870618351
+captain_contract,captain,NA,NA,NA,NA,NA,Jordan Staal,2023,same_team,top,declining,1.1607053271825656
+captain_contract,captain,NA,NA,NA,NA,NA,Claude Giroux,2022,new_team,top,declining,1.09212128606665
+captain_contract,captain,NA,NA,NA,NA,NA,Ryan McDonagh,2013,same_team,top,insufficient_history,1.0866610881803709
+captain_contract,captain,NA,NA,NA,NA,NA,Gabriel Landeskog,2013,same_team,top,insufficient_history,0.7008547980443325
+captain_contract,captain,NA,NA,NA,NA,NA,Mark Stone,2018,same_team,top,rising,0.6252507502471829
+captain_contract,captain,NA,NA,NA,NA,NA,Sidney Crosby,2024,same_team,top,stable,0.5415616311937974
+captain_contract,captain,NA,NA,NA,NA,NA,Bo Horvat,2023,new_team,top,stable,-0.08362749927175628
+captain_contract,captain,NA,NA,NA,NA,NA,Dylan Larkin,2023,same_team,top,declining,-0.19856385021655143
+captain_contract,captain,NA,NA,NA,NA,NA,Steven Stamkos,2024,new_team,top,rising,-1.1057669646741957
+captain_contract,captain,NA,NA,NA,NA,NA,Max Pacioretty,2018,new_team,top,stable,-1.447450757738462
+captain_contract,captain,NA,NA,NA,NA,NA,Anders Lee,2019,same_team,top,rising,-1.7302113751547274
+captain_contract,captain,NA,NA,NA,NA,NA,Alex Ovechkin,2021,same_team,NA,stable,-1.906919931477404
+captain_contract,captain,NA,NA,NA,NA,NA,Mark Stone,2019,new_team,top,stable,-2.1412163481440736
+captain_contract,captain,NA,NA,NA,NA,NA,Claude Giroux,2013,same_team,top,rising,-2.1847651895891893
+captain_contract,captain,NA,NA,NA,NA,NA,Alex Pietrangelo,2020,new_team,top,declining,-2.2958010794325467
+captain_contract,captain,NA,NA,NA,NA,NA,Nick Foligno,2021,new_team,NA,stable,-2.880702189728355
+captain_contract,captain,NA,NA,NA,NA,NA,Steven Stamkos,2016,same_team,top,declining,-2.891647661562317
+captain_contract,captain,NA,NA,NA,NA,NA,John Tavares,2018,new_team,top,stable,-4.79760177758514
