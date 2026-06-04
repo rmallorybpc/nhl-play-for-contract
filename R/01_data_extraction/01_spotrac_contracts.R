@@ -1,7 +1,8 @@
 # 01_spotrac_contracts.R
 # Contract extraction for the play-for-contract project.
 #
-# Current default source is a GitHub-hosted community dataset snapshot.
+# Current default source is a GitHub-hosted community dataset snapshot from
+# Chief-Zach Sports-Data.
 # The extraction seam can route to other adapters, but downstream stages are
 # source-agnostic as long as the contract schema contract is preserved.
 

@@ -800,7 +800,7 @@ findings_lines <- c(
   "- Players without NHL performance records are out of scope because TOI outcomes cannot be computed.",
   "- Captaincy source is captains-only from Wikipedia captaincy histories (no alternates).",
   "- Intent is unmeasurable; this captures revealed outcomes (TOI delivered versus cap-share cost), not motivation.",
-  "- Contract source used in this build is a GitHub-hosted community dataset snapshot from Chief-Zach Sports-Data (with known source-coverage characteristics).",
+  "- Contract data: a GitHub-hosted community dataset snapshot from Chief-Zach Sports-Data, accessed through the contract source seam adapter in extraction. Current signing-year window is 2012 to 2025.",
   "- TOI is the value proxy and reflects coaching usage, not every dimension of player value.",
   "",
   "## Output files",
