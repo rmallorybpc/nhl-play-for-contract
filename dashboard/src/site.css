@@ -5,6 +5,19 @@
   margin-bottom: var(--tmg-gap);
 }
 
+.tmg-nav {
+  gap: var(--tmg-gap-sm);
+}
+
+.tmg-nav .tmg-page-links {
+  flex: 1;
+  margin-bottom: 0;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: thin;
+}
+
 .tmg-page-link {
   display: inline-flex;
   align-items: center;
@@ -16,6 +29,11 @@
   padding: 8px 12px;
   font-size: 13px;
   font-weight: 500;
+}
+
+.tmg-nav .tmg-page-link {
+  flex: 0 0 auto;
+  padding: 6px 10px;
 }
 
 .tmg-page-link[aria-current="page"] {
