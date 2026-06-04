@@ -27,6 +27,20 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Copy findings data into dashboard payload
+        run: |
+          mkdir -p dashboard/src/data
+          cp output/tables/coverage_eligible_sample_sizes.csv dashboard/src/data/
+          cp output/tables/coverage_tier_trajectory_bucket_sizes.csv dashboard/src/data/
+          cp output/tables/walk_year_effect_by_bucket.csv dashboard/src/data/
+          cp output/tables/retention_overpay_comparison.csv dashboard/src/data/
+          cp output/tables/retention_overpay_model.csv dashboard/src/data/
+          cp output/tables/walk_year_toi_change_model.csv dashboard/src/data/
+          cp output/tables/discount_profile.csv dashboard/src/data/
+          cp output/tables/captaincy_lens.csv dashboard/src/data/
+          cp output/tables/overpay_extremes_material.csv dashboard/src/data/
+          cp output/tables/overpay_extremes_raw.csv dashboard/src/data/
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:

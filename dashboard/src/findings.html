@@ -47,61 +47,152 @@
       <header class="tmg-page-header">
         <p class="tmg-eyebrow">The Mallory Group</p>
         <h1 class="tmg-page-title">Findings</h1>
-        <p class="tmg-page-desc">Structure is complete. Phase 5 values will be inserted into these shells.</p>
+        <p class="tmg-page-desc">Phase 5 results in narrative order: loyalty discount first, segmented walk-year effect second.</p>
       </header>
 
-      <section class="tmg-bento-grid" aria-label="Findings shells">
+      <section class="tmg-bento-grid" aria-label="Findings sections">
         <article class="tmg-card-wide">
-          <h2 class="tmg-h2">Walk-year effect by archetype</h2>
-          <p class="tmg-body">[PHASE 5 FINDING: walk-year effect by tier x trajectory]</p>
-          <p class="tmg-note">The aggregate signal is muted. The material effect appears inside bucketed groups.</p>
+          <h2 class="tmg-h2">Lead finding: the loyalty discount</h2>
+          <p class="tmg-body">Same-team contracts show a mean overpay residual of +0.32 (n=1,115). New-team contracts show -0.45 (n=592).</p>
+          <p class="tmg-body">The mean gap is +0.78 residual minutes per game-equivalent (same-team minus new-team).</p>
+          <p class="tmg-body">The tier-controlled model estimates a same-team coefficient of +0.70 with p&lt;0.0001.</p>
+          <p class="tmg-body">Read plainly: same-team contracts deliver more time on ice per cap share than new-team signings.</p>
+          <p class="tmg-note">The prior loyalty-tax expectation was that teams overpay to retain. This sample points the other way.</p>
         </article>
 
         <article class="tmg-card-wide">
-          <h2 class="tmg-h2">Retention and loyalty tax</h2>
-          <p class="tmg-body">[PHASE 5 FINDING: same-team vs new-team residuals]</p>
-          <p class="tmg-note">This section will report the direction and magnitude after final model lock.</p>
-        </article>
-
-        <article class="tmg-card-wide">
-          <h2 class="tmg-h2">Discount profile</h2>
-          <p class="tmg-body">[PHASE 5 FINDING: discount characteristics]</p>
-          <p class="tmg-note">Profile details will include role, trajectory, and retention context.</p>
-        </article>
-
-        <article class="tmg-card-wide">
-          <h2 class="tmg-h2">Table shell for key outputs</h2>
+          <h2 class="tmg-h2">Walk-year effect, segmented</h2>
+          <p class="tmg-body">The aggregate effect is small. The all-bucket mean post-signing TOI change is +0.36.</p>
+          <p class="tmg-body">The split by archetype is the signal. Declining veterans show large walk-year spikes over trend, then fall after signing.</p>
           <div class="tmg-stack-sm">
             <table class="tmg-table">
               <thead>
                 <tr>
-                  <th scope="col">Finding bucket</th>
-                  <th scope="col">Metric</th>
-                  <th scope="col">Value</th>
-                  <th scope="col">Interpretation</th>
+                  <th scope="col">Bucket</th>
+                  <th scope="col">n</th>
+                  <th scope="col">Post-signing TOI change</th>
+                  <th scope="col">Walk-year trend delta</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Walk-year by bucket</td>
-                  <td>TOI delta</td>
-                  <td>[PHASE 5 FINDING: value]</td>
-                  <td>[PHASE 5 FINDING: interpretation]</td>
+                  <td>ALL x ALL</td>
+                  <td>1,624</td>
+                  <td>+0.36</td>
+                  <td>-0.15</td>
                 </tr>
                 <tr>
-                  <td>Retention comparison</td>
-                  <td>Residual gap</td>
-                  <td>[PHASE 5 FINDING: value]</td>
-                  <td>[PHASE 5 FINDING: interpretation]</td>
+                  <td>middle x declining</td>
+                  <td>142</td>
+                  <td>-0.26</td>
+                  <td>+3.41</td>
                 </tr>
                 <tr>
-                  <td>Discount profile</td>
-                  <td>Share of discount group</td>
-                  <td>[PHASE 5 FINDING: value]</td>
-                  <td>[PHASE 5 FINDING: interpretation]</td>
+                  <td>top x declining</td>
+                  <td>74</td>
+                  <td>-0.24</td>
+                  <td>+3.45</td>
+                </tr>
+                <tr>
+                  <td>top x stable</td>
+                  <td>87</td>
+                  <td>-0.58</td>
+                  <td>+0.62</td>
+                </tr>
+                <tr>
+                  <td>fringe x declining</td>
+                  <td>128</td>
+                  <td>+0.87</td>
+                  <td>+2.57</td>
+                </tr>
+                <tr>
+                  <td>fringe x stable</td>
+                  <td>43</td>
+                  <td>+1.11</td>
+                  <td>-1.33</td>
+                </tr>
+                <tr>
+                  <td>fringe x insufficient_history</td>
+                  <td>281</td>
+                  <td>+1.86</td>
+                  <td>NA</td>
                 </tr>
               </tbody>
             </table>
+          </div>
+          <p class="tmg-note">Supporting model: age coefficient is -0.17 with p&lt;0.0001 in the TOI-change model.</p>
+        </article>
+
+        <article class="tmg-card-wide">
+          <h2 class="tmg-h2">Discount profile</h2>
+          <p class="tmg-body">Positive-residual contracts in the eligible set: 905.</p>
+          <p class="tmg-body">Most common tier is middle (323, 35.7 percent). Most common trajectory is insufficient history (319, 35.2 percent).</p>
+          <p class="tmg-body">Retention concentration is strong: same-team is 648 (71.6 percent).</p>
+          <p class="tmg-body">Age profile is young: mean 25.01, median 24, IQR 23 to 27.</p>
+          <p class="tmg-note">Largest material discounts are listed in the extremes section below.</p>
+        </article>
+
+        <article class="tmg-card-wide">
+          <h2 class="tmg-h2">What did not hold: captain-as-discount archetype</h2>
+          <p class="tmg-body">Captain contracts have a mean residual of -0.35 (n=22). Non-captain contracts are near zero at +0.00 (n=1,738).</p>
+          <p class="tmg-body">Captain outcomes run both directions. Discounts include Mark Stone (2015, +4.28), Ryan O'Reilly (2023, +3.45), and Gabriel Landeskog (2021, +1.63).</p>
+          <p class="tmg-body">Overpays also appear. John Tavares (2018, -4.80), Steven Stamkos (2016, -2.89), and Alex Pietrangelo (2020, -2.30).</p>
+          <p class="tmg-body">The broader same-team discount finding is robust. The narrower captain-as-discount archetype does not generalize in this thin sample.</p>
+          <p class="tmg-note">Bergeron is a narrative anchor, not a panel row. His defining 2013 deal predates the contract source window in this pull.</p>
+        </article>
+
+        <article class="tmg-card-wide">
+          <h2 class="tmg-h2">Material overpays and discounts</h2>
+          <p class="tmg-note">Material lens floors: cap share at least 0.03, and usage at least 82 games or at least 1,000 TOI minutes.</p>
+          <div class="tmg-two-col">
+            <div class="tmg-stack-sm">
+              <h3 class="tmg-h3">Largest overpays</h3>
+              <table class="tmg-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Player</th>
+                    <th scope="col">Signing year</th>
+                    <th scope="col">Residual</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Brendan Smith</td><td>2017</td><td>-6.13</td></tr>
+                  <tr><td>Marc-Edouard Vlasic</td><td>2017</td><td>-6.08</td></tr>
+                  <tr><td>Dmitry Orlov</td><td>2023</td><td>-5.84</td></tr>
+                  <tr><td>Corey Perry</td><td>2013</td><td>-5.82</td></tr>
+                  <tr><td>Dougie Hamilton</td><td>2021</td><td>-5.28</td></tr>
+                  <tr><td>Erik Karlsson</td><td>2019</td><td>-5.25</td></tr>
+                  <tr><td>Jeff Skinner</td><td>2019</td><td>-4.90</td></tr>
+                  <tr><td>Evgeni Malkin</td><td>2013</td><td>-4.85</td></tr>
+                  <tr><td>John Tavares</td><td>2018</td><td>-4.80</td></tr>
+                  <tr><td>Nicklas Backstrom</td><td>2020</td><td>-4.72</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="tmg-stack-sm">
+              <h3 class="tmg-h3">Largest discounts</h3>
+              <table class="tmg-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Player</th>
+                    <th scope="col">Signing year</th>
+                    <th scope="col">Residual</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>TJ Brodie</td><td>2013</td><td>+6.63</td></tr>
+                  <tr><td>Valeri Nichushkin</td><td>2020</td><td>+5.11</td></tr>
+                  <tr><td>Neal Pionk</td><td>2019</td><td>+4.97</td></tr>
+                  <tr><td>Darnell Nurse</td><td>2018</td><td>+4.87</td></tr>
+                  <tr><td>Robert Thomas</td><td>2021</td><td>+4.82</td></tr>
+                  <tr><td>Devon Toews</td><td>2020</td><td>+4.80</td></tr>
+                  <tr><td>Chandler Stephenson</td><td>2020</td><td>+4.76</td></tr>
+                  <tr><td>Cody Ceci</td><td>2016</td><td>+4.70</td></tr>
+                  <tr><td>Sam Reinhart</td><td>2018</td><td>+4.56</td></tr>
+                  <tr><td>Roman Josi</td><td>2013</td><td>+4.45</td></tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </article>
       </section>

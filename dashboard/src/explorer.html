@@ -58,9 +58,9 @@
               <label class="tmg-field-label" for="filter-tier">Tier</label>
               <select class="tmg-select" id="filter-tier" aria-label="Filter by tier">
                 <option value="all">All tiers</option>
-                <option value="overpay">Overpay</option>
-                <option value="market_rate">Market rate</option>
-                <option value="discount">Discount</option>
+                <option value="top">Top</option>
+                <option value="middle">Middle</option>
+                <option value="fringe">Fringe</option>
               </select>
             </div>
             <div>
@@ -68,8 +68,9 @@
               <select class="tmg-select" id="filter-trajectory" aria-label="Filter by trajectory">
                 <option value="all">All trajectories</option>
                 <option value="rising">Rising</option>
-                <option value="steady">Steady</option>
+                <option value="stable">Stable</option>
                 <option value="declining">Declining</option>
+                <option value="insufficient_history">Insufficient history</option>
               </select>
             </div>
             <div>
@@ -78,16 +79,29 @@
                 <option value="all">All statuses</option>
                 <option value="same_team">Same team</option>
                 <option value="new_team">New team</option>
+                <option value="entry">Entry</option>
               </select>
             </div>
           </div>
         </article>
 
         <article class="tmg-card-wide" id="explorer-results" aria-live="polite" aria-label="Explorer results">
-          <h2 class="tmg-h2">Aggregate view</h2>
-          <p class="tmg-note">This shell loads a placeholder data file from dashboard/src/data. Phase 6b will wire final outputs.</p>
-          <pre id="explorer-results-content" class="tmg-body" style="margin: 0; white-space: pre-wrap;"></pre>
+          <h2 class="tmg-h2">Primary results</h2>
+          <p class="tmg-note">This explorer surfaces derived findings only. No raw contract rows are exposed.</p>
+          <div id="explorer-results-content" class="tmg-stack-sm"></div>
           <p class="sr-only" id="explorer-access-note">Results update when filters change.</p>
+        </article>
+
+        <article class="tmg-card-wide" aria-live="polite" aria-label="Material extremes">
+          <div class="tmg-row-between">
+            <h2 class="tmg-h2">Material extremes</h2>
+            <div class="tmg-inline-links" role="group" aria-label="Toggle extremes list">
+              <button type="button" class="tmg-page-link" id="extreme-overpay" aria-pressed="true">Overpays</button>
+              <button type="button" class="tmg-page-link" id="extreme-discount" aria-pressed="false">Discounts</button>
+            </div>
+          </div>
+          <p class="tmg-note">Floors: cap share at least 0.03, and usage at least 82 games or 1,000 TOI minutes.</p>
+          <div id="explorer-extremes-content" class="tmg-stack-sm"></div>
         </article>
       </section>
     </div>
