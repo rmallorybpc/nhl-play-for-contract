@@ -101,4 +101,4 @@ The TMG design system is shared through the portfolio CDN, and this repo current
 GitHub Pages deploys through GitHub Actions via .github/workflows/deploy-pages.yml.
 In repository settings, Pages source must be set to GitHub Actions.
 
-Live site link: [to be added after deployment]
+Live site link: [https://rmallorybpc.github.io/nhl-play-for-contract/index.html]
