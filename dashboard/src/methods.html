@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NHL play for contract methods</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://rmallorybpc.github.io/tmg-brand-guide/dist/tmg.css">
+  <link rel="stylesheet" href="./site.css">
+</head>
+<body>
+  <nav class="tmg-nav" role="banner" aria-label="The Mallory Group site navigation">
+    <div class="tmg-logo" aria-label="The Mallory Group">
+      <span>TM</span>
+      <div class="tmg-logo-divider" aria-hidden="true"></div>
+      <span>G</span>
+    </div>
+    <div class="tmg-dropdown-wrap">
+      <button class="tmg-dropdown-btn" id="tmgDdBtn" aria-haspopup="true" aria-expanded="false" aria-controls="tmgDdMenu">
+        TMG tool suite
+        <svg class="tmg-chevron" viewBox="0 0 12 12" fill="none" width="12" height="12" aria-hidden="true">
+          <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg>
+      </button>
+      <div class="tmg-dropdown-menu" id="tmgDdMenu" role="menu">
+        <a href="https://rmallorybpc.github.io/pdf-multi-agent-analysis/" target="_blank" rel="noreferrer" role="menuitem">PDF multi-agent analysis</a>
+        <a href="https://rmallorybpc.github.io/housing-market-intel/" target="_blank" rel="noreferrer" role="menuitem">Housing market intel</a>
+        <a href="https://rmallorybpc.github.io/real-estate-report/" target="_blank" rel="noreferrer" role="menuitem">Real estate report</a>
+        <a href="https://rmallorybpc.github.io/nflanalysis/dashboard/src/" target="_blank" rel="noreferrer" role="menuitem">NFL analysis</a>
+        <a href="https://rmallorybpc.github.io/recipes/" target="_blank" rel="noreferrer" role="menuitem">Recipe book</a>
+        <a href="https://rmallorybpc.github.io/nhl-free-agency-research/" target="_blank" rel="noreferrer" role="menuitem">NHL free agency research</a>
+        <a href="https://rmallorybpc.github.io/nhl-play-for-contract/" target="_blank" rel="noreferrer" role="menuitem">NHL play for contract</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="tmg-page" aria-label="NHL play for contract methods page">
+    <div class="tmg-container">
+      <header class="tmg-page-header">
+        <p class="tmg-eyebrow">The Mallory Group</p>
+        <h1 class="tmg-page-title">Methods and limitations</h1>
+        <p class="tmg-page-desc">This page explains the metric, data, scope decisions, and known blind spots.</p>
+      </header>
+
+      <nav class="tmg-page-links" aria-label="Site pages">
+        <a class="tmg-page-link" href="./index.html">Overview</a>
+        <a class="tmg-page-link" href="./findings.html">Findings</a>
+        <a class="tmg-page-link" href="./explorer.html">Explorer</a>
+        <a class="tmg-page-link" href="./methods.html" aria-current="page">Methods</a>
+        <a class="tmg-page-link" href="./audit.html">Audit</a>
+      </nav>
+
+      <section class="tmg-bento-grid" aria-label="Methodology details">
+        <article class="tmg-card-wide">
+          <h2 class="tmg-h2">The metric</h2>
+          <p class="tmg-body">The core metric is expected versus actual time on ice, evaluated at contract level.</p>
+          <p class="tmg-body">Expected usage is modeled from AAV, normalized as cap share, with position controls.</p>
+          <p class="tmg-body">Actual usage is post-signing average time on ice per game for observed seasons.</p>
+          <p class="tmg-body">Time on ice is used because it is available and reflects coaching preference at scale.</p>
+          <p class="tmg-body">The expected-versus-actual framing also handles zero-TOI outcomes as a floor, not an error.</p>
+        </article>
+
+        <article class="tmg-card-wide">
+          <h2 class="tmg-h2">The data</h2>
+          <ul class="tmg-body tmg-list">
+            <li>Spotrac contract history for contract timing, value, term, and signing context.</li>
+            <li>nhlscraper for skater performance and player bios.</li>
+            <li>Wikipedia for captaincy history.</li>
+            <li>Current skater season coverage: 2009-2010 through 2024-2025.</li>
+            <li>Current contract signing coverage: 2012 through 2025.</li>
+          </ul>
+        </article>
+
+        <article class="tmg-card-wide">
+          <h2 class="tmg-h2">Scope and exclusions</h2>
+          <ul class="tmg-body tmg-list">
+            <li>Scope is skaters only. Goalies are excluded.</li>
+            <li>Entry contracts are flagged and excluded from walk-year effect analysis.</li>
+            <li>Extension deals are flagged and excluded from walk-year effect analysis.</li>
+            <li>Players without NHL performance rows are out of scope because no usage can be measured.</li>
+          </ul>
+        </article>
+
+        <article class="tmg-card-wide">
+          <h2 class="tmg-h2">What the model cannot see</h2>
+          <ul class="tmg-body tmg-list">
+            <li>Captaincy captures captains only. Alternate captains are not covered in the source.</li>
+            <li>Intent is unmeasurable. The metric captures revealed outcomes, not motivation.</li>
+            <li>Captaincy is an association variable. It is not a causal claim.</li>
+            <li>Some iconic older contracts predate this data window. They are narrative anchors, not model rows.</li>
+            <li>Time on ice captures coaching usage and trust. It does not capture every form of contribution.</li>
+          </ul>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="tmg-footer" role="contentinfo">
+    NHL play for contract by The Mallory Group. Last scaffold update <span class="js-year">2026</span>.
+  </footer>
+
+  <script src="./site.js" defer></script>
+</body>
+</html>

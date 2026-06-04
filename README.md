@@ -26,4 +26,12 @@ This project is in early development. The current build focuses on repository sc
 
 ## Live site
 
-Placeholder: _live site link coming soon_
+https://rmallorybpc.github.io/nhl-play-for-contract/
+
+## Deployment
+
+This repository deploys GitHub Pages via GitHub Actions using `.github/workflows/deploy-pages.yml`.
+
+Manual one-time repository setting:
+- In GitHub repository settings, go to Pages.
+- Set Source to `GitHub Actions`.

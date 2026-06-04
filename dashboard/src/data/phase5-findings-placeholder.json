@@ -1,0 +1,9 @@
+{
+  "status": "placeholder",
+  "message": "Phase 6a scaffold only. Replace this file with aggregated Phase 5 output data in Phase 6b.",
+  "required_outputs": [
+    "walk-year effect by tier and trajectory",
+    "retention same-team versus new-team residual comparison",
+    "discount profile aggregates"
+  ]
+}

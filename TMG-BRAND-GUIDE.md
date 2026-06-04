@@ -280,7 +280,8 @@ The nav appears on every page. Sticky, white background, fixed height of `56px`.
       <a href="https://rmallorybpc.github.io/real-estate-report/" target="_blank" rel="noreferrer" role="menuitem">Real Estate Report</a>
       <a href="https://rmallorybpc.github.io/nflanalysis/dashboard/src/" target="_blank" rel="noreferrer" role="menuitem">NFL Analysis</a>
       <a href="https://rmallorybpc.github.io/recipes/" target="_blank" rel="noreferrer" role="menuitem">Recipe Book</a>
-      <!-- ADD NEW TOOLS HERE — also update section 14 manifest -->
+      <a href="https://rmallorybpc.github.io/nhl-free-agency-research/" target="_blank" rel="noreferrer" role="menuitem">NHL Free Agency Research</a>
+      <a href="https://rmallorybpc.github.io/nhl-play-for-contract/" target="_blank" rel="noreferrer" role="menuitem">NHL Play for Contract</a>
     </div>
   </div>
 </nav>
@@ -761,6 +762,8 @@ Update this table and the nav HTML (section 6) whenever a new tool is added.
 | Real Estate Report | `https://rmallorybpc.github.io/real-estate-report/` | Real Estate |
 | NFL Analysis | `https://rmallorybpc.github.io/nflanalysis/dashboard/src/` | Sports |
 | Recipe Book | `https://rmallorybpc.github.io/recipes/` | Home / Lifestyle |
+| NHL Free Agency Research | `https://rmallorybpc.github.io/nhl-free-agency-research/` | Sports |
+| NHL Play for Contract | `https://rmallorybpc.github.io/nhl-play-for-contract/` | Sports |
 
 > **For Copilot:** All nav links use `target="_blank" rel="noreferrer"`. When adding a tool, add a row here AND an `<a role="menuitem">` in the nav HTML in section 6.
 
