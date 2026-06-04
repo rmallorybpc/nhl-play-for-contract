@@ -1,9 +1,9 @@
 # 01_spotrac_contracts.R
 # Contract extraction for the play-for-contract project.
 #
-# Live Spotrac access is attempted where possible, but this script also supports
-# a GitHub-hosted public contract snapshot fallback so it can run in sandboxed
-# environments where Spotrac is unavailable.
+# Current default source is a GitHub-hosted community dataset snapshot.
+# The extraction seam can route to other adapters, but downstream stages are
+# source-agnostic as long as the contract schema contract is preserved.
 
 suppressPackageStartupMessages({
   library(dplyr)
@@ -234,7 +234,7 @@ contracts_raw <- dispatch_contract_source(CONTRACT_SOURCE) %>%
 
 readr::write_csv(contracts_raw, output_path)
 
-message("Spotrac contracts QA summary")
+message("Contract extraction QA summary")
 message(sprintf("- contract source: %s", CONTRACT_SOURCE))
 message(sprintf("- total rows: %s", nrow(contracts_raw)))
 message("- rows per year:")

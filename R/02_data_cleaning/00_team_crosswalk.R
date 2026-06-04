@@ -94,7 +94,7 @@ if (sys.nframe() == 0) {
       get_team_crosswalk()$team_name_key
     )
     message(sprintf(
-      "- Spotrac signing_team names missing from crosswalk: %s",
+      "- Contract-source signing_team names missing from crosswalk: %s",
       ifelse(length(missing_spotrac) == 0, "none", paste(missing_spotrac, collapse = ", "))
     ))
   }

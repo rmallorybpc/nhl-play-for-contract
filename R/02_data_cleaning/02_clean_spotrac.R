@@ -1,5 +1,5 @@
 # 02_clean_spotrac.R
-# Clean Spotrac contracts and reconcile names to player_id.
+# Clean extracted contract rows and reconcile names to player_id.
 
 suppressPackageStartupMessages({
   library(dplyr)
@@ -417,7 +417,7 @@ unmatched_out_path <- here::here("data", "processed", "spotrac_unmatched_names.c
 override_map_path <- here::here("data", "processed", "spotrac_manual_overrides.csv")
 
 if (!file.exists(spotrac_path)) {
-  stop("Missing Spotrac raw file: ", spotrac_path)
+  stop("Missing contract raw file: ", spotrac_path)
 }
 if (!file.exists(identity_path) || !file.exists(first_name_variants_path)) {
   stop("Missing identity outputs. Run 01_build_identity_crosswalk.R first.")
@@ -520,16 +520,16 @@ unmatched_names_in_bios <- spotrac_final %>%
 
 readr::write_csv(unmatched_names, unmatched_out_path)
 
-message("Spotrac cleaning QA summary")
+message("Contract cleaning QA summary")
 message(sprintf("- rows after goalie filter: %s", total_rows))
 message(sprintf("- matched to player_id: %s", matched_rows))
 message(sprintf("- unmatched: %s", unmatched_rows))
-message(sprintf("- Spotrac-to-player_id match rate: %.2f%%", match_rate))
+message(sprintf("- contract-to-player_id match rate: %.2f%%", match_rate))
 message(sprintf("- in-bios-contract match rate: %.2f%% (%s/%s)", bios_scope_match_rate, bios_scope_matched_rows, bios_scope_rows))
 message("- match_status distribution:")
 print(spotrac_clean %>% count(.data$match_status, sort = TRUE))
 message(sprintf("- colliding name keys discovered in identity crosswalk: %s", length(collision_pass$colliding_name_keys)))
-message(sprintf("- Spotrac rows with colliding names: %s", collision_pass$colliding_row_count))
+message(sprintf("- contract rows with colliding names: %s", collision_pass$colliding_row_count))
 message(sprintf("- colliding-name rows re-assigned in disambiguation pass: %s", collision_pass$colliding_reassigned_count))
 message(sprintf("- colliding-name rows still assigned by name-only statuses: %s", collision_pass$colliding_name_only_assigned_count))
 message(sprintf("- manual overrides applied: %s", override_result$overrides_applied))

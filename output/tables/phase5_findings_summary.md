@@ -55,7 +55,7 @@
 - Players without NHL performance records are out of scope because TOI outcomes cannot be computed.
 - Captaincy source is captains-only from Wikipedia captaincy histories (no alternates).
 - Intent is unmeasurable; this captures revealed outcomes (TOI delivered versus cap-share cost), not motivation.
-- Contract source used in this build is Spotrac-derived contract history (with known source-coverage characteristics).
+- Contract source used in this build is a GitHub-hosted community dataset snapshot from Chief-Zach Sports-Data (with known source-coverage characteristics).
 - TOI is the value proxy and reflects coaching usage, not every dimension of player value.
 
 ## Output files
