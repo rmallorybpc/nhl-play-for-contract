@@ -456,10 +456,22 @@ usage_by_contract <- panel %>%
     .groups = "drop"
   )
 
-extreme_base <- panel %>%
+if ("partial_delivery_flag" %in% names(panel)) {
+  panel_partial_delivery_flag <- dplyr::coalesce(as.logical(panel$partial_delivery_flag), FALSE)
+} else if ("contract_complete" %in% names(panel)) {
+  panel_partial_delivery_flag <- !dplyr::coalesce(as.logical(panel$contract_complete), TRUE)
+} else {
+  panel_partial_delivery_flag <- rep(FALSE, nrow(panel))
+}
+
+panel_with_partial_flag <- panel %>%
+  mutate(partial_delivery_flag = panel_partial_delivery_flag)
+
+extreme_base <- panel_with_partial_flag %>%
   filter(.data$eligible_overpay, !is.na(.data$overpay_residual)) %>%
   left_join(usage_by_contract, by = "contract_id") %>%
   mutate(
+    partial_delivery_flag = dplyr::coalesce(.data$partial_delivery_flag, FALSE),
     post_signing_games_played = dplyr::coalesce(.data$post_signing_games_played, 0),
     post_signing_toi_total_minutes = dplyr::coalesce(.data$post_signing_toi_total_minutes, 0)
   )
@@ -489,6 +501,7 @@ overpay_extremes_raw <- bind_rows(raw_overpays, raw_discounts) %>%
     aav_cap_share,
     post_signing_games_played,
     post_signing_toi_total_minutes,
+    partial_delivery_flag,
     overpay_residual
   )
 
@@ -539,6 +552,7 @@ overpay_extremes_material <- bind_rows(material_overpays, material_discounts) %>
     aav_cap_share,
     post_signing_games_played,
     post_signing_toi_total_minutes,
+    partial_delivery_flag,
     overpay_residual,
     material_cap_share_floor,
     material_games_floor,

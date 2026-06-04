@@ -101,3 +101,13 @@
 .tmg-list li {
   margin-bottom: 8px;
 }
+
+.tmg-active-indicator {
+  margin-left: 2px;
+  color: var(--tmg-sage-hover);
+  font-weight: 600;
+}
+
+.tmg-extremes-callout {
+  margin-top: var(--tmg-gap-sm);
+}
