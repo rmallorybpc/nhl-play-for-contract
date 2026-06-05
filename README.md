@@ -1,104 +1,104 @@
-# NHL play-for-contract
+# nhl-play-for-contract
 
-A player-level study of whether NHL skaters perform differently around contract timing, segmented by player archetype.
+A player-level study of whether NHL players perform differently around contract timing, segmented by player archetype.
 
 ## What this studies
 
-This project asks one question: do skaters perform differently near contract end, and does that vary by player type.
+The question is whether NHL players perform differently near the end of their contracts, and whether the pattern varies by player type. The framework places each contract on a spectrum from overpay (paid for a past or for a ceiling that did not arrive) through market rate to discount (team-first, below market).
 
-The archetype spectrum runs from overpay to market rate to discount.
-Overpay means pay landed above observed delivery.
-Discount means observed delivery landed above expected value.
-Each contract is placed on that spectrum.
+This is a player-level study, one row per contract. It is distinct from the team-level NHL Free Agency Research project in the same portfolio.
 
-This is a player-level contract study, with one row per contract.
-It is distinct from the team-level NHL Free Agency Research project.
+## Headline finding
+
+The data shows a loyalty discount, not a loyalty tax. Teams that re-sign their own players deliver more time on ice per cap share than teams that sign new players from elsewhere.
+
+- Same-team mean overpay residual: +0.32 (n=1,115)
+- New-team mean overpay residual: -0.45 (n=592)
+- Tier-controlled difference: +0.70 minutes per game (p<0.0001)
+
+The going-in expectation was that teams overpay to retain (the loyalty-tax hypothesis). The data shows the opposite.
+
+The full findings, including the segmented walk-year effect by archetype and the honest null on the captain-as-discount question, are on the site.
+
+## Live site
+
+https://rmallorybpc.github.io/nhl-play-for-contract/
 
 ## Data sources
 
-- Contract data: a GitHub-hosted community dataset snapshot from Chief-Zach Sports-Data, accessed through the contract source seam adapter in extraction. Current signing-year window is 2012 to 2025.
-- Performance and player bios: NHL API data via the nhlscraper R package, including time on ice, production, and birth date fields.
-- Captaincy: Wikipedia captaincy lists, captains only.
+Contract data is a GitHub-hosted community dataset (Chief-Zach Sports-Data), accessed through a pluggable source adapter (the contract source seam). The current window spans 2012 through 2025.
 
-Wikipedia captaincy data is Creative Commons licensed and requires attribution.
-This repository attributes Wikipedia as the captaincy source in the raw extraction layer.
+Player performance and biographical data come from the NHL API via the nhlscraper R package, including time on ice, production, and birthdate. The earliest reliable performance season in this build is 2009-2010.
+
+Team captaincy comes from Wikipedia's "List of [team] captains" pages, used under Creative Commons attribution (CC BY-SA). Captains only; alternates are not available from this source.
 
 ## Method in brief
 
-The core metric is expected versus actual time on ice at contract level.
-Expected time on ice is modeled from AAV normalized to cap share.
-Actual time on ice is post-signing observed usage.
-Negative residual means overpay.
-Positive residual means discount.
+The core metric is expected versus actual time on ice given AAV, normalized to cap share, evaluated at the contract level. A negative residual indicates an overpay (delivered less time on ice than the cost implied). A positive residual indicates a discount.
 
-Segmentation runs across three axes.
-Tier is TOI-based: top, middle, fringe.
-Trajectory is prior-season trend: rising, stable, declining.
-Retention status is same-team, new-team, or entry.
+Segmentation runs across three dimensions:
 
-Full method details and limitations will live on the site Methods page after site launch.
+- Tier: TOI percentiles within position and season (top, middle, fringe)
+- Trajectory: TOI slope over up to three prior seasons (rising, stable, declining)
+- Retention status: same-team, new-team, or entry
+
+Full methodology and the honest-limitations section live on the site's Methods page.
 
 ## Repo structure
 
-```text
-R/
-	01_data_extraction/      # raw extraction scripts and contract schema notes
-	02_data_cleaning/        # team crosswalk, identity reconciliation, source cleaning
-	03_feature_engineering/  # panel assembly, windows, overpay metric, analysis panel build
-	04_analysis/             # phase analysis script writing output tables and findings summary draft
-dashboard/
-	src/                     # static site pages, shared styles, client JS, placeholder explorer data
-data/
-	raw/                     # extracted source files
-	processed/               # cleaned tables and engineered features
-output/
-	tables/                  # analysis output tables and findings summary markdown
+```
+nhl-play-for-contract/
+├── R/
+│   ├── 01_data_extraction/        Contracts, performance, and captaincy extractors
+│   ├── 02_data_cleaning/          Identity crosswalk and source cleaning
+│   └── 03_feature_engineering/    Panel assembly, features, overpay metric
+├── data/
+│   ├── raw/                       Raw extracted CSVs
+│   └── processed/                 Cleaned and panel CSVs
+├── output/
+│   └── tables/                    Analysis outputs and findings summary
+├── dashboard/
+│   └── src/                       Static site (TMG design system)
+├── .github/
+│   └── workflows/                 GitHub Actions Pages deploy
+├── README.md
+├── ROADMAP.md
+├── TMG-BRAND-GUIDE.md             Reference (design source of truth)
+└── tmg.css                        Reference (design system stylesheet)
 ```
 
-## How the pipeline works
+## Pipeline
 
-1. Extraction: pull contract, performance, and captaincy source files.
-2. Cleaning and identity reconciliation: standardize teams, match names to player_id, and produce cleaned source tables.
-3. Panel assembly: create one-row-per-contract panel with contract timing fields and eligibility flags.
-4. Feature engineering: build walk-year and post-signing windows, trajectory and tier buckets, and cap-share overpay residuals.
-5. Analysis: produce segmented output tables from the analysis panel.
-6. Site: publish static overview, methods, findings, explorer, and audit pages.
+The pipeline runs in numbered stages:
 
-The contract source runs behind a pluggable seam adapter.
-Source can be swapped without downstream pipeline changes if the schema contract is preserved.
+1. Extraction (`R/01_data_extraction/`) pulls contracts, performance, and captaincy
+2. Cleaning (`R/02_data_cleaning/`) standardizes formats, builds the name-to-player_id crosswalk, resolves name collisions, and applies manual overrides
+3. Panel assembly (`R/03_feature_engineering/01_assemble_panel.R`) assembles the per-contract panel with extension flags, retention status, age, and captaincy
+4. Feature engineering (`R/03_feature_engineering/02_*` through `04_*`) computes walk-year windows, trajectory, tier, and the overpay metric
+5. Analysis produces the findings tables and the plain-language summary in `output/tables/`
+6. Site (`dashboard/src/`) presents the findings
+
+The contract data source sits behind a pluggable adapter (the source seam). The source can be swapped without changing any downstream code.
 
 ## Status
 
-Built now:
+V1 is live. The pipeline runs end to end. The analysis has produced the findings tables and the plain-language summary. The static site presents them.
 
-- Extraction scripts for contracts, performance, and captaincy.
-- Cleaning and identity reconciliation pipeline.
-- Panel assembly and feature engineering pipeline.
-- Contract source seam with source dispatch and schema validation.
-
-In progress or pending:
-
-- Analysis interpretation and final narrative conclusions.
-- Static site content population for findings and explorer outputs.
-- Public launch packaging.
-
-This repository does not claim final findings yet.
+A future iteration may expand the contract source to capture more pre-2015 deals if data access permits, which would strengthen the discount and captaincy analyses.
 
 ## Scope and limitations
 
-- Scope is skaters only. Goalies are excluded in this version.
-- Entry contracts and extensions are flagged and excluded from walk-year effect analysis.
-- Players without NHL performance rows are out of scope because the analysis requires time on ice.
-- Captaincy is captains only. Alternate captains are not covered by the current source.
-- Some iconic historical contracts predate the data window and are narrative references, not model rows.
-- Time on ice is a value proxy. It captures coaching usage, not every contribution type.
+- Skaters only; goalies excluded for this version
+- Entry contracts and extensions are flagged and excluded from the walk-year analysis
+- Players with no NHL performance data are out of scope, because the analysis requires time on ice
+- Captaincy is captains only (no alternates), a data-source limitation
+- Some iconic historical contracts (notably Patrice Bergeron's 2013 extension) predate the contract source window and are narrative references, not data points
+- Earlier years (2012-2014) and 2025 are more sparsely covered than the middle years
+- Time on ice is the value proxy; it captures coaching usage, not everything a player contributes
+- The captain-as-discount archetype was tested empirically and did not generalize from the available sample
 
-## Portfolio and deployment notes
+## Portfolio and deployment
 
-This project is part of the TMG (The Mallory Group) research portfolio.
-The TMG design system is shared through the portfolio CDN, and this repo currently includes a local copy of that stylesheet for site scaffolding.
+This is part of the TMG (The Mallory Group) research portfolio. The design system is referenced via the shared CDN: https://rmallorybpc.github.io/tmg-brand-guide/dist/tmg.css
 
-GitHub Pages deploys through GitHub Actions via .github/workflows/deploy-pages.yml.
-In repository settings, Pages source must be set to GitHub Actions.
-
-Live site link: [https://rmallorybpc.github.io/nhl-play-for-contract/index.html]
+GitHub Pages deploys via GitHub Actions. The Pages source must be set to "GitHub Actions" in repo settings for the workflow to publish.
