@@ -46,16 +46,95 @@
     <div class="tmg-container">
       <header class="tmg-page-header">
         <p class="tmg-eyebrow">The Mallory Group</p>
-        <h1 class="tmg-page-title">Audit shell</h1>
-        <p class="tmg-page-desc">This page is reserved for a project self-audit pattern.</p>
+        <h1 class="tmg-page-title">Audit and robustness checks</h1>
+        <p class="tmg-page-desc">Validation tests for the loyalty-discount result, separate from Findings and Methods.</p>
       </header>
 
-      <section class="tmg-bento-grid" aria-label="Audit placeholder">
+      <section class="tmg-bento-grid" aria-label="Audit robustness sections">
         <article class="tmg-card-wide">
-          <h2 class="tmg-h2">Audit scope for V1</h2>
-          <p class="tmg-body">This version keeps the audit layer light.</p>
-          <p class="tmg-body">A full audit pass would verify source-to-output lineage, residual sanity checks, and bucket coverage checks.</p>
-          <p class="tmg-body">The same honest-limitations posture applies here. Results show observed outcomes, not intent or causality.</p>
+          <h2 class="tmg-h2">Intro</h2>
+          <p class="tmg-body">This page reports checks that test whether the loyalty-discount finding is real and stable. Findings states what the result is. Methods states how it was produced. Audit shows how hard the result was pushed.</p>
+        </article>
+
+        <article class="tmg-card-wide">
+          <h2 class="tmg-h2">Falsification test</h2>
+          <p class="tmg-body">The test keeps the same model but randomizes contract grouping 2,000 times. If a random split could reproduce the same-team effect, the model structure might be creating the signal.</p>
+          <p class="tmg-body">Observed same-team coefficient: +0.703. Null mean from random relabeling: +0.001. Empirical p-value: &lt;0.0001 (0 of 2,000 random draws as extreme as the real estimate).</p>
+          <p class="tmg-body">Takeaway: a random grouping does not reproduce the same-team advantage, so the effect is not an artifact of the model form.</p>
+          <p class="tmg-note">Source: output/tables/audit_falsification.csv</p>
+        </article>
+
+        <article class="tmg-card-wide">
+          <h2 class="tmg-h2">Subsample robustness</h2>
+          <p class="tmg-body">The model was re-estimated inside position, trajectory, tier, and era slices. Holds is TRUE when the subgroup coefficient keeps the full-sample sign and has p&lt;0.05.</p>
+          <div class="tmg-stack-sm">
+            <table class="tmg-table">
+              <thead>
+                <tr>
+                  <th scope="col">Subgroup</th>
+                  <th scope="col">Value</th>
+                  <th scope="col">n</th>
+                  <th scope="col">Coefficient</th>
+                  <th scope="col">Std. error</th>
+                  <th scope="col">p-value</th>
+                  <th scope="col">Holds</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>position</td><td>defensemen</td><td>602</td><td>+0.977</td><td>0.215</td><td>&lt;0.0001</td><td>TRUE</td></tr>
+                <tr><td>position</td><td>forwards</td><td>1,105</td><td>+0.526</td><td>0.138</td><td>0.0001</td><td>TRUE</td></tr>
+                <tr><td>trajectory</td><td>declining</td><td>389</td><td>+0.392</td><td>0.239</td><td>0.1018</td><td>FALSE</td></tr>
+                <tr><td>trajectory</td><td>insufficient_history</td><td>566</td><td>+0.561</td><td>0.280</td><td>0.0458</td><td>TRUE</td></tr>
+                <tr><td>trajectory</td><td>rising</td><td>543</td><td>+0.712</td><td>0.192</td><td>0.0002</td><td>TRUE</td></tr>
+                <tr><td>trajectory</td><td>stable</td><td>209</td><td>+0.531</td><td>0.294</td><td>0.0724</td><td>FALSE</td></tr>
+                <tr><td>tier</td><td>fringe</td><td>416</td><td>+0.528</td><td>0.252</td><td>0.0368</td><td>TRUE</td></tr>
+                <tr><td>tier</td><td>middle</td><td>539</td><td>+0.829</td><td>0.187</td><td>&lt;0.0001</td><td>TRUE</td></tr>
+                <tr><td>tier</td><td>top</td><td>434</td><td>+0.916</td><td>0.241</td><td>0.0002</td><td>TRUE</td></tr>
+                <tr><td>tier</td><td>unknown</td><td>318</td><td>+0.486</td><td>0.278</td><td>0.0814</td><td>FALSE</td></tr>
+                <tr><td>era</td><td>early_2012_2021</td><td>971</td><td>+0.641</td><td>0.178</td><td>0.0003</td><td>TRUE</td></tr>
+                <tr><td>era</td><td>late_2022_2024</td><td>736</td><td>+0.527</td><td>0.161</td><td>0.0011</td><td>TRUE</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="tmg-body">Selection-relevant read: the same-team coefficient remains positive and significant in key tier groups (fringe, middle, top) and in trajectory groups with enough precision (rising and insufficient history). That pattern is evidence against a pure selection story, but it is not a full causal identification.</p>
+          <p class="tmg-body">Non-holding cells are shown directly: declining trajectory, stable trajectory, and unknown tier.</p>
+          <p class="tmg-note">Source: output/tables/audit_subsample_robustness.csv</p>
+        </article>
+
+        <article class="tmg-card-wide">
+          <h2 class="tmg-h2">Outlier sensitivity</h2>
+          <p class="tmg-body">The model was re-fit after trimming outcome tails to test whether a small number of extremes drives the result.</p>
+          <div class="tmg-stack-sm">
+            <table class="tmg-table">
+              <thead>
+                <tr>
+                  <th scope="col">Trim fraction</th>
+                  <th scope="col">n</th>
+                  <th scope="col">Coefficient</th>
+                  <th scope="col">p-value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>0.00</td><td>1,707</td><td>+0.703</td><td>&lt;0.0001</td></tr>
+                <tr><td>0.01</td><td>1,671</td><td>+0.593</td><td>&lt;0.0001</td></tr>
+                <tr><td>0.05</td><td>1,535</td><td>+0.503</td><td>&lt;0.0001</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="tmg-body">Takeaway: the same-team effect survives removal of the tails. The estimate shrinks but stays positive and statistically strong.</p>
+          <p class="tmg-note">Source: output/tables/audit_outlier_sensitivity.csv</p>
+        </article>
+
+        <article class="tmg-card-wide">
+          <h2 class="tmg-h2">Data integrity</h2>
+          <p class="tmg-body">Coverage tables from Phase 5 confirm the sample inputs used here: eligible walk-year n=1,624 and eligible overpay n=1,760.</p>
+          <p class="tmg-body">Retention distribution in the panel is same_team 1,507, new_team 857, entry 728, unknown 83. Signing-year counts are explicit in the coverage table, with sparse edges in 2012 to 2014 and a partial 2025.</p>
+          <p class="tmg-note">Sources: output/tables/coverage_eligible_sample_sizes.csv, output/tables/coverage_retention_distribution.csv, output/tables/coverage_contract_count_by_signing_year.csv</p>
+        </article>
+
+        <article class="tmg-card-wide">
+          <h2 class="tmg-h2">Interpretation limit</h2>
+          <p class="tmg-body">For the selection caveat and interpretation boundaries, see the Methods page discussion in <a href="./methods.html">What the model cannot see</a>.</p>
         </article>
       </section>
     </div>

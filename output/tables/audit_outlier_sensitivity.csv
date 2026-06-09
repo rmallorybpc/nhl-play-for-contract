@@ -1,0 +1,4 @@
+model,treatment_term,trim_fraction,n,coefficient,p_value,full_sample_coefficient
+overpay_residual ~ retention_status + tier,retention_statussame_team,0,1707,0.7029864310098282,2.2143519376222014e-9,0.7029864310098282
+overpay_residual ~ retention_status + tier,retention_statussame_team,0.01,1671,0.5925136518596784,5.325525349105461e-8,0.7029864310098282
+overpay_residual ~ retention_status + tier,retention_statussame_team,0.05,1535,0.5025934562870162,2.089434451957155e-7,0.7029864310098282

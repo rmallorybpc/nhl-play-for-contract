@@ -1,0 +1,2 @@
+model,treatment_term,sample_n,seed,real_coefficient,null_mean,null_sd,n_perms,n_more_extreme,empirical_p_value
+overpay_residual ~ retention_status + tier,retention_statussame_team,1707,20260609,0.7029864310098282,5.003918229011584e-4,0.11615606982120766,2000,0,0
