@@ -90,14 +90,15 @@
                 <tr><td>tier</td><td>fringe</td><td>416</td><td>+0.528</td><td>0.252</td><td>0.0368</td><td>TRUE</td></tr>
                 <tr><td>tier</td><td>middle</td><td>539</td><td>+0.829</td><td>0.187</td><td>&lt;0.0001</td><td>TRUE</td></tr>
                 <tr><td>tier</td><td>top</td><td>434</td><td>+0.916</td><td>0.241</td><td>0.0002</td><td>TRUE</td></tr>
-                <tr><td>tier</td><td>unknown</td><td>318</td><td>+0.486</td><td>0.278</td><td>0.0814</td><td>FALSE</td></tr>
+                <tr><td>tier</td><td>unknown*</td><td>318</td><td>+0.486</td><td>0.278</td><td>0.0814</td><td>FALSE</td></tr>
                 <tr><td>era</td><td>early_2012_2021</td><td>971</td><td>+0.641</td><td>0.178</td><td>0.0003</td><td>TRUE</td></tr>
                 <tr><td>era</td><td>late_2022_2024</td><td>736</td><td>+0.527</td><td>0.161</td><td>0.0011</td><td>TRUE</td></tr>
               </tbody>
             </table>
           </div>
           <p class="tmg-body">Selection-relevant read: the same-team coefficient remains positive and significant in key tier groups (fringe, middle, top) and in trajectory groups with enough precision (rising and insufficient history). That pattern is evidence against a pure selection story, but it is not a full causal identification.</p>
-          <p class="tmg-body">Non-holding cells are shown directly: declining trajectory, stable trajectory, and unknown tier.</p>
+          <p class="tmg-body">Non-holding cells are shown directly: declining trajectory, stable trajectory, and the residual unknown tier (see note).</p>
+          <p class="tmg-note">* Unknown is a residual category, not a player type. A contract lands here when its walk-year usage could not be placed in a tier, for example when walk-year position group or walk-year time on ice per game is missing and it cannot be ranked against same-season position peers. The non-holding result for the unknown row reflects that mixed, unclassified group. It is not a real tier where the effect fails.</p>
           <p class="tmg-note">Source: output/tables/audit_subsample_robustness.csv</p>
         </article>
 
@@ -128,7 +129,7 @@
         <article class="tmg-card-wide">
           <h2 class="tmg-h2">Data integrity</h2>
           <p class="tmg-body">Coverage tables from Phase 5 confirm the sample inputs used here: eligible walk-year n=1,624 and eligible overpay n=1,760.</p>
-          <p class="tmg-body">Retention distribution in the panel is same_team 1,507, new_team 857, entry 728, unknown 83. Signing-year counts are explicit in the coverage table, with sparse edges in 2012 to 2014 and a partial 2025.</p>
+          <p class="tmg-body">Retention distribution in the panel is same_team 1,507, new_team 857, entry 728, unknown 83. This unknown count is also residual, not a retention category. Signing-year counts are explicit in the coverage table, with sparse edges in 2012 to 2014 and a partial 2025.</p>
           <p class="tmg-note">Sources: output/tables/coverage_eligible_sample_sizes.csv, output/tables/coverage_retention_distribution.csv, output/tables/coverage_contract_count_by_signing_year.csv</p>
         </article>
 
